@@ -1,0 +1,923 @@
+{
+    "scores": {
+        "execution": {
+            "T1204.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Legitimate user Debbie clicked and executed malicious self-extracting archive (Resume Viewer.exe) on 10.0.1.6 (Nimda)",
+                            "images": [],
+                            "note": "Telemetry showed execution of Resume Viewer.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.011": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Previously executed batch file (pdfhelper.cmd) launched a DLL payload (update.dat) using Rundll32",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe launching rundll32.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: Built-in process injection capability executed to inject callback into cmd.exe",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe creating a remote thread into cmd.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'schtasks' via cmd to create scheduled task that executes a DLL payload (updater.dll)",
+                            "images": [],
+                            "note": "Telemetry showed the execution of schtasks.exe as well as the full command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Scheduled task executed when user Debbie logs on to Nimda (10.0.1.6), launching a DLL payload (updater.dll) using Rundll32",
+                            "images": [],
+                            "note": "Telemetry showed rundll32.exe executing updater.dll."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Legitimate user Bob clicked and executed malicious VBScript (autoupdate.vbs) on 10.0.1.5 (CodeRed)",
+                            "images": [],
+                            "note": "Telemetry showed wscript.exe executing autoupdate.vbs and the subsequent PowerShell child process."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Built-in WinEnum module executed to programmatically execute a series of enumeration techniques",
+                            "images": [],
+                            "note": "Telemetry showed PowerShell running and a PowerShell script being written to disk that coincided with the execution of WinEnum."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Built-in runas module executed to launch malicious VBScript (autoupdate.vbs) as user Kmitnick",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing autoupdate.vbs via wscript.exe as user Kmitnick"
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'sc start' via PowerShell to remotely launch a specific service on Creeper (10.0.0.4)",
+                            "images": [],
+                            "note": "Telemetry showed execution of sc.exe to start the AdobeUpdater service on 10.0.0.4 (Creeper). Telemetry on Creeper showed the execution of cmd.exe to run update.vbs."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1547.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Previously executed batch file (pdfhelper.cmd) moved a separate batch file (autoupdate.bat) to the Startup folder",
+                            "images": [],
+                            "note": "Telemetry showed a cmd.exe \\\"rename to executable\\\" event for autoupdate.bat in the Startup folder."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Batch file (autoupdate.bat) previously written to Startup folder executed when user Debbie logs on to Nimda (10.0.1.6), launching a DLL payload (update.dat) using Rundll32",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing autoupdate.bat from the Startup folder."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "RDP connection to Conficker (10.0.0.5) authenticated using previously added user Jesse",
+                            "images": [],
+                            "note": "Telemetry showed \\\\\"unregmp2.exe /FirstLogon\\\\\" (associated with user logon) as well as the user name \\\\\"Jesse J\\\\\" within Machine Properties."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1546.008": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'copy' via PowerShell to overwrite magnify.exe with cmd.exe",
+                            "images": [],
+                            "note": "Telemetry showed a file write event on magnify.exe in the system directory. A search for \\\"cmd\\\" on CodeRed shows the hash value of magnify.exe matches cmd.exe."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "magnifer.exe previously overwritten by cmd.exe launched through RDP connection made to Creeper (10.0.0.4)",
+                            "images": [],
+                            "note": "Telemetry showed execution of magnify.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1016": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'ipconfig -all' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing ipconfig.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'arp -a' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing arp.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'netsh advfirewall show allprofiles' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe running netsh.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'route print' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing route.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'ipconfig -all' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing ipconfig.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1033": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'echo' via cmd to enumerate specific environment variables",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing echo with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'whoami -all -fo list' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing whoami.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Executed 'whoami' via cmd persistence mechanism through RDP connection made to Creeper (10.0.0.4)",
+                            "images": [],
+                            "note": "Telemetry showed execution of whoami.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1057": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'tasklist -v' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing tasklist.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'qprocess *' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing qprocess.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1007": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'sc query' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing sc.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net start' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net start' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'sc query' via PowerShell to remotely enumerate services on Creeper (10.0.0.4)",
+                            "images": [],
+                            "note": "Telemetry showed execution of sc.exe to query services on 10.0.0.4 (Creeper)."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'sc qc' via PowerShell to remotely enumerate a specific service on Creeper (10.0.0.4)",
+                            "images": [],
+                            "note": "Telemetry showed execution of sc.exe to query for the AdobeUpdater service on 10.0.0.4 (Creeper)."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'reg query' via PowerShell to enumerate a specific Registry key associated with terminal services",
+                            "images": [],
+                            "note": "Telemetry showed reg.exe executing with command-line arguments indicating a check to see if terminal services was enabled."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1082": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'systeminfo' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing systeminfo.exe."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net config workstation' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing net.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net localgroup administrators' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'Net Localgroup Administrators' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing net.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net localgroup administrators -domain' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net group \\\"Domain Admins\\\" -domain' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net group \\\"Domain Admins\\\" -domain' via cmd",
+                            "images": [],
+                            "note": "An \\\"IIOC\\\" module called \\\"Enumerates domain administrators\\\" was generated and provided enrichment."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net group \\\"Domain Admins\\\" -domain' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing net.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net user -domain' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net user george -domain' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net user -domain' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing net.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1012": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'reg query' via cmd to enumerate a specific Registry key",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing reg.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'reg query' via cmd to remotely enumerate a specific Registry key on Conficker (10.0.0.5)",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing reg.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire:'reg query' via PowerShell to enumerate a specific Registry key",
+                            "images": [],
+                            "note": "Telemetry showed execution of reg.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'reg query' via PowerShell to enumerate a specific Registry key",
+                            "images": [],
+                            "note": "Telemetry showed reg.exe executing with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1018": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net group \\\"Domain Controllers\\\" -domain' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe running net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'net group \\\"Domain Computers\\\" -domain' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe running net.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net group \\\"Domain Computers\\\" -domain' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed execution of net.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1049": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'netstat -ano' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe running netstat.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: WinEnum module included enumeration of established network connections",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing netstat.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net use' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed execution of net.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1083": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'dir -s -b \\\"\\\\conficker\\wormshare\\\"' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing dir with command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: 'tree \\\"C:\\Users\\debbie\\\"' via cmd",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe executing tree with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net user' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing net.exe with command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "command-and-control": {
+            "T1043": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: C2 channel modified to use port 80",
+                            "images": [],
+                            "note": "Telemetry showed connections over TCP port 80 to freegoogleadsenseinfo.com (C2 domain)."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: UAC bypass module downloaded a new Empire stager (wdbypass) over port 8080",
+                            "images": [],
+                            "note": "Telemetry showed network connection to 192.168.0.5 (C2 server) over port 8080. Though it does not count as a detection, telemetry also showed an encoded PowerShell command that could be decoded outside the capability to show the IEX command used to download the file (wdbypass) over HTTP port 8080."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1105": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: Built-in upload capability executed to write a DLL payload (updater.dll) to disk on Nimda (10.0.1.6)",
+                            "images": [],
+                            "note": "Telemetry showed file write of updater.dll."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Built-in upload module executed to write malicious VBScript (autoupdate.vbs) to disk on CodeRed (10.0.1.5)",
+                            "images": [],
+                            "note": "Telemetry showed file write of autoupdate.vbs."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Built-in upload module executed to write binary (recycler.exe) to disk on CodeRed (10.0.1.5)",
+                            "images": [],
+                            "note": "Telemetry showed a write file event for recycler.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1071.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: C2 channel established using HTTPS traffic to freegoogleadsenseinfo.com",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe making a connection over port 443 to freegoogleadsenseinfo.com (C2 domain)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "lateral-movement": {
+            "T1021.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Cobalt Strike: C2 channel modified to proxy RDP connection to Conficker (10.0.0.5)",
+                            "images": [],
+                            "note": "Telemetry showed cmd.exe connecting to 10.0.0.5 (Conficker) over port 3389."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Brute force password spraying attempts targeted Windows admin shares on Morris (10.0.1.4) and Nimda (10.0.1.6)",
+                            "images": [],
+                            "note": "Telemetry showed repeated logon attempts targeting ADMIN$ via net.exe and command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Successful authentication targeted Windows admin share on Conficker (10.0.0.5)",
+                            "images": [],
+                            "note": "Telemetry showed a logon attempt via net.exe and command-line arguments targeting ADMIN$ via net.exe and command-line arguments."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Successful authentication targeted Windows admin shares on Conficker (10.0.0.5)",
+                            "images": [],
+                            "note": "Telemetry showed a logon attempt via net.exe and command-line arguments targeting C$ via net.exe and command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "credential-access": {
+            "T1110.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net use' via PowerShell to brute force password spraying authentication attempts to Morris (10.0.1.4) and Nimda (10.0.1.6) targeting credentials of usersKmitnick, Bob, and Frieda",
+                            "images": [],
+                            "note": "Telemetry showed repeated logon attempts via net.exe and command-line arguments indicative of password spraying."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Successful authentication to Conficker (10.0.0.5) using credentials of user Kmitnick as a result of the brute force password spraying",
+                            "images": [],
+                            "note": "Telemetry showed repeated logon attempts via net.exe and command-line arguments indicative of password spraying, eventually resulting in a successful logon."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "privilege-escalation": {
+            "T1078.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net use' via PowerShell to successfully authenticate to Conficker (10.0.0.5) using credentials of user Kmitnick",
+                            "images": [],
+                            "note": "Telemetry showed a logon attempt via net.exe and command-line arguments using valid credentials of user Kmitnick."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1543.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'sc create' via PowerShell to remotely create a service on Creeper (10.0.0.4)",
+                            "images": [],
+                            "note": "Telemetry showed execution of sc.exe to create a new service called AdobeUpdater with a binPath set to run cmd.exe and execute update.vbs."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "defense-evasion": {
+            "T1070.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net use -delete' via PowerShell",
+                            "images": [],
+                            "note": "Telemetry showed net.exe execution and command-line arguments."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'sc description' via PowerShell to remotely disguise a service on Creeper (10.0.0.4)",
+                            "images": [],
+                            "note": "Telemetry showed execution of sc.exe to create a new service called AdobeUpdater with a binPath set to run cmd.exe and execute update.vbs as well as set the service description. An analyst can use this information to determine the service is masquerading."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1222.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'takeown' via PowerShell to obtain ownership of magnify.exe",
+                            "images": [],
+                            "note": "Telemetry showed takeown.exe execution to change the file permissions on magnify.exe."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'icacls' via PowerShell to modify the DACL for magnify.exe",
+                            "images": [],
+                            "note": "Telemetry showed icacls.exe execution to change permissions on magnify.exe granting discretionary access to SYSTEM."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Executed binary (recycler.exe) is a renamed copy of the WinRAR binary",
+                            "images": [],
+                            "note": "Telemetry showed execution of recycler.exe with full command-line arguments, including -hp flag, indicating compression and encryption was used with a WinRAR utility."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "initial-access": {
+            "T1078.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: 'net use' via PowerShell to successfully authenticate to Creeper (10.0.0.4) using credentials of user Kmitnick",
+                            "images": [],
+                            "note": "Telemetry showed a process tree containing a logon attempt via net.exe and command-line arguments using valid credentials of user Kmitnick."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "collection": {
+            "T1560.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Executed binary (recycler.exe) created compressed archive (old.rar) of previously collected file",
+                            "images": [],
+                            "note": "Telemetry showed execution of recycler.exe with full command-line arguments, including -hp flag, indicating compression and encryption was used with a WinRAR utility."
+                        },
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Executed binary (recycler.exe) created encrypted archive (old.rar) of previously collected file",
+                            "images": [],
+                            "note": "Telemetry showed execution of recycler.exe with full command-line arguments, including -hp flag, indicating compression and encryption was used with a WinRAR utility."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "exfiltration": {
+            "T1048": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT3",
+                            "criteria": "Empire: Sequence of 'echo' commands via PowerShell to populate commands in text file (ftp.txt), which is then executed by FTP to exfil data through network connection separate of existing C2 channel",
+                            "images": [],
+                            "note": "Telemetry showed the execution of ftp.exe with command-line arguments, including ftp.txt, for exfiltration. The contents of ftp.txt was not seen."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        }
+    },
+    "filename": "rsa_engenuity.json",
+    "capability_name": "rsa",
+    "counts": {
+        "detect": 38,
+        "protect": 0
+    }
+}

@@ -1,0 +1,3677 @@
+{
+    "scores": {
+        "execution": {
+            "T1204.002": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process spawning from explorer.exe",
+                            "images": [
+                                "Symantec-APT29-7342.png",
+                                "Symantec-APT29-7346.png"
+                            ],
+                            "note": "Telemetry showed explorer.exe executing rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process spawning from explorer.exe",
+                            "images": [
+                                "Symantec-APT29-17516.png"
+                            ],
+                            "note": "A General alert detection was generated for \"malicious file ???.cod.3aka3.scr with heuristic signature SONAR.ProcHijack!g31\"."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from explorer.exe",
+                            "images": [
+                                "Symantec-APT29-9704.png"
+                            ],
+                            "note": "Telemetry showed explorer.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from explorer.exe",
+                            "images": [
+                                "Symantec-APT29-17704.png"
+                            ],
+                            "note": "A Tactic detection called \"Execution\" was generated when explorer.exe executed powershell.exe."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "explorer.exe executes winword.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.1.png",
+                                "WizardSpider-Sandworm_SY_1.A.1_1.png",
+                                "WizardSpider-Sandworm_SY_1.A.1_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe spawning from the rcs.3aka3.doc process",
+                            "images": [
+                                "Symantec-APT29-7357.png"
+                            ],
+                            "note": "Telemetry showed rcs.3aka3.doc executing cmd.exe."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe executes cmd.exe to execute adb.vbs",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.4.png",
+                                "WizardSpider-Sandworm_SY_1.A.4_1.png",
+                                "WizardSpider-Sandworm_SY_1.A.4_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_16.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "winword.exe executes cmd.exe to execute adb.vbs",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.4_2.png",
+                                "WizardSpider-Sandworm_SY_1.A.4_4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 14,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "Symantec-APT29-12868.png",
+                                "Symantec-APT29-7357.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe spawning from cmd.exe. The telemetry was correlated to a parent detection cod.3aka.scr as a suspicious file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "Symantec-APT29-12868.png",
+                                "Symantec-APT29-7357.png"
+                            ],
+                            "note": "A Technique detection for \"PowerShell\" was generated when cmd.exe spawned powershell.exe. The event was correlated to a parent detection cod.3aka.scr as a suspicious file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "Symantec-APT29-13030.png"
+                            ],
+                            "note": "An MSSP detection for \"PowerShell\" was received that included a description of the PowerShell commands executed by the adversary."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from powershell.exe",
+                            "images": [
+                                "Symantec-APT29-7421.png"
+                            ],
+                            "note": "A Technique detection for \"PowerShell\" was generated when powershell.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from powershell.exe",
+                            "images": [
+                                "Symantec-APT29-12909.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of a new powershell.exe spawning from powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from python.exe",
+                            "images": [
+                                "Symantec-APT29-17683.png"
+                            ],
+                            "note": "Telemetry showed python.exe executing powershell.exe. The telemetry was correlated to a parent detection python.exe as a suspicious file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from python.exe",
+                            "images": [
+                                "Symantec-APT29-7472.png",
+                                "Symantec-APT29-7475.png"
+                            ],
+                            "note": "A Technique detection for PowerShell was generated when python.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "Symantec-APT29-12850.png",
+                                "Symantec-APT29-9700.png",
+                                "Symantec-APT29-9705.png",
+                                "Symantec-APT29-9706.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe spawned from a PowerShell stager."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "Symantec-APT29-12850.png",
+                                "Symantec-APT29-9700.png",
+                                "Symantec-APT29-9705.png",
+                                "Symantec-APT29-9706.png"
+                            ],
+                            "note": "A Technique alert detection (medium severity) for \"Powershell\" was generated for powershell.exe spawned from a PowerShell stager."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "Symantec-APT29-12953.png",
+                                "Symantec-APT29-12954.png"
+                            ],
+                            "note": "An MSSP detection for \"PowerShell\" was received that included a PowerShell command executed by the adversary and explained that it was used to download and execute a PoshC2 stager located on a remote server."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SYSTEM-level powershell.exe spawned from the powershell.exe",
+                            "images": [
+                                "Symantec-APT29-9859.png"
+                            ],
+                            "note": "A General detection called \"powershell.exe contains suspicious argument\" was generated on a SYSTEM-level powershell.exe spawning from wmiprvse.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SYSTEM-level powershell.exe spawned from the powershell.exe",
+                            "images": [
+                                "Symantec-APT29-17733.png"
+                            ],
+                            "note": "A Technique detection for \"PowerShell\" was generated due to wmiprvse.exe spawning powershell.exe."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "WmiPrvSE.exe spawns powershell.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.7.png",
+                                "WizardSpider-Sandworm_SY_1.A.7_1.png",
+                                "WizardSpider-Sandworm_SY_1.A.7_2.png",
+                                "WizardSpider-Sandworm_SY_1.A.7_3.png",
+                                "WizardSpider-Sandworm_SY_1.A.7_4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_18.A.3.png",
+                                "WizardSpider-Sandworm_SY_18.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe spawned by PSEXESVC.exe",
+                            "images": [
+                                "Symantec-APT29-7466.png"
+                            ],
+                            "note": "Telemetry showed PSEXECSVC.exe executing python.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe spawned by PSEXESVC.exe",
+                            "images": [
+                                "Symantec-APT29-7458.png"
+                            ],
+                            "note": "A Technique alert detection for \"PsExec interacted with services - SONAR.PsExeSvc!gen1\" was generated on PsExecSvc targeting python.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe spawned by PSEXESVC.exe",
+                            "images": [
+                                "Symantec-APT29-12942.png"
+                            ],
+                            "note": "An MSSP detection for \"Service Execution\" occurred containing evidence of PSEXECSVC.exe executing python.exe."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.6.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1047": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "WMI Process (WmiPrvSE.exe) executing powershell.exe",
+                            "images": [
+                                "Symantec-APT29-9755.png"
+                            ],
+                            "note": "Telemetry showed WmiPrvSE.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "WMI Process (WmiPrvSE.exe) executing powershell.exe",
+                            "images": [
+                                "Symantec-APT29-17707.png"
+                            ],
+                            "note": "A Tactic detection called \"Execution\" was generated when wmiprvse.exe launched powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "WMI Process (WmiPrvSE.exe) executing powershell.exe",
+                            "images": [
+                                "Symantec-APT29-12962.png"
+                            ],
+                            "note": "An MSSP detection for \"WMI\" was received that included a PowerShell command executed by the adversary and explained that it was used to execute PowerShel through WMI that downloads and executes mimikatz."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "adb.vbs executes powershell.exe via Win32_Process",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.6.png",
+                                "WizardSpider-Sandworm_SY_1.A.6_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1106": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ConvertSidToStringSid API function by loading Advapi32.dll",
+                            "images": [
+                                "Symantec-APT29-12967.png",
+                                "Symantec-APT29-12968.png"
+                            ],
+                            "note": "An MSSP detection for \"Execution through API\" was received that included a PowerShell command executed by the adversary and explained that it was used to execute the GetTokenInformation API call from Advapi32.dll."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-9853.png"
+                            ],
+                            "note": "Telemetry showed rundll32.exe executing kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-17729.png"
+                            ],
+                            "note": "A Technique alert detection called \"Rundll32\" was generated on \"malicious file kxwn.lock with heuristic signature SONAR.Module!gen3\"."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-9853.png"
+                            ],
+                            "note": "A Technique alert detection called \"SONAR - RunDLL32 loaded a suspicious DLL\" was generated due to rundll32.exe executing kxwn.lock."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe loads VBEUI.DLL, executes code via AutoOpen()",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.2.png",
+                                "WizardSpider-Sandworm_SY_1.A.2_1.png",
+                                "WizardSpider-Sandworm_SY_1.A.2_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "A shell is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_12.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "defense-evasion": {
+            "T1036.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "Symantec-APT29-9896.png",
+                                "Symantec-APT29-9898.png"
+                            ],
+                            "note": "Telemetry showed original filename of cod.3aka.scr and it was a Windows PE file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "Symantec-APT29-17521.png"
+                            ],
+                            "note": "A General detection was generated for \"Suspicious File Detected rcs.3aka3.doc\" due to machine learning identifying the payload as a PE32 executable and analyzing it."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "Symantec-APT29-17553.png"
+                            ],
+                            "note": "Telemetry showed PowerShell extracting and executing the code embedded within monkey.png. The telemetry was correlated to a parent detection cod.3aka.scr as a suspicious file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "Symantec-APT29-17553.png"
+                            ],
+                            "note": "A Technique alert detection for Obfuscated Files or Information was generated for PowerShell extracting and executing the code embedded within monkey.png. The telemetry was correlated to a parent detection cod.3aka.scr as a suspicious file. Detection incurred a delay based on machine learning processing."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "Symantec-APT29-9908.png"
+                            ],
+                            "note": "An MSSP detection for \"Data Obfuscation\" occurred containing evidence of the PowerShell script contained within monkey.png."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1112": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Deletion of of the HKCU\\Software\\Classes\\Folder\\shell\\Open\\command subkey",
+                            "images": [
+                                "Symantec-APT29-9919.png"
+                            ],
+                            "note": "Telemetry showed the deletion of the command subkey."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Deletion of the HKCU\\Software\\Classes\\Folder\\shell\\Open\\command subkey",
+                            "images": [
+                                "Symantec-APT29-9871.png"
+                            ],
+                            "note": "Telemetry showed the deletion of the Registry value."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Deletion of the HKCU\\Software\\Classes\\Folder\\shell\\Open\\command subkey",
+                            "images": [
+                                "Symantec-APT29-12963.png",
+                                "Symantec-APT29-12964.png"
+                            ],
+                            "note": "An MSSP detection for \"Modify Registry\" was received that included a PowerShell command executed by the adversary and explained that it was used to delete the Registry Key."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1140": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Expand-Archive",
+                            "images": [
+                                "Symantec-APT29-7411.png"
+                            ],
+                            "note": "Telemetry showed PowerShell writing the files that were decompressed from the ZIP."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Expand-Archive",
+                            "images": [
+                                "Symantec-APT29-17583.png"
+                            ],
+                            "note": "A General alert detection was generated for \"PowerShell created a suspicious file\" on PowerShell writing the files that were decompressed from the ZIP."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-12850.png",
+                                "Symantec-APT29-12902.png",
+                                "Symantec-APT29-9709.png"
+                            ],
+                            "note": "Telemetry showed the certutil.exe process and corresponding file write of the kxwn.lock payload."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-12850.png",
+                                "Symantec-APT29-12902.png",
+                                "Symantec-APT29-9709.png"
+                            ],
+                            "note": "A Technique alert detection (red indicator) for \"Deobfuscate/Decode Files or Information\" was generated when certutil decoded data and created an executable file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-12950.png",
+                                "Symantec-APT29-12951.png"
+                            ],
+                            "note": "An MSSP detection for \"Deobfuscate/Decode Files or Information\" was received that included details on execution of certutil.exe by the adversary and explained that it was used to decode a fake certificate file into a DLL."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.004": {
+                "d": {
+                    "count": 17,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rcs.3aka3.doc",
+                            "images": [
+                                "Symantec-APT29-7427.png",
+                                "Symantec-APT29-7428.png",
+                                "Symantec-APT29-9921.png"
+                            ],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rcs.3aka3.doc",
+                            "images": [
+                                "Symantec-APT29-7427.png",
+                                "Symantec-APT29-7428.png"
+                            ],
+                            "note": "A Tactic detection called \"Defense Evasion\" was generated when sdelete64.exe with command-line arguments was used to delete rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rcs.3aka3.doc",
+                            "images": [
+                                "Symantec-APT29-12912.png",
+                                "Symantec-APT29-12913.png"
+                            ],
+                            "note": "An MSSP detection for \"File Deletion\" occurred containing evidence of sdelete64.exe deleting rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file draft.zip",
+                            "images": [
+                                "Symantec-APT29-7428.png",
+                                "Symantec-APT29-9921.png"
+                            ],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file draft.zip",
+                            "images": [
+                                "Symantec-APT29-7428.png"
+                            ],
+                            "note": "A Tactic detection called \"Defense Evasion\" was generated when sdelete64.exe with command-line arguments was used to delete Roaming\\Draft.Zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file draft.zip",
+                            "images": [
+                                "Symantec-APT29-12912.png",
+                                "Symantec-APT29-12913.png"
+                            ],
+                            "note": "An MSSP detection for \"File Deletion\" occurred containing evidence of sdelete64.exe deleting Draft.Zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file SysinternalsSuite.zip",
+                            "images": [
+                                "Symantec-APT29-7428.png",
+                                "Symantec-APT29-9921.png"
+                            ],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file SysinternalsSuite.zip",
+                            "images": [
+                                "Symantec-APT29-7428.png"
+                            ],
+                            "note": "A Tactic detection called \"Defense Evasion\" was generated when sdelete64.exe with command-line arguments was used to delete SysinternalsSuite.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file SysinternalsSuite.zip",
+                            "images": [
+                                "Symantec-APT29-12912.png",
+                                "Symantec-APT29-12913.png"
+                            ],
+                            "note": "An MSSP detection for \"File Deletion\" occurred containing evidence of sdelete64.exe deleting SysinternalsSuite.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rar.exe",
+                            "images": [
+                                "Symantec-APT29-17696.png"
+                            ],
+                            "note": "Telemetry showed sdelete64.exe executing with command-line arguments to delete Rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rar.exe",
+                            "images": [
+                                "Symantec-APT29-17696.png"
+                            ],
+                            "note": "A Tactic detection called \"Defense Evasion\" was generated when sdelete64.exe with command-line arguments was used to delete Rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\Desktop\\working.zip",
+                            "images": [
+                                "Symantec-APT29-17696.png"
+                            ],
+                            "note": "Telemetry showed sdelete64.exe executing with command-line arguments to delete Desktop\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\Desktop\\working.zip",
+                            "images": [
+                                "Symantec-APT29-17696.png"
+                            ],
+                            "note": "A Tactic detection called \"Defense Evasion\" was generated when sdelete64.exe with command-line arguments was used to delete Desktop\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\AppData\\Roaming\\working.zip",
+                            "images": [
+                                "Symantec-APT29-17696.png"
+                            ],
+                            "note": "Telemetry showed sdelete64.exe executing with command-line arguments to delete Roaming\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\AppData\\Roaming\\working.zip",
+                            "images": [
+                                "Symantec-APT29-17696.png"
+                            ],
+                            "note": "A Tactic detection called \"Defense Evasion\" was generated when sdelete64.exe with command-line arguments was used to delete Roaming\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe deleting the file sdelete64.exe",
+                            "images": [
+                                "Symantec-APT29-17698.png"
+                            ],
+                            "note": "Telemetry showed cmd.exe deleting sdelete64.exe. Processing was triggered by human action and not initiated automatically."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe deletes oradump.exe, mslog.exe, and mslog.txt via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_17.A.8.png",
+                                "WizardSpider-Sandworm_SY_17.A.8_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that accesschk.exe is not the legitimate Sysinternals tool",
+                            "images": [
+                                "Symantec-APT29-7436.png",
+                                "Symantec-APT29-7437.png",
+                                "Symantec-APT29-7438.png"
+                            ],
+                            "note": "A General alert detection was generated for \"Potential risk found\" on accesschk.exe receiving a reputation report that indicated it was known to be an untrusted file with the maximum suspicion rating, which indicates it is not a legitimate Sysinternals tool."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the file python.exe is packed",
+                            "images": [
+                                "Symantec-APT29-7488.png"
+                            ],
+                            "note": "Telemetry from automated file analysis showed python.exe was UPX packed. Detection incurred a delay based on additional data processing of python.exe to determine it was UPX packed."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the file python.exe is packed",
+                            "images": [
+                                "Symantec-APT29-7457.png"
+                            ],
+                            "note": "A Technique detection for \"Software Packing\" was generated when python.exe was executed by PSExec."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.002": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user Pam on Scranton (10.0.1.4)",
+                            "images": [
+                                "Symantec-APT29-17670.png"
+                            ],
+                            "note": "Telemetry showed PsExec64.exe executing python.exe with pam's login credentials on Scranton. A Kerberos ticket was generated on Scranton for pam."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user Pam on Scranton (10.0.1.4)",
+                            "images": [
+                                "Symantec-APT29-12942.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of a valid logon on Scranton (10.0.1.4) as user Pam."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User bill successfully authenticates into 10.0.0.8",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_4.A.2.png",
+                                "WizardSpider-Sandworm_SY_4.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User vfleming successfully authenticates into 10.0.0.4",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_7.A.2.png",
+                                "WizardSpider-Sandworm_SY_7.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User fherbert successfully authenticates into 10.0.1.7 via SMB",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.1_1.png",
+                                "WizardSpider-Sandworm_SY_15.A.1_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User patreides successfully authenticates into 10.0.1.4",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_18.A.1.png",
+                                "WizardSpider-Sandworm_SY_18.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1134.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "hostui.exe manipulating the token of powershell.exe via the CreateProcessWithToken API OR powershell.exe executing with the stolen token of explorer.exe",
+                            "images": [
+                                "Symantec-APT29-17702.png"
+                            ],
+                            "note": "Telemetry shows powershell.exe's security_descriptor obtaining the same value as explorer.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1564.004": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the schemas ADS via Get-Content and IEX",
+                            "images": [
+                                "Symantec-APT29-9697.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing the schemas ADS with Get-Content and IEX."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the schemas ADS via Get-Content and IEX",
+                            "images": [
+                                "Symantec-APT29-12947.png"
+                            ],
+                            "note": "An MSSP detection for \"NTFS File Attributes\"  was received that included the PowerShell command used by the adversary and explained that it was used to retrieve the PowerShell script from the schemas Alternate Data Stream and execute it."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1497.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
+                            "images": [
+                                "Symantec-APT29-12948.png",
+                                "Symantec-APT29-12949.png"
+                            ],
+                            "note": "An MSSP detection for \"Virtualization/Sandbox Evasion\" was received that included a PowerShell command executed by the adversary and explained that it was used to query BIOS information."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.006": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe modifying the creation, last access, and last write times of kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-9869.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe setting the file attributes of kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe modifying the creation, last access, and last write times of kxwn.lock",
+                            "images": [
+                                "Symantec-APT29-12955.png",
+                                "Symantec-APT29-12956.png"
+                            ],
+                            "note": "An MSSP detection for \"Timestomp\" occurred containing evidence of timestamp modifications of kxwn.lock."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Set-WmiInstance",
+                            "images": [
+                                "Symantec-APT29-17711.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing Set-WmiInstance to write encoded content to Win32_AuditCode."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "adb.vbs is obfuscated",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.5.png",
+                                "WizardSpider-Sandworm_SY_1.A.5_1.png",
+                                "WizardSpider-Sandworm_SY_1.A.5_2.png",
+                                "WizardSpider-Sandworm_SY_1.A.5_3.png",
+                                "WizardSpider-Sandworm_SY_1.A.5_4.png",
+                                "WizardSpider-Sandworm_SY_1.A.5_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes adb.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.9.png",
+                                "WizardSpider-Sandworm_SY_1.A.9_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32.exe executes wsmprovav.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.8.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes perfc.dat",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Sandworm",
+                            "criteria": "Rundll32.exe executes wsmprovav.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.8_1.png",
+                                "WizardSpider-Sandworm_SY_15.A.8_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1222.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.Exe executes icacls.exe to modify permissions on C: and Z:",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_9.A.3.png",
+                                "WizardSpider-Sandworm_SY_9.A.3_1.png",
+                                "WizardSpider-Sandworm_SY_9.A.3_2.png",
+                                "WizardSpider-Sandworm_SY_9.A.3_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe injects into notepad.exe via WriteProcessMemory() and CreateRemoteThread()",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_10.A.4.png",
+                                "WizardSpider-Sandworm_SY_10.A.4_1.png",
+                                "WizardSpider-Sandworm_SY_10.A.4_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User fherbert successfully authenticates into 10.0.1.5",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_11.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Event logs are cleared via wevtutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.8.png",
+                                "WizardSpider-Sandworm_SY_19.A.8_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "USN change journal is cleared using fsutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.9.png",
+                                "WizardSpider-Sandworm_SY_19.A.9_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "command-and-control": {
+            "T1095": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 1234",
+                            "images": [
+                                "Symantec-APT29-7338.png"
+                            ],
+                            "note": "Telemetry showed the rcs.3aka.doc connected to 192.168.0.5 on port 1234."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 1234",
+                            "images": [
+                                "Symantec-APT29-7338.png"
+                            ],
+                            "note": "A General alert detection for \"Attack, Backdoor\" was generated when rcs.3aka3.doc connected to 192.168.0.5 on port 1234."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1105": {
+                "d": {
+                    "count": 27,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process creating the file monkey.png",
+                            "images": [
+                                "Symantec-APT29-9907.png"
+                            ],
+                            "note": "Telemetry showed rcs.3aka3.doc creating monkey.png, with the file path reversed due to the Unicode right-to-left override character."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file SysinternalsSuite.zip",
+                            "images": [
+                                "Symantec-APT29-7416.png",
+                                "Symantec-APT29-7419.png"
+                            ],
+                            "note": "Telemetry showed the file write of the ZIP by PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The file python.exe created on Scranton (10.0.1.4)",
+                            "images": [
+                                "Symantec-APT29-17662.png"
+                            ],
+                            "note": "A General alert detection for \"Malicious file detected python.exe\" was generated on sandbox detection evaluation of python.exe. Detection incurred a delay based on sandbox detonation processing."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The file python.exe created on Scranton (10.0.1.4)",
+                            "images": [
+                                "Symantec-APT29-17664.png"
+                            ],
+                            "note": "A Technique detection for \"Remote File Copy\" was generated data being sent over SMB2 to Scranton (10.0.1.4) creating a .exe file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file rar.exe",
+                            "images": [
+                                "Symantec-APT29-7468.png"
+                            ],
+                            "note": "Telemetry showed python.exe creating rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file rar.exe",
+                            "images": [
+                                "Symantec-APT29-17864.png"
+                            ],
+                            "note": "A Technique alert detection for \"Remote File Copy - Suspicious N-Gram\" was generated when python.exe connected to 192.168.0.4 port 8443 and then immediately created rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file sdelete64.exe",
+                            "images": [
+                                "Symantec-APT29-7471.png"
+                            ],
+                            "note": "Telemetry showed Created File event for python.exe connecting to 192.168.0.4 port 8443 and then immediately creating sdelete64.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file sdelete64.exe",
+                            "images": [
+                                "Symantec-APT29-17867.png"
+                            ],
+                            "note": "A General alert detection for \"Suspicious N-Gram\" was generated when python.exe connected to 192.168.0.4 port 8443 and then immediately created sdelete64.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe downloading and/or the file write of m.exe",
+                            "images": [
+                                "Symantec-APT29-9757.png",
+                                "Symantec-APT29-9759.png"
+                            ],
+                            "note": "Telemetry showed the file create event for m.exe into the System32 folder."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe downloading and/or the file write of m.exe",
+                            "images": [
+                                "Symantec-APT29-12906.png",
+                                "Symantec-APT29-9758.png",
+                                "Symantec-APT29-9759.png"
+                            ],
+                            "note": "A Technique detection for \"Remote File Copy\" was generated when powershell.exe generated network traffic immediately followed by creation of an executable file. The event was correlated to a previous event showing wmiprvse.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe downloading and/or the file write of m.exe",
+                            "images": [
+                                "Symantec-APT29-12962.png"
+                            ],
+                            "note": "An MSSP detection for \"Remote File Copy\" was received that included a PowerShell command executed by the adversary and explained that it was used to download m.exe from a remote server."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe downloads C:\\Users\\Public\\adb.txt",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.3.png",
+                                "WizardSpider-Sandworm_SY_1.A.3_1.png",
+                                "WizardSpider-Sandworm_SY_1.A.3_2.png",
+                                "WizardSpider-Sandworm_SY_1.A.3_3.png",
+                                "WizardSpider-Sandworm_SY_1.A.3_4.png",
+                                "WizardSpider-Sandworm_SY_1.A.3_5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads adb.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.8.png",
+                                "WizardSpider-Sandworm_SY_1.A.8_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe downloads Outlook.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_3.A.3.png",
+                                "WizardSpider-Sandworm_SY_3.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_4.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe downloads  the file rubeus.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_6.A.1.png",
+                                "WizardSpider-Sandworm_SY_6.A.1_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_7.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads kill.bat",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_9.A.1.png",
+                                "WizardSpider-Sandworm_SY_9.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads window.bat",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_9.A.4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads C:\\Users\\Public\\ryuk.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_10.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Webshell payload (/tmp/search.php) is dropped to disk on 10.0.1.5",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_11.A.3.png",
+                                "WizardSpider-Sandworm_SY_11.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "/var/www/html/centreon_module_linux_app64 is dropped to disk on 10.0.1.5",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_13.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "C:\\Windows\\wsmprovav.exe is written to disk on 10.0.1.7",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.3.png",
+                                "WizardSpider-Sandworm_SY_15.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "A service binary is written to disk in C:\\Windows\\on 10.0.1.7",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.4.png",
+                                "WizardSpider-Sandworm_SY_15.A.4_1.png",
+                                "WizardSpider-Sandworm_SY_15.A.4_2.png",
+                                "WizardSpider-Sandworm_SY_15.A.4_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe creates the file oradump.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_17.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe creates the file mslog.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_17.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads perfc.dat via copy",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_18.A.4.png",
+                                "WizardSpider-Sandworm_SY_18.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "uxtheme.exe downloads  the file rubeus.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_6.A.1_1.png",
+                                "WizardSpider-Sandworm_SY_6.A.1_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "powershell.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_7.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "cmd.exe downloads C:\\Users\\Public\\ryuk.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_10.A.1_1.png",
+                                "WizardSpider-Sandworm_SY_10.A.1_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Sandworm",
+                            "criteria": "/var/www/html/centreon_module_linux_app64 is dropped to disk on 10.0.1.5",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_13.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1043": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Symantec-APT29-7402.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe connecting to 192.168.0.5 on port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Symantec-APT29-7402.png"
+                            ],
+                            "note": "A General alert detection for \"Attack, Backdoor\" was generated when PowerShell connected to 192.168.0.5 on port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Symantec-APT29-9867.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe making a network connection to the C2 (192.168.0.4) over port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Symantec-APT29-12953.png",
+                                "Symantec-APT29-12954.png"
+                            ],
+                            "note": "An MSSP detection for \"Commonly Used Port\" was received that included a description of PowerShell script downloaded and executed by the adversary and explained that it was used to establish a connection to 192.168.0.4 over port 443. A detailed analysis of the script was also provided."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1071.001": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the network data sent over the C2 channel is HTTPS",
+                            "images": [
+                                "Symantec-APT29-7402.png"
+                            ],
+                            "note": "Telemetry showed PowerShell process exchanging data with 192.168.0.5 over HTTPS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the network data sent over the C2 channel is HTTPS",
+                            "images": [
+                                "Symantec-APT29-7402.png"
+                            ],
+                            "note": "A General alert detection for \"Attack, Backdoor\" was generated when PowerShell process exchanged data with 192.168.0.5 over HTTPS due to network traffic analysis."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over the HTTPS protocol",
+                            "images": [
+                                "Symantec-APT29-9867.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe connecting and sending data to 192.168.0.4 via TLS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over the HTTPS protocol",
+                            "images": [
+                                "Symantec-APT29-12953.png",
+                                "Symantec-APT29-12954.png"
+                            ],
+                            "note": "A MSSP detection for \"Standard Application Layer Protocol\" was received that included a description of PowerShell script downloaded and executed by the adversary and explained that it was used to establish a connection to 192.168.0.4 using HTTPS. A detailed analysis of the script was also provided."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_1.A.10.png",
+                                "WizardSpider-Sandworm_SY_1.A.10_1.png",
+                                "WizardSpider-Sandworm_SY_1.A.10_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_4.A.4.png",
+                                "WizardSpider-Sandworm_SY_4.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1573.002": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the network data sent over the C2 channel is encrypted",
+                            "images": [
+                                "Symantec-APT29-7402.png"
+                            ],
+                            "note": "Telemetry showed PowerShell process exchanging data with 192.168.0.5 over HTTPS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the network data sent over the C2 channel is encrypted",
+                            "images": [
+                                "Symantec-APT29-7402.png"
+                            ],
+                            "note": "A General alert detection for \"Attack, Backdoor\" was generated when PowerShell process exchanged data with 192.168.0.5 over HTTPS due to network traffic analysis."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the network data sent over the C2 channel is encrypted",
+                            "images": [
+                                "Symantec-APT29-9867.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe connecting and sending data to 192.168.0.4 via TLS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the network data sent over the C2 channel is encrypted",
+                            "images": [
+                                "Symantec-APT29-12953.png",
+                                "Symantec-APT29-12954.png"
+                            ],
+                            "note": "An MSSP detection for \"Standard Application Layer Protocol\" was received that included a description of PowerShell script downloaded and executed by the adversary and explained that it was used to establish a connection to 192.168.0.4 using HTTPS. A detailed analysis of the script was also provided."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32 connects to 192.168.0.4 over encrypted protocol HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.10.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1102": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe with command-line arguments then making a network connection to a public IP over port 443",
+                            "images": [
+                                "Symantec-APT29-9838.png",
+                                "Symantec-APT29-9839.png",
+                                "Symantec-APT29-9885.png"
+                            ],
+                            "note": "Telemetry showed net.exe with command-line arguments to connect to a OneDrive URL as well as net.exe subsequently making a network connection to public IPs over port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe with command-line arguments then making a network connection to a public IP over port 443",
+                            "images": [
+                                "Symantec-APT29-12973.png"
+                            ],
+                            "note": "An MSSP detection for \"Web Service\" was received that included a PowerShell command executed by the adversary and explained that it was used to exfiltrate locally staged data to a remote WebDav share."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1571": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP on port 447",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_4.A.5.png",
+                                "WizardSpider-Sandworm_SY_4.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1083": {
+                "d": {
+                    "count": 8,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-9905.png"
+                            ],
+                            "note": "Telemetry showed PowerShell execution of ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-12974.png"
+                            ],
+                            "note": "An MSSP detection for \"Data from Local System\" contained evidence of PowerShell executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:TEMP",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection for \"File and Directory Discovery\" was received that included details about a PowerShell script used for Discovery and mentioned that it collected the TempDirectory."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-17689.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-17686.png"
+                            ],
+                            "note": "An MSSP detection for \"Collection\" was received that included ChildItem command execution searching for document and media files."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-Item -Path \".\\\" -Verbose).FullName",
+                            "images": [
+                                "Symantec-APT29-12948.png",
+                                "Symantec-APT29-12949.png"
+                            ],
+                            "note": "An MSSP detection for \"File and Directory Discovery\" was received that included a PowerShell command executed by the adversary and explained that it was used to perform discovery of the file and directory list from the local filesystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (gci ((gci env:windir).Value + '\\system32')",
+                            "images": [
+                                "Symantec-APT29-12955.png",
+                                "Symantec-APT29-12956.png"
+                            ],
+                            "note": "An MSSP detection for \"File and Directory Discovery\" was received that noted a PowerShell command was used to find a random file in the System32 folder."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Shell executes ls -lsahR",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_12.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1057": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "Symantec-APT29-12910.png",
+                                "Symantec-APT29-12911.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of powershell.exe executing Get-Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $PID",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection was received that included details about a PowerShell script used for Discovery and mentioned that it collected the current PID."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "Symantec-APT29-12975.png"
+                            ],
+                            "note": "An MSSP detection for \"Process Discovery\" was received that included PowerShell commands run by the adversary and explained that they were used to enumerate running processes on remote host Scranton (10.0.1.4)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_Process",
+                            "images": [
+                                "Symantec-APT29-12948.png",
+                                "Symantec-APT29-12949.png"
+                            ],
+                            "note": "An MSSP detection for \"Process Discovery\" was received that included a PowerShell command executed by the adversary and explained that it was used to enumerate running processes on the local system."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CreateToolhelp32Snapshot API",
+                            "images": [
+                                "Symantec-APT29-12962.png",
+                                "Symantec-APT29-12965.png"
+                            ],
+                            "note": "An MSSP detection for \"Process Discovery\" occurred containing evidence of an executed PowerShell command used to enumerate running processes on the local machine."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1033": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:USERNAME",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection for \"System Owner/User Discovery\" was received that included details about a PowerShell script used for Discovery and mentioned that it collected the User Name."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "Symantec-APT29-12948.png",
+                                "Symantec-APT29-12949.png"
+                            ],
+                            "note": "An MSSP detection for \"System Owner/User Discovery\" was received that included a PowerShell command executed by the adversary and explained that it was used to query the system owner."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetUserNameEx API",
+                            "images": [
+                                "Symantec-APT29-12960.png",
+                                "Symantec-APT29-12961.png"
+                            ],
+                            "note": "An MSSP detection for \"System Owner/User Discovery\" was received that included a PowerShell command executed by the adversary and explained that it was used to obtain the username."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Shell executes whoami",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_12.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1082": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:COMPUTERNAME",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection for \"System Information Discovery\" was received that included details about a PowerShell script used for Discovery and mentioned that it collected the Computer Name."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject gwmi queries for Win32_BIOS and Win32_ComputerSystem",
+                            "images": [
+                                "Symantec-APT29-12948.png",
+                                "Symantec-APT29-12949.png"
+                            ],
+                            "note": "An MSSP detection for \"System Information Discovery\" was received that included a PowerShell command executed by the adversary and explained that it was used to collect information about the local system."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetComputerNameEx API",
+                            "images": [
+                                "Symantec-APT29-12960.png",
+                                "Symantec-APT29-12961.png"
+                            ],
+                            "note": "An MSSP detection for \"System Information Discovery\" occurred containg evidence of PowerShell calling the GetComputerNameEx API."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes systeminfo",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.1.png",
+                                "WizardSpider-Sandworm_SY_5.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net /config",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.7.png",
+                                "WizardSpider-Sandworm_SY_5.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Shell executes uname -a",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_12.A.3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1016": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:USERDOMAIN",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection was received that included details about a PowerShell script used for Discovery and mentioned that it collected the user's domain name."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "Symantec-APT29-12948.png",
+                                "Symantec-APT29-12949.png"
+                            ],
+                            "note": "An MSSP detection for \"System Network Configuration Discovery\" was received that included a PowerShell command executed by the adversary and explained that it was used to query the system's network configuration."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetWkstaGetInfo API",
+                            "images": [
+                                "Symantec-APT29-12960.png",
+                                "Symantec-APT29-12961.png"
+                            ],
+                            "note": "An MSSP detection for \"System Network Configuration Discovery\" occurred containing evidence of PowerShell calling the NetWkstaGetInfo API."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes ipconfig",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.5.png",
+                                "WizardSpider-Sandworm_SY_5.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1518.001": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiObject ... -Class AntiVirusProduct",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection was received that included details about a PowerShell script used for Discovery and mentioned that it collected information about installed antivirus and firewall products."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiObject ... -Class FireWallProduct",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection was received that included details about a PowerShell script used for Discovery and mentioned that it collected information about installed antivirus and firewall products."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for AntiVirusProduct",
+                            "images": [
+                                "Symantec-APT29-12957.png"
+                            ],
+                            "note": "An MSSP detection for \"Security Software Discovery\" was occurred containing evidence WMI was used to enumerate installed AntiVirus products."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetUserGetGroups API",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection for \"Permissions Groups Discovery\" was received that included details about a PowerShell script used for Discovery and mentioned that it collected a list of global groups."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe executes adfind.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_7.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetUserGetLocalGroups API",
+                            "images": [
+                                "Symantec-APT29-12919.png",
+                                "Symantec-APT29-12921.png",
+                                "Symantec-APT29-12922.png"
+                            ],
+                            "note": "A MSSP detection for \"Permissions Groups Discovery\" was received that included details about a PowerShell script used for Discovery and mentioned that it collected a list of local groups."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1018": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 to the Domain Controller (10.0.0.4)",
+                            "images": [
+                                "Symantec-APT29-9930.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe establishing a connection identified as LDAP over port 389 to NewYork (10.0.0.4)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 to the Domain Controller (10.0.0.4)",
+                            "images": [
+                                "Symantec-APT29-12941.png"
+                            ],
+                            "note": "An MSSP detection for \"Remote System Discovery\" was received that included PowerShell commands run by the adversary and an explanation of those commands."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 via functions from System.DirectoryServices.dll",
+                            "images": [
+                                "Symantec-APT29-17717.png",
+                                "Symantec-APT29-17718.png"
+                            ],
+                            "note": "Telemetry showed PowerShell making a network connection to the domain controller NewYork (10.0.0.4) over LDAP port 389. Additionally, Oscar's Kerberos ticket was seen in memory on NewYork."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes dsquery.exe via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_17.A.7.png",
+                                "WizardSpider-Sandworm_SY_17.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes GetIpNetTable()",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.3.png",
+                                "WizardSpider-Sandworm_SY_19.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1120": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_PnPEntity",
+                            "images": [
+                                "Symantec-APT29-12948.png",
+                                "Symantec-APT29-12949.png"
+                            ],
+                            "note": "An MSSP detection for \"Peripheral Device Discovery\" was received that included a PowerShell command executed by the adversary and explained that it was used to enumerate Plug and Play devices."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1012": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Registry query for HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+                            "images": [
+                                "Symantec-APT29-12958.png",
+                                "Symantec-APT29-12959.png"
+                            ],
+                            "note": "An MSSP detection for \"Query Registry\" occurred that containing registry query for installed software."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Registry query for HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+                            "images": [
+                                "Symantec-APT29-12958.png",
+                                "Symantec-APT29-12959.png"
+                            ],
+                            "note": "An MSSP detection for \"Query Registry\" occurred that containing registry query for installed software."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1007": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes sc query",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.2.png",
+                                "WizardSpider-Sandworm_SY_5.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.3.png",
+                                "WizardSpider-Sandworm_SY_5.A.3_1.png",
+                                "WizardSpider-Sandworm_SY_5.A.3_2.png",
+                                "WizardSpider-Sandworm_SY_5.A.3_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user /domain",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.4.png",
+                                "WizardSpider-Sandworm_SY_5.A.4_1.png",
+                                "WizardSpider-Sandworm_SY_5.A.4_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1049": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.6.png",
+                                "WizardSpider-Sandworm_SY_5.A.6_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_16.A.5.png",
+                                "WizardSpider-Sandworm_SY_16.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1482": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes nltest /domain_trusts /all_trusts",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.8.png",
+                                "WizardSpider-Sandworm_SY_5.A.8_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes whoami",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_5.A.9.png",
+                                "WizardSpider-Sandworm_SY_5.A.9_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "collection": {
+            "T1119": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-9905.png"
+                            ],
+                            "note": "Telemetry showed PowerShell execution of ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-12974.png"
+                            ],
+                            "note": "An MSSP detection for \"Data from Local System\" contained evidence of PowerShell executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-17689.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "Symantec-APT29-17686.png"
+                            ],
+                            "note": "An MSSP detection for \"Collection\" was received that included ChildItem command execution searching for document and media files."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1560.001": {
+                "d": {
+                    "count": 15,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-Archive",
+                            "images": [
+                                "Symantec-APT29-9905.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe compressing via Compress-Archive."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-Archive",
+                            "images": [
+                                "Symantec-APT29-17539.png"
+                            ],
+                            "note": "A Technique detection for \"Data Compressed\" was generated when Draft.zip was identified as compressed. The event was correlated to a parent detection cod.3aka.scr as a malicious file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-Archive",
+                            "images": [
+                                "Symantec-APT29-9903.png"
+                            ],
+                            "note": "An MSSP detection for \"Data Compressed \"was received that included an explanation of the PowerShell script used to compress files and store the results in Draft.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file draft.zip",
+                            "images": [
+                                "Symantec-APT29-17539.png"
+                            ],
+                            "note": "Telemetry showed the creation of Draft.Zip. The telemetry was correlated to a parent detection cod.3aka.scr as a suspicious file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file OfficeSupplies.7z",
+                            "images": [
+                                "Symantec-APT29-7447.png"
+                            ],
+                            "note": "Telemetry showed the creation of OfficeSupplies.7z."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file OfficeSupplies.7z",
+                            "images": [
+                                "Symantec-APT29-7447.png"
+                            ],
+                            "note": "A Technique detection for \"Data Compressed\" was generated when powershell.exe created OfficeSupplies.7z."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file OfficeSupplies.7z",
+                            "images": [
+                                "Symantec-APT29-17645.png"
+                            ],
+                            "note": "An MSSP detection occurred for \"Data Compressed\" containing evidence of Invoke-Exfil function using 7-zip with password \"lolol\" to compressed downloads directory into OfficeSupplies.7z."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-7Zip with the password argument used for encryption",
+                            "images": [
+                                "Symantec-APT29-12935.png",
+                                "Symantec-APT29-12936.png",
+                                "Symantec-APT29-12937.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence that data was compressed and password encrypted for exfiltration."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe with the -a parameter for a password to use for encryption",
+                            "images": [
+                                "Symantec-APT29-7479.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing rar.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe with the -a parameter for a password to use for encryption",
+                            "images": [
+                                "Symantec-APT29-17694.png"
+                            ],
+                            "note": "A Tactic detection for \"Exfiltration\" was generated when rar.exe executed with command-line arguments creating working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe with the -a parameter for a password to use for encryption",
+                            "images": [
+                                "Symantec-APT29-12945.png",
+                                "Symantec-APT29-12946.png"
+                            ],
+                            "note": "A MSSP detection for \"Data Encrypted\" was received included the command used by the adversary to execute Rar.exe and explained that it was used to compress data into an encrypted ZIP file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe",
+                            "images": [
+                                "Symantec-APT29-7479.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing rar.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe",
+                            "images": [
+                                "Symantec-APT29-7479.png"
+                            ],
+                            "note": "A Technique detection for Data Compressed was generated when rar.exe created working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe",
+                            "images": [
+                                "Symantec-APT29-12945.png",
+                                "Symantec-APT29-12946.png"
+                            ],
+                            "note": "A MSSP detection for \"Data Staged\" was received included the command used by the adversary to execute Rar.exe and explained that it was used to compress compress data into working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ZipFile.CreateFromDirectory .NET method",
+                            "images": [
+                                "Symantec-APT29-12972.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of commands used to copy and compress data."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1113": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CopyFromScreen function from System.Drawing.dll",
+                            "images": [
+                                "Symantec-APT29-12930.png",
+                                "Symantec-APT29-12931.png",
+                                "Symantec-APT29-12932.png"
+                            ],
+                            "note": "An MSSP detection for \"Screen Capture\" was received that included details about a PowerShell script used to collect screenshots."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1115": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Clipboard",
+                            "images": [
+                                "Symantec-APT29-12933.png"
+                            ],
+                            "note": "An MSSP detection for \"Clipboard Data\" was received for PowerShell executing \"Get-Clipboard\" to retrieve clipboard contents."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1056.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetAsyncKeyState API",
+                            "images": [
+                                "Symantec-APT29-17628.png"
+                            ],
+                            "note": "An MSSP detection for \"Input Capture\" occurred containing evidence of Get-Keystrokes function execution from psversion.ps1."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1074.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file working.zip",
+                            "images": [
+                                "Symantec-APT29-17692.png",
+                                "Symantec-APT29-7473.png"
+                            ],
+                            "note": "Telemetry showed a Created File event for powershell.exe creating working.zip. The event was correlated to a parent General detection for a suspicious PowerShell process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file \\WindowsParentalControlMigration\\MITRE-ATTACK-EVALS.HTML",
+                            "images": [
+                                "Symantec-APT29-9874.png"
+                            ],
+                            "note": "Telemetry showed the file create event for MITRE-ATTACK-EVALS.HTML."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1114": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "outlook.exe spawning from svchost.exe or powershell.exe",
+                            "images": [
+                                "Symantec-APT29-9835.png"
+                            ],
+                            "note": "Telemetry showed outlook.exe spawning from svchost.exe, which is indicative of programmatic access to Outlook emails."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "outlook.exe spawning from svchost.exe or powershell.exe",
+                            "images": [
+                                "Symantec-APT29-12971.png"
+                            ],
+                            "note": "An MSSP detection for \"Email Collection\" was generated containing evidence of email collection."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1114.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to read SenderEmailAddress values from Outlook",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_3.A.5.png",
+                                "WizardSpider-Sandworm_SY_3.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "privilege-escalation": {
+            "T1546.015": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "Symantec-APT29-9910.png"
+                            ],
+                            "note": "Telemetry showed the addition of the DelegateExecute Registry Value."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "Symantec-APT29-9870.png"
+                            ],
+                            "note": "Telemetry showed the addition of the DelegateExecute Registry value."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1548.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powershell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Symantec-APT29-7397.png",
+                                "Symantec-APT29-7400.png"
+                            ],
+                            "note": "Telemetry showed control.exe creating a high integrity powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powrshell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Symantec-APT29-9752.png"
+                            ],
+                            "note": "Telemetry showed a new High Integrity PowerShell callback spawned from control.exe (spawned from sdclt.exe)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powrshell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Symantec-APT29-9737.png",
+                                "Symantec-APT29-9740.png"
+                            ],
+                            "note": "A Technique alert detection for \"UAC Bypass\" was generated when the setting of registry values associated with COM Hijacking was followed by execution of a program known to be associated with UAC bypasses. The event was correlated to a parent Tactic detection called \"Execution\" that was generated when explorer.exe executed powershell.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1548.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "SUID binary /bin/backup is executed as root",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_13.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1543.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the Javamtsup service",
+                            "images": [
+                                "Symantec-APT29-7432.png"
+                            ],
+                            "note": "Telemetry showed a registry event for the creation of javamtsup service."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the Javamtsup service",
+                            "images": [
+                                "Symantec-APT29-7432.png"
+                            ],
+                            "note": "A Technique detection for \"New Service\" was generated due to services.exe creating javamtsup."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "New service Windows Check AV is created",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.001": {
+                "d": {
+                    "count": 7,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file hostui.lnk in the Startup folder",
+                            "images": [
+                                "Symantec-APT29-7433.png"
+                            ],
+                            "note": "Telemetry showed creation of hostui.lnk in the Startup folder."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file hostui.lnk in the Startup folder",
+                            "images": [
+                                "Symantec-APT29-7433.png"
+                            ],
+                            "note": "A Technique detection for \"Registry Run Keys / Startup Folder\" was generated due to powershell.exe creating the hostui.lnk file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Symantec-APT29-9714.png",
+                                "Symantec-APT29-9716.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe adding Run key persistence into the Registry."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Symantec-APT29-9713.png",
+                                "Symantec-APT29-9714.png"
+                            ],
+                            "note": "A Technique detection for \"Registry Run Keys / Startup Folder\" was generated for powershell.exe adding Run key persistence into the Registry."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Symantec-APT29-12952.png"
+                            ],
+                            "note": "An MSSP detection for \"Registry Run Keys / Startup Folder\" was received that included a PowerShell command executed by the adversary and explained that it was used to set a Registry Run Key. A detailed analysis of the malicious payload was also provided. [SE: see comment]"
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe adds the blbdigital Registry Run key using RegSetValueExA()",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_2.A.1.png",
+                                "WizardSpider-Sandworm_SY_2.A.1_1.png",
+                                "WizardSpider-Sandworm_SY_2.A.1_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "SecurityHealth Registry Run key is added using reg.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.7.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1546.003": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "Symantec-APT29-17715.png"
+                            ],
+                            "note": "A General alert detection called \"SEP detected: CLDownloader!gen1\" was generated on subscription:CommandLineEventConsumer.Name=WindowsParentalControlMigration."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "Symantec-APT29-17713.png"
+                            ],
+                            "note": "A Technique detection called \"WMI Event Subscriptionmodule WindowsParentalControlMigration contains suspicious argument\" was generated on WMIProcessCreationEvent and WMIConsumerEvent being created in root/subscription."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "Symantec-APT29-12966.png"
+                            ],
+                            "note": "An MSSP detection for \"WMI Event Subscription\" was received that included a PowerShell command executed by the adversary and explained that it was used to establish persistence through a WMI Event Subscription that executes upon user logon."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The WMI process (wmiprvse.exe) executing powershell.exe",
+                            "images": [
+                                "Symantec-APT29-9856.png"
+                            ],
+                            "note": "Telemetry showed wmiprvse.exe executing PowerShell."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1136.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe adding the user Toby",
+                            "images": [
+                                "Symantec-APT29-9862.png"
+                            ],
+                            "note": "Telemetry showed wsmprovhost.exe spawning net.exe with the command-line arguments to add the new user Toby."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe adding the user Toby",
+                            "images": [
+                                "Symantec-APT29-9862.png"
+                            ],
+                            "note": "A Technique detection for \"Create Account\" was generated for wsmprovhost.exe spawning net.exe with the command-line arguments to add the new user Toby."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe adds the Userinit Registry key using Set-ItemProperty",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_7.A.4.png",
+                                "WizardSpider-Sandworm_SY_7.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1133": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.1.5 using SCP (port 22)",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_11.A.2.png",
+                                "WizardSpider-Sandworm_SY_11.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1505.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Webshell payload (search.php) is copied to /var/www/html then connected to over port 443",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_11.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "centreon_module_linux_app64 spawns crontab to create a new job",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_14.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1543.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "centreon_module_linux_app64 writes to /etc/systemd/system/syslogd.service",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_14.A.2.png",
+                                "WizardSpider-Sandworm_SY_14.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe creates Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.2.png",
+                                "WizardSpider-Sandworm_SY_19.A.2_1.png",
+                                "WizardSpider-Sandworm_SY_19.A.2_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe executes Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.10.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "credential-access": {
+            "T1552.004": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating a certificate file exported from the system",
+                            "images": [
+                                "Symantec-APT29-9927.png"
+                            ],
+                            "note": "Telemetry showed file create event for a $RandomFileName.pfx file by powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating a certificate file exported from the system",
+                            "images": [
+                                "Symantec-APT29-17593.png"
+                            ],
+                            "note": "An MSSP detection for \"Private Keys\" occurred containing evidence of readme.ps1 analysis indicating Get-PrivateKeys execution writing a .pfx file."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "centreon_module_linux_app64 accesses /home/fherbert/.ssh/id_rsa and /home/fherbert/.ssh/id_rsa.pub",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_14.A.5.png",
+                                "WizardSpider-Sandworm_SY_14.A.5_1.png",
+                                "WizardSpider-Sandworm_SY_14.A.5_2.png",
+                                "WizardSpider-Sandworm_SY_14.A.5_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe injecting into lsass.exe OR lsass.exe reading Registry keys under HKLM:\\SAM\\SAM\\Domains\\Account\\Users\\",
+                            "images": [
+                                "Symantec-APT29-7446.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe injecting into lsass.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe injecting into lsass.exe OR lsass.exe reading Registry keys under HKLM:\\SAM\\SAM\\Domains\\Account\\Users\\",
+                            "images": [
+                                "Symantec-APT29-7446.png"
+                            ],
+                            "note": "A General alert detection for \"Process Injection\" was generated on \"PowerShell injected into Microsoft signed process\"."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe injecting into lsass.exe OR lsass.exe reading Registry keys under HKLM:\\SAM\\SAM\\Domains\\Account\\Users\\",
+                            "images": [
+                                "Symantec-APT29-17862.png"
+                            ],
+                            "note": "A Technique alert detection for \"Credential Dumping\" was generated when PowerShell attempted injection into lsass."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes reg.exe to save HKLM\\SYSTEM",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_8.A.2.png",
+                                "WizardSpider-Sandworm_SY_8.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.001": {
+                "d": {
+                    "count": 11,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-17709.png"
+                            ],
+                            "note": "A Technique alert detection for \"Credential Dumping\" was generated when m.exe read Lsass memory. The detection was correlated to a parent alert for wmiprvse.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-9762.png"
+                            ],
+                            "note": "A Technique alert detection for \"Credential Dumping\" was generated when powershell.exe loaded cryptography DLLs and attempted to inject into lsass.exe, and again when powershell.exe successfully injected into lsass.exe. The detection was correlated to a parent alert for wmiprvse.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-12962.png"
+                            ],
+                            "note": "An MSSP detection for \"Credential Dumping\" was received that included a PowerShell command executed by the adversary to download Mimikatz and execute it with a sequence of commands."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-9775.png"
+                            ],
+                            "note": "Telemetry showed m.exe injecting into lsass.exe"
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-17724.png"
+                            ],
+                            "note": "A General alert detection for \"Process Injection\" was generated on \"Untrusted process attempted to open a thread in a Microsoft process\"."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-17724.png"
+                            ],
+                            "note": "A General detection was generated for a \"Suspected Mimikatz credential theft activity\". The event was correlated to a parent General detection on m.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-9735.png",
+                                "Symantec-APT29-9787.png"
+                            ],
+                            "note": "A Technique detection for \"Credential Dumping\" was generated when m.exe injected into lsass.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-9775.png"
+                            ],
+                            "note": "A Technique alert detection for \"Credential Dumping\" was generated when a suspicious process opened LSASS and wrote to a file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-9775.png"
+                            ],
+                            "note": "A Technique alert detection for \"Credential Dumping\" was generated for a suspicious injection into LSASS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-9775.png"
+                            ],
+                            "note": "A Technique alert detection for \"Credential Dumping\" was generated when a suspicious process loaded a cryptographic DLL and accessed LSASS memory."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Symantec-APT29-12969.png",
+                                "Symantec-APT29-12970.png"
+                            ],
+                            "note": "An MSSP detection for \"Credential Dumping\" was received that included a PowerShell command executed by the adversary and explained that it was used to execute mimikatz to retrieve the krbtgt hash from host NewYork (10.0.0.4)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1552": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to search Outlook for password strings",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_3.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1558.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes rubeus.exe kerberoast /domain:oz.local",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_6.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes vssadmin.exe to create a copy of C:",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_8.A.1.png",
+                                "WizardSpider-Sandworm_SY_8.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.008": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Shell executes cat to read /etc/passwd",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_12.A.5.png",
+                                "WizardSpider-Sandworm_SY_12.A.5_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User root executes cat to read /etc/shadow",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_14.A.3_2.png",
+                                "WizardSpider-Sandworm_SY_14.A.3_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User root executes cat to read /etc/shadow",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_14.A.3.png",
+                                "WizardSpider-Sandworm_SY_14.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1552.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User root executes cat to read /home/fherbert/.bash_history",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_14.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes CredEnumerateW()",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.4.png",
+                                "WizardSpider-Sandworm_SY_19.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "exfiltration": {
+            "T1048.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell executing Copy-Item pointing to an attack-controlled WebDav network share (192.168.0.4:80)",
+                            "images": [
+                                "Symantec-APT29-17654.png"
+                            ],
+                            "note": "Telemetry showed a .7z file creation to a remote file share."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell executing Copy-Item pointing to an attack-controlled WebDav network share (192.168.0.4:80)",
+                            "images": [
+                                "Symantec-APT29-12935.png",
+                                "Symantec-APT29-12936.png",
+                                "Symantec-APT29-12937.png"
+                            ],
+                            "note": "An MSSP detection for \"Exfiltration over Alternative Protocol\" occurred containing evidence of exfiltration to remote WebDav network share (192.168.0.4)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1567.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Copy-Item pointing to drive mapped to an attack-controlled OneDrive account",
+                            "images": [
+                                "Symantec-APT29-12973.png"
+                            ],
+                            "note": "An MSSP detection for \"Exfiltration Over Alternative Protocol\" was received that included a PowerShell command executed by the adversary and explained that it was used to copy a file to a drive mapped to a WebDav share."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1041": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe posts data from mslog.txt to 192.168.0.4 over HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_17.A.6.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "lateral-movement": {
+            "T1021.006": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "Symantec-APT29-9931.png"
+                            ],
+                            "note": "Telemetry showed a connection to Scranton (10.0.1.4) over port 5985 via HTTP."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to NewYork (10.0.0.4) over port 5985",
+                            "images": [
+                                "Symantec-APT29-9872.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe making a network connection to remote host NewYork (10.0.0.4) over port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to NewYork (10.0.0.4) over port 5985",
+                            "images": [
+                                "Symantec-APT29-17722.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of WinRM usage via invoke-winrmsession with command-line arguments."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Remote WMI is used to execute rundll32.exe on 10.0.1.8",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.6.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "SMB session to Scranton (10.0.1.4) over TCP port 445/135 OR evidence of usage of a Windows share",
+                            "images": [
+                                "Symantec-APT29-7461.png"
+                            ],
+                            "note": "Telemetry showed an SMB session from Nashua (10.0.1.6) to Scranton (10.0.1.4) over TCP port 445."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Connection to 10.0.1.7 over protocol SMB",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_15.A.2.png",
+                                "WizardSpider-Sandworm_SY_15.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1570": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "File write of m.exe by the WinRM process (wsmprovhost.exe)",
+                            "images": [
+                                "Symantec-APT29-9775.png"
+                            ],
+                            "note": "Telemetry showed a file create event for m.exe in the System32 directory by \"Host process for WinRM plug-ins\"."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "File write of m.exe by the WinRM process (wsmprovhost.exe)",
+                            "images": [
+                                "Symantec-APT29-17725.png"
+                            ],
+                            "note": "A General alert detection called \"Malicious file detected\" was generated on sandbox detection analysis of m.exe. Detection incurred a delay based on sandbox detonation processing."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "File write of m.exe by the WinRM process (wsmprovhost.exe)",
+                            "images": [
+                                "Symantec-APT29-9735.png",
+                                "Symantec-APT29-9774.png",
+                                "Symantec-APT29-9775.png"
+                            ],
+                            "note": "A Technique detection for \"Remote File Copy\" was generated when SMB traffic from another host was received and then immediately followed by a file write for m.exe by wsmprovhost.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "File write of m.exe by the WinRM process (wsmprovhost.exe)",
+                            "images": [
+                                "Symantec-APT29-12969.png",
+                                "Symantec-APT29-12970.png"
+                            ],
+                            "note": "An MSSP detection for \"Remote File Copy\" was received that included a PowerShell command executed by the adversary and explained that it was used to copy mimikatz to a remote PowerShell session."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "C:\\Windows\\perfc.dat is written to disk on 10.0.1.8",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1550.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Invoke-Mimikatz with command-line arguments to create a golden ticket",
+                            "images": [
+                                "Symantec-APT29-17735.png"
+                            ],
+                            "note": "Telemetry showed WinRM activity as MScott from Scranton (10.0.1.4) to Utica (10.0.1.5) with a Kerberos ticket in memory for MScott on Scranton (10.0.1.4)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.8 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_4.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.4 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_7.A.1.png",
+                                "WizardSpider-Sandworm_SY_7.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.1.4 using RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_18.A.2.png",
+                                "WizardSpider-Sandworm_SY_18.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "initial-access": {
+            "T1078.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user MScott on NewYork (10.0.0.4)",
+                            "images": [
+                                "Symantec-APT29-9778.png",
+                                "Symantec-APT29-9787.png"
+                            ],
+                            "note": "Telemetry showed wsmprovhost.exe successfully executing a program as user MScott, indicating that a valid user session was created through WinRM."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "impact": {
+            "T1489": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe stops various services via net stop, sc config, and taskkill",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_9.A.2.png",
+                                "WizardSpider-Sandworm_SY_9.A.2_1.png",
+                                "WizardSpider-Sandworm_SY_9.A.2_2.png",
+                                "WizardSpider-Sandworm_SY_9.A.2_3.png",
+                                "WizardSpider-Sandworm_SY_9.A.2_4.png",
+                                "WizardSpider-Sandworm_SY_9.A.2_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1490": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe deletes system backups via vssadmin and del",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_9.A.5.png",
+                                "WizardSpider-Sandworm_SY_9.A.5_1.png",
+                                "WizardSpider-Sandworm_SY_9.A.5_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1486": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "notepad.exe encrypts various files using AES + RSA",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_10.A.7.png",
+                                "WizardSpider-Sandworm_SY_10.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe encrypts various files using AES",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.7.png",
+                                "WizardSpider-Sandworm_SY_19.A.7_1.png",
+                                "WizardSpider-Sandworm_SY_19.A.7_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1529": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe reboots the hosts via Restart-Computer",
+                            "images": [
+                                "WizardSpider-Sandworm_SY_19.A.11.png",
+                                "WizardSpider-Sandworm_SY_19.A.11_1.png",
+                                "WizardSpider-Sandworm_SY_19.A.11_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        }
+    },
+    "filename": "symantec_engenuity.json",
+    "capability_name": "symantec",
+    "counts": {
+        "detect": 60,
+        "protect": 3
+    }
+}

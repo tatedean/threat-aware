@@ -1,0 +1,3546 @@
+{
+    "scores": {
+        "execution": {
+            "T1204": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe spawns winword.exe when user clicks 1-list.rtf",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.1_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe spawns winword.exe when user clicks 1-list.rtf",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"User Execution, T1204\" was generated when explorer.exe spawned winword.exe when the user clicks 1-list.rtf."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe spawns winword.exe when user clicks 2-list.rtf",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.1_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe spawns winword.exe when user clicks 2-list.rtf",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"User Execution, T1204\" was generated when explorer.exe spawned winword.exe when the user clicked 2-list.rtf."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1559.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe loads VBE7.DLL",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe loads VBE7.DLL",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.2.png"
+                            ],
+                            "note": "A Technique detection named \"Inter-Process Communication: Component Object Model, T1559.001\" was generated when winword.exe loaded VBE7.DLL and spawned 1-list.rtf."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns verclsid.exe and loads VBE7.DLL, VBEUI.DLL, and VBE7INTL.DLL",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.7_1.png",
+                                "Carbanak-FIN7_FO_11.A.7_2.png",
+                                "Carbanak-FIN7_FO_11.A.7_3.png",
+                                "Carbanak-FIN7_FO_11.A.7_4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns verclsid.exe and loads VBE7.DLL, VBEUI.DLL, and VBE7INTL.DLL",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.7.png"
+                            ],
+                            "note": "A Technique detection named \"Inter-Process Communication: Component Object Model, T1559.001\" was generated when winword.exe spawned verclsid.exe and loaded VBE7.DLL, VBEUI.DLL, and VBE7INTL.DLL."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.005": {
+                "d": {
+                    "count": 12,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.3_2.png",
+                                "Carbanak-FIN7_FO_1.A.3_3.png"
+                            ],
+                            "note": "A Tactic detection named \"Suspicious Script Execution\" (Malicious) was generated when wscript.exe spawned unprotected.vbe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.3.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Visual Basic, T1059.005\" was generated when wscript.exe spawned unprotected.vbe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.7_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.7.png"
+                            ],
+                            "note": "A General detection named \"Suspicious Script Execution\" (Malicious) was generated when wscript.exe executed starter.vbs."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.7_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Visual Basic\" was generated when wscript.exe executed starter.vbs."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns Java-Update.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_8.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns Java-Update.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_8.A.1_1.png",
+                                "Carbanak-FIN7_FO_8.A.1_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Visual Basic, T1059.005\" was generated when wscript.exe spawned Java-Update.exe and loaded vbscript.dll."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe executes an embedded VBScript payload",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe executes an embedded VBScript payload",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.4_2.png"
+                            ],
+                            "note": "A Tactic detection named \"File Execution Attempt\" (malicious) was generated when mshta.exe executed an embedded VBScript payload."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe executes an embedded VBScript payload",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.4_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Visual Basic, T1059.005\" was generated when mshta.exe executed an embedded VBScript payload."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe loads VBEUI.DLL, executes code via AutoOpen()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.2.png",
+                                "WizardSpider-Sandworm_FO_1.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.3P_1.png",
+                                "Carbanak-FIN7_FO_1.A.3P_2.png"
+                            ],
+                            "note": "Test 1 was blocked when wscript.exe was not executed, because winword.exe launched wscript.exe and was deemed malicious."
+                        }
+                    ]
+                }
+            },
+            "T1059.003": {
+                "d": {
+                    "count": 29,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.8_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.8.png"
+                            ],
+                            "note": "A Tactic detection named \"Suspicious Script Execution\" (malicious) was generated when wscript.exe spawning cmd.exe via the execution of a suspicious script."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_2.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_2.B.2_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Windows Command Shell\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interface: Windows Command Shell, T1059.003\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.2_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Windows Command Shell \" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns smrs.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns smrs.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.6_1.png"
+                            ],
+                            "note": "A General detection named \"File Execution Attempt\" (malicious) was generated when cmd.exe executed smrs.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.6_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Suspicious Script Execution\" (Malicious) was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.6_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Windows Command Shell, T1059.003\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns tiny.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.C.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.A.2_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Windows Command Shell, T1059.003\" was generated when tiny.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.A.2.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Intepreter: Windows Command Shell, T1059.003\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.B.2_1.png",
+                                "Carbanak-FIN7_FO_13.B.2_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Intepreter: Windows Command Shell, T1059.003\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_14.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_14.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Windows Command Shell, T1059.003\" was generated when Abd156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.3.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: WIndows Command Shell, T1059.003\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_17.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_17.A.3_2.png"
+                            ],
+                            "note": "A General detection named \"Create Process Hollowing\" (malicious) was generated when svchost.exe spawned cmd.exe due to process hollowing of an unmapped executable. ."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_17.A.3.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interface: Windows Command Shell, T1059.003\" was generated when svchost.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe executes cmd.exe to execute adb.vbs",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.4.png",
+                                "WizardSpider-Sandworm_FO_1.A.4_1.png",
+                                "WizardSpider-Sandworm_FO_1.A.4_2.png",
+                                "WizardSpider-Sandworm_FO_1.A.4_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_16.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.007": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns wscript.exe to execute TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.9_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns wscript.exe to execute TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.9_5.png"
+                            ],
+                            "note": "A Technique detection named \"Suspicious Script Execution\" (malicious) was generated when cmd.exe spawned wscript.exe to execute TransBaseOdbcDriver.js."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns wscript.exe to execute TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.9_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Windows Command Shell, T1059.003\" was generated when cmd.exe spawned wscript.exe to execute TransBaseOdbcDriver.js."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe loads scrobj.dll and executes sql-rat.js using Jscript",
+                            "images": [
+                                "Carbanak-FIN7_FO_12.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe loads scrobj.dll and executes sql-rat.js using Jscript",
+                            "images": [
+                                "Carbanak-FIN7_FO_12.A.2.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter, T1059\" was generated when Adb156.exe loaded scrobj.dll and executed sql-rat.js using Jscript."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 20,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_2.B.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_2.B.3_2.png",
+                                "Carbanak-FIN7_FO_2.B.3_3.png"
+                            ],
+                            "note": "A Tactic detection named \"Suspicious Script Execution\" (malicious) was generated when cmd.exe spawned powershell.exe and marked it as malicious."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_2.B.3.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Powershell, T1059.001\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.3_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Powershell, T1059.001\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes rad353F7.ps1",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes rad353F7.ps1",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.3_3.png"
+                            ],
+                            "note": "A Tactic detection named \"Suspicious Script Execution\" (Malicious) was generated when powershell.exe executed rad353F7.ps1."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes rad353F7.ps1",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.3_1.png",
+                                "Carbanak-FIN7_FO_4.B.3_4.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Powershell, T1059.001\" was generated when powershell.exe executed rad353F7.ps1."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe loads system.management.automation.dll",
+                            "images": [
+                                "Carbanak-FIN7_FO_6.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe loads system.management.automation.dll",
+                            "images": [
+                                "Carbanak-FIN7_FO_6.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interface: Powershell, T1059.00\" was generated when tiny.exe loaded system.management.automation.ni.dll."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.B.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.B.3.png",
+                                "Carbanak-FIN7_FO_13.B.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Powershell, T1059.001\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_14.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_14.A.2.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Interpreter: Powershell, T1059.001\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.4_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Intepreter: Powershell, T1059.001\" was generated when powershell.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.B.1_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.B.1.png",
+                                "Carbanak-FIN7_FO_19.B.1_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command and Scripting Intepreter: Powershell, T1059.001\" was generated when powershell.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "WmiPrvSE.exe spawns powershell.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.7.png",
+                                "WizardSpider-Sandworm_FO_1.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_18.A.3.png",
+                                "WizardSpider-Sandworm_FO_18.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1106": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes the shellcode from the Registry by calling the CreateThread() API",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.6.png",
+                                "Carbanak-FIN7_FO_3.B.6_1.png"
+                            ],
+                            "note": "A General detection (malicious) was generated when powershell.exe executed shellcode by creating a thread."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns from a service executable in C:\\Windows\\",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.C.3_1.png",
+                                "Carbanak-FIN7_FO_5.C.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns from a service executable in C:\\Windows\\",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.C.3.png"
+                            ],
+                            "note": "A General detection named \"File Execution Attempt\" (malicious) was generated when cmd.exe spawned from a service executable in C:\\Windows\\."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Windows service started PAExec-{PID}-HOTELMANAGER.exe, which executes hollow.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.6_1.png",
+                                "WizardSpider-Sandworm_FO_15.A.6_2.png",
+                                "WizardSpider-Sandworm_FO_15.A.6_3.png",
+                                "WizardSpider-Sandworm_FO_15.A.6_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak",
+                            "criteria": "cmd.exe spawns from a service executable in C:\\Windows\\",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.C.3P.png"
+                            ],
+                            "note": "Test 4 was blocked when the service executable was not executed, because it attempted to remotely start the service."
+                        },
+                        {
+                            "threat": "Sandworm",
+                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.6_6.png",
+                                "WizardSpider-Sandworm_FO_15.A.6_7.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1218.005": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns mshta.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns mshta.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.3_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Suspicious Script Execution\" (malicious) was generated when winword.exe spawned mshta.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns mshta.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.3_1.png"
+                            ],
+                            "note": "A Technique detection named \"Signed Binary Proxy Execution: Mshta, T1218.005\" was generated when winword.exe spawned mshta.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "FIN7",
+                            "criteria": "winword.exe spawns mshta.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.3P.png",
+                                "Carbanak-FIN7_FO_11.A.3P_1.png"
+                            ],
+                            "note": "Test 11 was blocked when winword.exe was not executed, because it attempted to spawn mshta.exe and was deemed malicious."
+                        }
+                    ]
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe loads taskschd.dll and creates a scheduled task to execute in 5 minutes",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.8.png",
+                                "Carbanak-FIN7_FO_11.A.8_1.png",
+                                "Carbanak-FIN7_FO_11.A.8_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe (-s Schedule) spawns Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_12.A.1_1.png",
+                                "Carbanak-FIN7_FO_12.A.1_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe (-s Schedule) spawns Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_12.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"Scheduled Task/Job: Scheduled Task, T1053.005\" was generated when svchost.exe (-s Schedule) spawned Adb156.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1204.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "explorer.exe executes winword.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.1.png",
+                                "WizardSpider-Sandworm_FO_1.A.1_1.png",
+                                "WizardSpider-Sandworm_FO_1.A.1_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1047": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "adb.vbs executes powershell.exe via Win32_Process",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.6.png",
+                                "WizardSpider-Sandworm_FO_1.A.6_1.png",
+                                "WizardSpider-Sandworm_FO_1.A.6_2.png",
+                                "WizardSpider-Sandworm_FO_1.A.6_3.png",
+                                "WizardSpider-Sandworm_FO_1.A.6_4.png",
+                                "WizardSpider-Sandworm_FO_1.A.6_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "defense-evasion": {
+            "T1140": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe decodes content and creates starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe decodes content and creates TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_FO_1.A.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe decrypts, decompresses, and base64 decodes the Registry value into plaintext shellcode",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.5.png"
+                            ],
+                            "note": "A General detection (malicious) was generated when powershell.exe decrypted, decompressed, and base64 decoded the Registry value into plaintext shellcode."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe loads shellcode from network connection into memory",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.C.6.png"
+                            ],
+                            "note": "A General detection named \"In Memory Execution\" (malicious) was generated when tiny.exe loaded shellcode into memory."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe loads shellcode from network connection into memory",
+                            "images": [
+                                "Carbanak-FIN7_FO_14.A.5_3.png"
+                            ],
+                            "note": "A General detection named \"Unmapped Executable and Dynamic Code\" was generated when powershell.exe loaded shellcode from network connection into memory."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1112": {
+                "d": {
+                    "count": 7,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns reg.exe to add a value under HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.A.2_3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns reg.exe to add a value under HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.A.2_2.png"
+                            ],
+                            "note": "A General detection (Malicious) was generated when cmd.exe spawned reg.exe to modify the registry."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns reg.exe to add a value under HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.A.2.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry, T1112\" was generated when cmd.exe spawned reg.exe to modify the registry."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe adds a value under HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command via New-Item and New-ItemProperty",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.4_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe adds a value under HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command via New-Item and New-ItemProperty",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.4.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry, T1112\" was generated when powershell.exe added a value to the Registry via New-Item and New-ItemProperty."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Addition of subkeys in HKLM\\Software\\TightVNC\\Server",
+                            "images": [
+                                "Carbanak-FIN7_FO_10.A.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Deletion of the Java-Update subkey in HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_FO_10.A.6.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Value added to Registry is base64 encoded",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes base64 encoded commands",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "adb.vbs is obfuscated",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.5.png",
+                                "WizardSpider-Sandworm_FO_1.A.5_1.png",
+                                "WizardSpider-Sandworm_FO_1.A.5_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.002": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to bankdc (10.0.0.4)",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User bill successfully authenticates into 10.0.0.8",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.2.png",
+                                "WizardSpider-Sandworm_FO_4.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User vfleming successfully authenticates into 10.0.0.4",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_7.A.2.png",
+                                "WizardSpider-Sandworm_FO_7.A.2_1.png",
+                                "WizardSpider-Sandworm_FO_7.A.2_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User fherbert successfully authenticates into 10.0.1.7 via SMB",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.1.png",
+                                "WizardSpider-Sandworm_FO_15.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User patreides successfully authenticates into 10.0.1.4",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_18.A.1.png",
+                                "WizardSpider-Sandworm_FO_18.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055": {
+                "d": {
+                    "count": 8,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update.exe injects into explorer.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.A.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update.exe injects into explorer.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.A.3.png",
+                                "Carbanak-FIN7_FO_9.A.3_1.png",
+                                "Carbanak-FIN7_FO_9.A.3_3.png"
+                            ],
+                            "note": "A Technique detection named \"Injected Thread\" (malicious) was generated when Java-Update.exe injected into explorer.exe via thread creation."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe injects into explorer.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_18.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe injects into explorer.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_18.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"Injected Thread\" (malicious) was generated when svchost.exe injected into explorer.exe with CreateRemoteThread."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe injects into mstsc.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_18.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe injects into mstsc.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_18.A.3.png"
+                            ],
+                            "note": "A Technique detection named \"Injected Thread\" (malicious) was generated when explorer.exe injected into mstsc.exe with CreateRemoteThread."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "AccountingIQ.exe injects into SyncHost.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "AccountingIQ.exe injects into SyncHost.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.A.2_1.png"
+                            ],
+                            "note": "A Technique detection named \"Injected Thread\" (malicious) was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.004": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe deletes files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.B.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe deletes files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.B.3_1.png"
+                            ],
+                            "note": "A Technique detection named \"Indicator Removal on Host: File Deletion, T1070\" was generated when powershell.exe deleted files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe deletes files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.B.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"File Delete Attempt\" (Malicious) was generated when powershell.exe deleted files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe deletes oradump.exe, mslog.exe, and mslog.txt via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.8.png",
+                                "WizardSpider-Sandworm_FO_17.A.8_1.png",
+                                "WizardSpider-Sandworm_FO_17.A.8_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1562.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "netsh adds Service Host rule for TCP port 5900",
+                            "images": [
+                                "Carbanak-FIN7_FO_10.A.3.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe makes a copy of the legitimate wscript.exe as Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe makes a copy of the legitimate wscript.exe as Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_11.A.6_1.png"
+                            ],
+                            "note": "A Technique detection named \"Masquerading: Rename System Utilities, T1036.003\" was generated when Adb156.exe ran and was identified as a renamed system utility."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055.012": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "hollow.exe spawns svchost.exe and unmaps its memory image via: NtUnmapViewOfSection",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.7_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "hollow.exe spawns svchost.exe and unmaps its memory image via: NtUnmapViewOfSection",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.7.png"
+                            ],
+                            "note": "A Technique detection named \"Process Injection: Process Hollowing, T1055.012\" was generated when the memory image of svchost.exe was unmapped."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "hollow.exe spawns svchost.exe and unmaps its memory image via: NtUnmapViewOfSection",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.7_2.png"
+                            ],
+                            "note": "A Technique detection named \"Process Hollowing\" (malicious) was generated when svchost.exe code was replaced and an unmapped executable was detected in critical process svchost.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes adb.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.9.png",
+                                "WizardSpider-Sandworm_FO_1.A.9_1.png",
+                                "WizardSpider-Sandworm_FO_1.A.9_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32.exe executes wsmprovav.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.8.png",
+                                "WizardSpider-Sandworm_FO_15.A.8_1.png",
+                                "WizardSpider-Sandworm_FO_15.A.8_4.png",
+                                "WizardSpider-Sandworm_FO_15.A.8_5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes perfc.dat",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1222.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.Exe executes icacls.exe to modify permissions on C: and Z:",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_9.A.3.png",
+                                "WizardSpider-Sandworm_FO_9.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1134": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe adjusts its token to include SE_PRIVILEGE_ENABLED via AdjustTokenPrivileges()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe injects into notepad.exe via WriteProcessMemory() and CreateRemoteThread()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.4.png",
+                                "WizardSpider-Sandworm_FO_10.A.4_1.png",
+                                "WizardSpider-Sandworm_FO_10.A.4_2.png",
+                                "WizardSpider-Sandworm_FO_10.A.4_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Event logs are cleared via wevtutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.8.png",
+                                "WizardSpider-Sandworm_FO_19.A.8_1.png",
+                                "WizardSpider-Sandworm_FO_19.A.8_2.png",
+                                "WizardSpider-Sandworm_FO_19.A.8_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "USN change journal is cleared using fsutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.9.png",
+                                "WizardSpider-Sandworm_FO_19.A.9_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "command-and-control": {
+            "T1105": {
+                "d": {
+                    "count": 50,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe downloads screenshot__.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_2.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe downloads LanCradDriver.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads rad353F7.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.1.png",
+                                "Carbanak-FIN7_FO_4.B.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads rad353F7.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.1_2.png"
+                            ],
+                            "note": "A Technique detection named \"Create Unmapped Executable\" (Malicious) was generated when powershell.exe downloaded rad353F7.ps1 from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads smrs.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.2.png",
+                                "Carbanak-FIN7_FO_4.B.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads smrs.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.2_2.png"
+                            ],
+                            "note": "A Technique detection named \"Create Unmapped Executable\" (Malicious) was generated when powershell.exe downloaded smrs.exe from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads pscp.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads psexec.py from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads runtime from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads plink.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads tiny.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.A.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe downloads plink.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "scp.exe downloads Java-Update.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.C.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe downloads Java-Update.vbs from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.C.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update.exe downloads DefenderUpgradeExec.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update.exe downloads DefenderUpgradeExec.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.A.1_2.png"
+                            ],
+                            "note": "A Technique detection named \"Create Unmapped Executable\" was generated when Java-Update.exe connected to 192.168.0.4 and created DefenderUpgradeExec.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe downloads infosMin48.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe downloads infosMin48.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.B.1_1.png"
+                            ],
+                            "note": "A Technique detection named \"Create Unmapped Executable\" (Malicious) was generated when explorer.exe downloaded infosMin48.exe from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe downloads tightvnc-2.8.27-gpl-setup-64bit.msi from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_10.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe downloads vnc-settings.reg from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_10.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe downloads stager.ps1 from 192.168.0.6",
+                            "images": [
+                                "Carbanak-FIN7_FO_12.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe downloads takeScreenshot.ps1 from 192.168.0.6 via MSSQL transactions",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.B.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads samcat.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.2_1.png",
+                                "Carbanak-FIN7_FO_15.A.2_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads samcat.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.2.png"
+                            ],
+                            "note": "A General detection named \"Create Unmapped Executable\" (malicious) was generated when powershell.exe downloaded samcat.exe from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads uac-samcats.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads uac-samcats.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.3.png"
+                            ],
+                            "note": "A General detection named \"Create Unmapped Executable\" (malicious) was generated when powershell.exe downloaded uac-samcats.ps1 from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads paexec.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads paexec.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.1_1.png"
+                            ],
+                            "note": "A General detection named \"Create Unmapped Executable\" (malicious) was generated when powershell.exe created paexec.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads hollow.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads hollow.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.2_1.png"
+                            ],
+                            "note": "A General detection named \"Create Unmapped Executable\" (malicious) was generated when powershell.exe created hollow.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe downloads srrstr.dll from 192.168.0.4 (port 443)",
+                            "images": [
+                                "Carbanak-FIN7_FO_17.A.1.png",
+                                "Carbanak-FIN7_FO_17.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads dll329.dll from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.B.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads sdbE376.tmp from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.B.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "rundll32.exe downloads debug.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.B.1.png",
+                                "Carbanak-FIN7_FO_20.B.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "rundll32.exe downloads 7za.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.B.3_1.png",
+                                "Carbanak-FIN7_FO_20.B.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "rundll32.exe downloads 7za.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.B.3_3.png"
+                            ],
+                            "note": "A Technique detection named \"Create Unmapped Executable\" (Malicious) was generated when rundll32.exe downloaded 7za.exe from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe downloads C:\\Users\\Public\\adb.txt",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.3.png",
+                                "WizardSpider-Sandworm_FO_1.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads adb.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.8.png",
+                                "WizardSpider-Sandworm_FO_1.A.8_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe downloads Outlook.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_3.A.3.png",
+                                "WizardSpider-Sandworm_FO_3.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.3.png",
+                                "WizardSpider-Sandworm_FO_4.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe downloads  the file rubeus.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_6.A.1.png",
+                                "WizardSpider-Sandworm_FO_6.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_7.A.3.png",
+                                "WizardSpider-Sandworm_FO_7.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads kill.bat",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_9.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads window.bat",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_9.A.4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads C:\\Users\\Public\\ryuk.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "C:\\Windows\\wsmprovav.exe is written to disk on 10.0.1.7",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.3.png",
+                                "WizardSpider-Sandworm_FO_15.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "A service binary is written to disk in C:\\Windows\\on 10.0.1.7",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe creates the file oradump.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe creates the file mslog.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.3.png",
+                                "WizardSpider-Sandworm_FO_17.A.3_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads perfc.dat via copy",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_18.A.4.png",
+                                "WizardSpider-Sandworm_FO_18.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "winword.exe downloads C:\\Users\\Public\\adb.txt",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.3P.png",
+                                "WizardSpider-Sandworm_FO_1.A.3P_1.png",
+                                "WizardSpider-Sandworm_FO_1.A.3P_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "powershell.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_7.A.3P.png",
+                                "WizardSpider-Sandworm_FO_7.A.3P_1.png",
+                                "WizardSpider-Sandworm_FO_7.A.3P_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "cmd.exe downloads C:\\Users\\Public\\ryuk.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.1_1.png",
+                                "WizardSpider-Sandworm_FO_10.A.1_2.png",
+                                "WizardSpider-Sandworm_FO_10.A.1_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1095": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe transmits data to 192.168.0.4 over TCP",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.7.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe transmits data to 192.168.0.4 over TCP",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.7_1.png"
+                            ],
+                            "note": "A General detection (malicious) was generated when powershell.exe connected to 192.168.0.4."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak",
+                            "criteria": "powershell.exe transmits data to 192.168.0.4 over TCP",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.7P.png",
+                                "Carbanak-FIN7_FO_3.B.7P_1.png",
+                                "Carbanak-FIN7_FO_3.B.7P_2.png"
+                            ],
+                            "note": "Test 2 was blocked when the process was terminated, because it injected shellcode and then attempted to connect to 192.168.0.4."
+                        }
+                    ]
+                }
+            },
+            "T1090": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "itadmin (10.0.1.6) is relaying RDP traffic from attacker infrastructure",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.A.3.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1071.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_1.A.10.png",
+                                "WizardSpider-Sandworm_FO_1.A.10_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.4.png",
+                                "WizardSpider-Sandworm_FO_4.A.4_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.4_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32 connects to 192.168.0.4 over protocol HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.9.png",
+                                "WizardSpider-Sandworm_FO_15.A.9_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "FIN7",
+                            "criteria": "svchost.exe transmits data to 192.168.0.4 over HTTPS protocol",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.8P.png",
+                                "Carbanak-FIN7_FO_16.A.8P_1.png"
+                            ],
+                            "note": "Test 13 was blocked when svchost.exe was terminated, because it was the target of process hollowing and attempted to connect to 192.168.0.4."
+                        },
+                        {
+                            "threat": "FIN7",
+                            "criteria": "rundll32.exe transmits data to 192.168.0.4 over HTTPS protocol",
+                            "images": [
+                                "Carbanak-FIN7_FO_17.A.5P.png",
+                                "Carbanak-FIN7_FO_17.A.5P_1.png",
+                                "Carbanak-FIN7_FO_17.A.5P_3.png"
+                            ],
+                            "note": "Test 14 was blocked when rundll32.exe was terminated, because it was the target of process hollowing and attempted to connect to 192.168.0.4."
+                        },
+                        {
+                            "threat": "FIN7",
+                            "criteria": "rundll32.exe transmits data to 192.168.0.4 over HTTPS protocol",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.A.3P.png",
+                                "Carbanak-FIN7_FO_20.A.3P_1.png",
+                                "Carbanak-FIN7_FO_20.A.3P_2.png",
+                                "Carbanak-FIN7_FO_20.A.3P_3.png"
+                            ],
+                            "note": "Test 15 was blocked when rundll32.exe was terminated, because it was the target of process injection and attempted to connect to 192.168.0.4."
+                        },
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.4P.png",
+                                "WizardSpider-Sandworm_FO_4.A.4P_1.png",
+                                "WizardSpider-Sandworm_FO_4.A.4P_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1571": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP on port 447",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.5.png",
+                                "WizardSpider-Sandworm_FO_4.A.5_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP on port 447",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.5_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1573.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32 connects to 192.168.0.4 over encrypted protocol HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.10.png",
+                                "WizardSpider-Sandworm_FO_15.A.10_2.png",
+                                "WizardSpider-Sandworm_FO_15.A.10_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "exfiltration": {
+            "T1041": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe reads and uploads screenshot__.png to 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_2.B.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe reads and uploads image.png to 192.168.0.6 via MSSQL transactions",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.B.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "rundll32.exe reads and uploads log.7z to 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.B.5_1.png",
+                                "Carbanak-FIN7_FO_20.B.5_2.png",
+                                "Carbanak-FIN7_FO_20.B.5_3.png",
+                                "Carbanak-FIN7_FO_20.B.5_4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe posts data from mslog.txt to 192.168.0.4 over HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.6_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1560.001": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "7za.exe creates C:\\Users\\Public\\log.7z",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.B.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "7za.exe creates C:\\Users\\Public\\log.7z",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.B.4_2.png"
+                            ],
+                            "note": "A General detection (Potentially Unwanted Program) was generated when Add process monitoring."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "7za.exe creates C:\\Users\\Public\\log.7z",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.B.4.png"
+                            ],
+                            "note": "A Technique detection named \"Archive Collected Data: Archive via Utility, T1560.001\" was generated when 7za.exe created C:\\Users\\Public\\log.7z."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1012": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe reads HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer via Get-ItemProperty",
+                            "images": [
+                                "Carbanak-FIN7_FO_3.B.4.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1018": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes Get-NetComputer to query LDAP (port 389) via a network connection to 10.0.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns nslookup.exe, which queries the DC (10.0.1.4) over DNS (port 53)",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.8.png",
+                                "Carbanak-FIN7_FO_15.A.8_1.png",
+                                "Carbanak-FIN7_FO_15.A.8_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes dsquery.exe via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.7.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes GetIpNetTable()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes GetIpNetTable()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.3_1.png",
+                                "WizardSpider-Sandworm_FO_19.A.3_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1033": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes qwinsta /server:cfo",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes user.Current()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_16.A.1.png",
+                                "WizardSpider-Sandworm_FO_16.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1135": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe executes net view",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe executes net view",
+                            "images": [
+                                "Carbanak-FIN7_FO_13.A.3.png"
+                            ],
+                            "note": "A Technique detection named \"Remote System Discovery, T1018\" was generated when cmd.exe executed net view."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1082": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes RtlGetVersion(), GetNativeSystemInfo(), and RtlGetNtProductType()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_3.A.1.png",
+                                "WizardSpider-Sandworm_FO_3.A.1_1.png",
+                                "WizardSpider-Sandworm_FO_3.A.1_2.png",
+                                "WizardSpider-Sandworm_FO_3.A.1_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes systeminfo",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net /config",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.7.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe enumerates drives via GetLogicalDriveStrings() and GetDriveType()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.5.png",
+                                "WizardSpider-Sandworm_FO_10.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1057": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes CreateToolhelp32Snapshot()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_3.A.2.png",
+                                "WizardSpider-Sandworm_FO_3.A.2_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe executes CreateToolhelp32Snapshot()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.3.png",
+                                "WizardSpider-Sandworm_FO_10.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1007": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes sc query",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.3.png",
+                                "WizardSpider-Sandworm_FO_5.A.3_1.png",
+                                "WizardSpider-Sandworm_FO_5.A.3_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user /domain",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.4.png",
+                                "WizardSpider-Sandworm_FO_5.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1016": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes ipconfig",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.5.png",
+                                "WizardSpider-Sandworm_FO_5.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1049": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.6.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_16.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1482": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes nltest /domain_trusts /all_trusts",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.8.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes whoami",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.9.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes whoami",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_5.A.9_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe executes adfind.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_7.A.5.png",
+                                "WizardSpider-Sandworm_FO_7.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1083": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe enumerates files via FindFirstFile() and FindNextFile()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.6.png",
+                                "WizardSpider-Sandworm_FO_10.A.6_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe lists files in C:\\",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_16.A.3.png",
+                                "WizardSpider-Sandworm_FO_16.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "credential-access": {
+            "T1110.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes Find-LocalAdminAccess, which attempts a DCOM/RPC (port 135) connection to multiple hosts to check for access",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.A.3.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.001": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "smrs.exe opens and reads lsass.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.7_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "smrs.exe opens and reads lsass.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.7.png",
+                                "Carbanak-FIN7_FO_4.B.7_1.png"
+                            ],
+                            "note": "A Tactic detection named \"Credential Access\" (Malicious) was generated when smrs.exe opened and read lsass.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "samcat.exe opens and reads the SAM via LSASS",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "samcat.exe opens and reads the SAM via LSASS",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.6_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Access to critical system information (credentials)\" (malicious) was generated when samcat.exe accessed SAM."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "samcat.exe opens and reads the SAM via LSASS",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.6_1.png"
+                            ],
+                            "note": "A Technique detection named \"OS Credential Dumping: Security Account Manager, T1003.002\" was generated when samcat.exe opened and read the SAM."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak",
+                            "criteria": "smrs.exe opens and reads lsass.exe",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.7P.png",
+                                "Carbanak-FIN7_FO_4.B.7P_1.png"
+                            ],
+                            "note": "Test 3 was blocked when the powershell.exe process chain was terminated, because it attempted to access credentials."
+                        },
+                        {
+                            "threat": "FIN7",
+                            "criteria": "samcat.exe opens and reads the SAM via LSASS",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.6P.png"
+                            ],
+                            "note": "Test 12 was blocked when powershell.exe process chain was terminated, because it spawned samcat.exe and was deemed malicious by the machine learning engine."
+                        }
+                    ]
+                }
+            },
+            "T1056.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "DefenderUpgradeExec.exe calls the SetWindowsHookEx API",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "mslog.exe executes SetWindowsHookEx() and GetKeyState() to collect keystrokes",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1555.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "infosMin48.exe calls the VaultEnumerateItems API from vaultcli.dll",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "oradump.exe reads passwords from local browsers DBs",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "oradump.exe reads passwords from local browsers DBs",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_17.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak",
+                            "criteria": "infosMin48.exe calls the VaultEnumerateItems API from vaultcli.dll",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.B.2P.png"
+                            ],
+                            "note": "Test 5 was blocked when infosmin48.exe was not executed, because the machine learning engine identified it as a potentially unwanted program (PUP)."
+                        }
+                    ]
+                }
+            },
+            "T1552": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to search Outlook for password strings",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_3.A.4.png",
+                                "WizardSpider-Sandworm_FO_3.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1558.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes rubeus.exe kerberoast /domain:oz.local",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_6.A.2.png",
+                                "WizardSpider-Sandworm_FO_6.A.2_1.png",
+                                "WizardSpider-Sandworm_FO_6.A.2_2.png",
+                                "WizardSpider-Sandworm_FO_6.A.2_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes vssadmin.exe to create a copy of C:",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_8.A.1.png",
+                                "WizardSpider-Sandworm_FO_8.A.1_1.png",
+                                "WizardSpider-Sandworm_FO_8.A.1_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "cmd.exe executes vssadmin.exe to create a copy of C:",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_8.A.1P.png",
+                                "WizardSpider-Sandworm_FO_8.A.1P_1.png",
+                                "WizardSpider-Sandworm_FO_8.A.1P_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1003.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes reg.exe to save HKLM\\SYSTEM",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_8.A.2.png",
+                                "WizardSpider-Sandworm_FO_8.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes CredEnumerateW()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.4_1.png",
+                                "WizardSpider-Sandworm_FO_19.A.4_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1078.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe successfully logs in to host 10.0.0.4 or 10.0.0.5 as user kmitnick",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.A.4.png",
+                                "Carbanak-FIN7_FO_4.A.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to cfo (10.0.0.5)",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to itadmin (10.0.1.6)",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to accounting (10.0.1.7)",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.A.1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.001": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update subkey is added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.C.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update subkey is added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.C.4_1.png"
+                            ],
+                            "note": "A Technique detection named \"Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder, T1547.001\" was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "msiexec.exe adds the tvncontrol subkey in HKLM\\Software\\Microsoft\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_FO_10.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "msiexec.exe adds the tvncontrol subkey in HKLM\\Software\\Microsoft\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_FO_10.A.4_1.png"
+                            ],
+                            "note": "A Technique detection named \"Boot of Logon Autostart Execution: Registry Run Keys / Startup Folder, T1547.001\" was generated when tvncontrol subkey was added to HKLM\\Software\\Microsoft\\CurrentVersion\\Run."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe adds the blbdigital Registry Run key using RegSetValueExA()",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_2.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "SecurityHealth Registry Run key is added using reg.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.7.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1546.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "sdbinst.exe installs sdbE376.tmp shim",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.B.5.png",
+                                "Carbanak-FIN7_FO_19.B.5_3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "sdbinst.exe installs sdbE376.tmp shim",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.B.5_1.png"
+                            ],
+                            "note": "A Technique detection named \"Event Triggered Execution: Application Shimming, T1546.011\" was generated when sdbinst.exe installed sdbE376.tmp shim database."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "AccountingIQ.exe queries HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\InstalledSDB\\ and loads dll329.dll",
+                            "images": [
+                                "Carbanak-FIN7_FO_20.A.1.png",
+                                "Carbanak-FIN7_FO_20.A.1_1.png",
+                                "Carbanak-FIN7_FO_20.A.1_2.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe adds the Userinit Registry key using Set-ItemProperty",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_7.A.4.png",
+                                "WizardSpider-Sandworm_FO_7.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1543.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "New service Windows Check AV is created",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe creates Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.2.png",
+                                "WizardSpider-Sandworm_FO_19.A.2_1.png",
+                                "WizardSpider-Sandworm_FO_19.A.2_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe executes Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.10.png",
+                                "WizardSpider-Sandworm_FO_19.A.10_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "privilege-escalation": {
+            "T1548.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "fodhelper.exe spawns cmd.exe as a high-integrity process (note: Due to the configuration of the environment, the adversary's process was high by default. This sub-step was evaluated based on the criteria of detecting data related to process integrity level as well as the executed mechanics of the UAC bypass)",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.5_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "fodhelper.exe spawns cmd.exe as a high-integrity process (note: Due to the configuration of the environment, the adversary's process was high by default. This sub-step was evaluated based on the criteria of detecting data related to process integrity level as well as the executed mechanics of the UAC bypass)",
+                            "images": [
+                                "Carbanak-FIN7_FO_4.B.5_2.png"
+                            ],
+                            "note": "A General detection (Malicious) was generated when fodhelper.exe spawned cmd.exe as a high-integrity process."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns samcat.exe as a high-integrity process (note: Due to the configuration of the environment, the adversary's process was high by default. This sub-step was evaluated based on the criteria of detecting data related to process integrity level as well as the executed mechanics of the UAC bypass)",
+                            "images": [
+                                "Carbanak-FIN7_FO_15.A.5.png",
+                                "Carbanak-FIN7_FO_15.A.5_1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1574.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "SystemPropertiesAdvanced.exe executes code in the illegitimate srrstr.dll",
+                            "images": [
+                                "Carbanak-FIN7_FO_17.A.4.png",
+                                "Carbanak-FIN7_FO_17.A.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "SystemPropertiesAdvanced.exe executes code in the illegitimate srrstr.dll",
+                            "images": [
+                                "Carbanak-FIN7_FO_17.A.4_2.png"
+                            ],
+                            "note": "A General detection (malicious) was generated when SystemPropertiesAdvanced.exe loaded srrstr.dll and created process rundll32.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "lateral-movement": {
+            "T1550.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "psexec.py creates a logon to 10.0.0.4 as user kmitnick",
+                            "images": [
+                                "Carbanak-FIN7_FO_5.C.1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.001": {
+                "d": {
+                    "count": 11,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from the localhost over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.A.5_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from the localhost over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.A.5.png"
+                            ],
+                            "note": "A Technique detection named \"Remote Services: Remote Desktop Protocol, T1201.001\" was generated when an RDP session was established from the localhost over TCP port 3389."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.0.4 to 10.0.0.5 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.B.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.0.4 to 10.0.0.5 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_FO_7.B.3_1.png"
+                            ],
+                            "note": "A Technique detection named \"Remote Services: Remote Desktop Protocol, T1021.001\" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.1.6 to 10.0.1.7 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.1.6 to 10.0.1.7 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.A.2_2.png"
+                            ],
+                            "note": "A General detection (malicious) was generated when rundll32.exe connected to accounting (10.0.1.7)."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.1.6 to 10.0.1.7 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_FO_19.A.2.png"
+                            ],
+                            "note": "A Technique detection named \"Remote Services: Remote Desktop Protocol, T1021.001\" was generated when an RDP session was created from itadmin (10.0.1.6) to accounting (10.0.1.7) over port 3389."
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.8 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.1.png",
+                                "WizardSpider-Sandworm_FO_4.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.8 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_4.A.1_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.4 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_7.A.1.png",
+                                "WizardSpider-Sandworm_FO_7.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.4 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_7.A.1_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "SMB session from 10.0.1.5 to 10.0.1.6 over TCP port 135 or 445 with admin shares accessed",
+                            "images": [
+                                "Carbanak-FIN7_FO_16.A.5.png",
+                                "Carbanak-FIN7_FO_16.A.5_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Connection to 10.0.1.7 over protocol SMB",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_15.A.2.png",
+                                "WizardSpider-Sandworm_FO_15.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.1.4 using RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_18.A.2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.1.4 using RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_18.A.2_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1570": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "C:\\Windows\\perfc.dat is written to disk on 10.0.1.8",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "C:\\Windows\\perfc.dat is written to disk on 10.0.1.8",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Sandworm",
+                            "criteria": "C:\\Windows\\perfc.dat is written to disk on 10.0.1.8",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.5_2.png",
+                                "WizardSpider-Sandworm_FO_19.A.5_3.png",
+                                "WizardSpider-Sandworm_FO_19.A.5_4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1021.006": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Remote WMI is used to execute rundll32.exe on 10.0.1.8",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.6.png",
+                                "WizardSpider-Sandworm_FO_19.A.6_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "collection": {
+            "T1005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe reads C:\\Users\\jsmith\\AppData\\Local\\Temp\\Klog2.txt over to 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_FO_9.A.5.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1114.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to read SenderEmailAddress values from Outlook",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_3.A.5.png",
+                                "WizardSpider-Sandworm_FO_3.A.5_1.png",
+                                "WizardSpider-Sandworm_FO_3.A.5_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "impact": {
+            "T1489": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe stops various services via net stop, sc config, and taskkill",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_9.A.2.png",
+                                "WizardSpider-Sandworm_FO_9.A.2_1.png",
+                                "WizardSpider-Sandworm_FO_9.A.2_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1490": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe deletes system backups via vssadmin and del",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_9.A.5.png",
+                                "WizardSpider-Sandworm_FO_9.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider",
+                            "criteria": "cmd.exe deletes system backups via vssadmin and del",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_9.A.5P.png",
+                                "WizardSpider-Sandworm_FO_9.A.5P_1.png",
+                                "WizardSpider-Sandworm_FO_9.A.5P_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                }
+            },
+            "T1486": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "notepad.exe encrypts various files using AES + RSA",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_10.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe encrypts various files using AES",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.7.png",
+                                "WizardSpider-Sandworm_FO_19.A.7_1.png",
+                                "WizardSpider-Sandworm_FO_19.A.7_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1529": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe reboots the hosts via Restart-Computer",
+                            "images": [
+                                "WizardSpider-Sandworm_FO_19.A.11.png",
+                                "WizardSpider-Sandworm_FO_19.A.11_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        }
+    },
+    "filename": "fortinet_engenuity.json",
+    "capability_name": "fortinet",
+    "counts": {
+        "detect": 54,
+        "protect": 6
+    }
+}

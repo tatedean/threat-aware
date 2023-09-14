@@ -1,0 +1,2647 @@
+{
+    "scores": {
+        "execution": {
+            "T1204.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process spawning from explorer.exe",
+                            "images": [
+                                "SecureWorks-APT29-6506.png"
+                            ],
+                            "note": "Telemetry showed explorer.exe executing rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process spawning from explorer.exe",
+                            "images": [
+                                "SecureWorks-APT29-12582.png",
+                                "SecureWorks-APT29-12782.png"
+                            ],
+                            "note": "An MSSP detection for \"Execution - User Execution\" occurred containing evidence of explorer.exe executing rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from explorer.exe",
+                            "images": [
+                                "SecureWorks-APT29-6929.png"
+                            ],
+                            "note": "Telemetry showed explorer.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from explorer.exe",
+                            "images": [
+                                "SecureWorks-APT29-13764.png"
+                            ],
+                            "note": "An MSSP detection for \"Execution - User Execution\" occurred containing evidence of  explorer.exe executing powershell.exe (Get-Content...)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe spawning from the rcs.3aka3.doc process",
+                            "images": [
+                                "SecureWorks-APT29-7213.png"
+                            ],
+                            "note": "Telemetry showed cmd.exe spawning from rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe spawning from the rcs.3aka3.doc process",
+                            "images": [
+                                "SecureWorks-APT29-6504.png",
+                                "SecureWorks-APT29-7196.png",
+                                "SecureWorks-APT29-7197.png",
+                                "SecureWorks-APT29-7198.png"
+                            ],
+                            "note": "A Technique alert detection (medium severity) called \"Screensaver file launches shell\" was generated due to cmd.exe spawning from rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe spawning from the rcs.3aka3.doc process",
+                            "images": [
+                                "SecureWorks-APT29-12582.png",
+                                "SecureWorks-APT29-12782.png"
+                            ],
+                            "note": "An MSSP detection was generated for cmd.exe spawning from rcs.3aka3.doc."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 9,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "SecureWorks-APT29-7213.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe spawning from cmd.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "SecureWorks-APT29-12582.png",
+                                "SecureWorks-APT29-12782.png"
+                            ],
+                            "note": "An MSSP detection was generated for cmd.exe spawning powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from powershell.exe",
+                            "images": [
+                                "SecureWorks-APT29-6613.png"
+                            ],
+                            "note": "Telemetry showed a new powershell.exe spawning from powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from python.exe",
+                            "images": [
+                                "SecureWorks-APT29-6790.png"
+                            ],
+                            "note": "Telemetry showed python.exe executing powershell.exe"
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from python.exe",
+                            "images": [
+                                "SecureWorks-APT29-12629.png"
+                            ],
+                            "note": "An MSSP detection for \"Execution - PowerShell\" occurred containing evidence of python.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "SecureWorks-APT29-6855.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe spawned from a PowerShell stager."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "SecureWorks-APT29-6993.png",
+                                "SecureWorks-APT29-6995.png",
+                                "SecureWorks-APT29-6996.png",
+                                "SecureWorks-APT29-6997.png",
+                                "SecureWorks-APT29-6998.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called PowerShell Downloading Remote Resource was generated due to PowerShell stager executing (IEX) from schemas."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Exeuction - PowerShell\" occurred for PowerShell executing a stager with Invoke-Expression."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SYSTEM-level powershell.exe spawned from the powershell.exe",
+                            "images": [
+                                "SecureWorks-APT29-7285.png"
+                            ],
+                            "note": "Telemetry showed a SYSTEM-level PowerShell spawning from wmiprvse.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1106": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "The NetUserGetGroups API function loaded into powershell.exe from Netapi32.dll",
+                            "images": [
+                                "SecureWorks-APT29-6581.png",
+                                "SecureWorks-APT29-6627.png"
+                            ],
+                            "note": "Telemetry showed the NetUserGetGroups API function being loaded into PowerShell from Netapi32.dll."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The NetUserGetLocalGroups API function loaded into powershelle.exe from Netapi32.dll",
+                            "images": [
+                                "SecureWorks-APT29-6580.png",
+                                "SecureWorks-APT29-6627.png"
+                            ],
+                            "note": "Telemetry showed the NetUserGetLocalGroups API function being loaded into PowerShell from Netapi32.dll."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ConvertSidToStringSid API function by loading Advapi32.dll",
+                            "images": [
+                                "SecureWorks-APT29-10675.png",
+                                "SecureWorks-APT29-10676.png",
+                                "SecureWorks-APT29-7155.png"
+                            ],
+                            "note": "Telemetry showed PowerShell reflectively loading Advapi32.dll inorder to execute the ConvertSidToStringSid API function."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ConvertSidToStringSid API function by loading Advapi32.dll",
+                            "images": [
+                                "SecureWorks-APT29-12661.png"
+                            ],
+                            "note": "An MSSP detection for \"Execution - Execution through API\" occurred containing evidence of PowerShell reflectively loading Advapi32.dll and executing APIs."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe spawned by PSEXESVC.exe",
+                            "images": [
+                                "SecureWorks-APT29-6780.png",
+                                "SecureWorks-APT29-6781.png"
+                            ],
+                            "note": "Telemetry showed python.exe spawned by PSEXESVC.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe spawned by PSEXESVC.exe",
+                            "images": [
+                                "SecureWorks-APT29-13755.png"
+                            ],
+                            "note": "An MSSP detection for Lateral Movement showed python.exe spawned by PSEXESVC.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "javamtsup.exe spawning from services.exe",
+                            "images": [
+                                "SecureWorks-APT29-13761.png",
+                                "SecureWorks-APT29-13762.png"
+                            ],
+                            "note": "Telemetry showed the javamtsup.exe processes executing as a persistent service."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1047": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "WMI Process (WmiPrvSE.exe) executing powershell.exe",
+                            "images": [
+                                "SecureWorks-APT29-7067.png"
+                            ],
+                            "note": "Telemetry showed WmiPrvSE.exe executing powershell.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.011": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-17650.png"
+                            ],
+                            "note": "Telemetry showed rundll32.exe executing kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-7267.png",
+                                "SecureWorks-APT29-7268.png",
+                                "SecureWorks-APT29-7269.png",
+                                "SecureWorks-APT29-7271.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) for Rundll32 called \"PowerDuke DLL Name\" was generated due to rundll32.exe executing kxwn.lock."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "defense-evasion": {
+            "T1036.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "SecureWorks-APT29-13733.png"
+                            ],
+                            "note": "Telemetry showed the right-to-left override character (U+202E) in rcs.3aka.doc and the original filename."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "SecureWorks-APT29-7191.png",
+                                "SecureWorks-APT29-7192.png",
+                                "SecureWorks-APT29-7193.png",
+                                "SecureWorks-APT29-7194.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"Right-to-Left Override\" was generated due a process event with RTLO."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "SecureWorks-APT29-12582.png",
+                                "SecureWorks-APT29-12584.png",
+                                "SecureWorks-APT29-12782.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of the original filename: cod.3aka.scr."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "SecureWorks-APT29-13735.png"
+                            ],
+                            "note": "Telemetry showed PowerShell extracting and executing the code embedded within monkey.png."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "SecureWorks-APT29-6540.png",
+                                "SecureWorks-APT29-6541.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) was generated for a PowerShell process executing code hidden in images via stenography."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "SecureWorks-APT29-12588.png",
+                                "SecureWorks-APT29-12591.png",
+                                "SecureWorks-APT29-12592.png"
+                            ],
+                            "note": "An MSSP detection for \"PowerShell script...that decodes malicious code\" occurred containing evidence of the PowerShell script contained within monkey.png."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1112": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Deletion of of the HKCU\\Software\\Classes\\Folder\\shell\\Open\\command subkey",
+                            "images": [
+                                "SecureWorks-APT29-6618.png"
+                            ],
+                            "note": "Telemetry showed PowerShell command to remove the DelegateExecute Registry Value."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Deletion of of the HKCU\\Software\\Classes\\Folder\\shell\\Open\\command subkey",
+                            "images": [
+                                "SecureWorks-APT29-12594.png"
+                            ],
+                            "note": "An MSSP detection for \"Defense Evasion - Modify Registry\" occurred containing evidence of the deletion of the subkey."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Deletion of the HKCU\\Software\\Classes\\Folder\\shell\\Open\\command subkey",
+                            "images": [
+                                "SecureWorks-APT29-7056.png"
+                            ],
+                            "note": "Telemetry showed the deletion of the DelegateExecute subkey."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Deletion of the HKCU\\Software\\Classes\\Folder\\shell\\Open\\command subkey",
+                            "images": [
+                                "SecureWorks-APT29-12651.png",
+                                "SecureWorks-APT29-12785.png"
+                            ],
+                            "note": "An MSSP detection for \"Defense Evasion - Modify Registry\" occurred containing evidence of deletion of Registry value using Remote-Item."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1140": {
+                "d": {
+                    "count": 7,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Expand-Archive",
+                            "images": [
+                                "SecureWorks-APT29-6633.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe decompressing SysinternalsSuite.zip via Expand-Archive."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Expand-Archive",
+                            "images": [
+                                "SecureWorks-APT29-12595.png",
+                                "SecureWorks-APT29-12597.png"
+                            ],
+                            "note": "An MSSP detection for \"Defense Evasion - Deobfuscate/Decode Files or Information\" occurred containing evidence of powershell.exe decompressing SysinternalsSuite.zip via Expand-Archive."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-17638.png"
+                            ],
+                            "note": "Telemetry showed the certutil.exe process decoding the kxwn.lock payload."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-6975.png",
+                                "SecureWorks-APT29-6976.png",
+                                "SecureWorks-APT29-6977.png"
+                            ],
+                            "note": "A Technique alert detection (low severity) called \"Certutil Decode Command Execution\" was generated due to process activity associated with the certutil decode command."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Defense Evasion- Deobfuscate/Decode Files or Information\" occurred for the cerutil utility decoding a writing a payload to disk."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiInstance",
+                            "images": [
+                                "SecureWorks-APT29-7057.png",
+                                "SecureWorks-APT29-7061.png",
+                                "SecureWorks-APT29-7062.png"
+                            ],
+                            "note": "Telemetry showed PowerShell reading encoded content from the WMI class."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiInstance",
+                            "images": [
+                                "SecureWorks-APT29-13774.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell reading encoded content from the WMI class."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.004": {
+                "d": {
+                    "count": 12,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rcs.3aka3.doc",
+                            "images": [],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rcs.3aka3.doc",
+                            "images": [
+                                "SecureWorks-APT29-7218.png",
+                                "SecureWorks-APT29-7220.png",
+                                "SecureWorks-APT29-7221.png",
+                                "SecureWorks-APT29-7222.png"
+                            ],
+                            "note": "A Technique alert detection (low severity) called \"SDelete64 Usage\" was generated due to Sdelete64.exe deleting rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file draft.zip",
+                            "images": [],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file draft.zip",
+                            "images": [
+                                "SecureWorks-APT29-7223.png",
+                                "SecureWorks-APT29-7225.png",
+                                "SecureWorks-APT29-7226.png",
+                                "SecureWorks-APT29-7227.png"
+                            ],
+                            "note": "A Technique alert detection (low severity) called \"SDelete64 Usage\" was generated due to Sdelete64.exe deleting Draft.Zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file SysinternalsSuite.zip",
+                            "images": [],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file and the subsequent file rename and delete events."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file SysinternalsSuite.zip",
+                            "images": [
+                                "SecureWorks-APT29-6603.png",
+                                "SecureWorks-APT29-6604.png",
+                                "SecureWorks-APT29-6605.png",
+                                "SecureWorks-APT29-6606.png"
+                            ],
+                            "note": "A Technique alert detection (low severity) called \"SDelete64 Usage\" was generated due to Sdelete64.exe deleting SysinternalsSuite.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rar.exe",
+                            "images": [
+                                "SecureWorks-APT29-13758.png"
+                            ],
+                            "note": "Telemetry showed sdelete64.exe with command-line arguments to delete rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rar.exe",
+                            "images": [
+                                "SecureWorks-APT29-13759.png",
+                                "SecureWorks-APT29-13760.png"
+                            ],
+                            "note": "A Technique detection alert (low severity) called \"SDelete64 Usage\" \"File Deletion T1107\" was generated when sdelete64.exe with command-line arguments was used to delete rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\Desktop\\working.zip",
+                            "images": [],
+                            "note": "Telemetry showed sdelete64.exe with command-line arguments to delete Desktop\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\Desktop\\working.zip",
+                            "images": [
+                                "SecureWorks-APT29-6816.png",
+                                "SecureWorks-APT29-6817.png",
+                                "SecureWorks-APT29-6818.png",
+                                "SecureWorks-APT29-6819.png"
+                            ],
+                            "note": "A Technique detection alert (low severity) called \"SDelete64 Usage\" \"File Deletion T1107\" was generated  when sdelete64.exe with command-line arguments was used to delete Desktop\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\AppData\\Roaming\\working.zip",
+                            "images": [],
+                            "note": "Telemetry showed sdelete64.exe with command-line arguments to delete Roaming\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\AppData\\Roaming\\working.zip",
+                            "images": [
+                                "SecureWorks-APT29-6819.png",
+                                "SecureWorks-APT29-6820.png",
+                                "SecureWorks-APT29-6821.png",
+                                "SecureWorks-APT29-6822.png"
+                            ],
+                            "note": "A Technique detection alert (low severity) called \"SDelete64 Usage\" \"File Deletion T1107\" was generated when sdelete64.exe with command-line arguments was used to delete Roaming\\working.zip."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.005": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that accesschk.exe is not the legitimate Sysinternals tool",
+                            "images": [
+                                "SecureWorks-APT29-6642.png",
+                                "SecureWorks-APT29-6643.png"
+                            ],
+                            "note": "Telemetry showed that accesschk.exe is not the legitimate Sysinternals tool by comparing the hashes."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that accesschk.exe is not the legitimate Sysinternals tool",
+                            "images": [
+                                "SecureWorks-APT29-12605.png",
+                                "SecureWorks-APT29-12606.png"
+                            ],
+                            "note": "An MSSP detection for Masquerading occurred containing evidence that accesschk.exe is not the legitimate Sysinternals tool."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the file python.exe is packed",
+                            "images": [
+                                "SecureWorks-APT29-12622.png",
+                                "SecureWorks-APT29-12623.png"
+                            ],
+                            "note": "An MSSP detection was generated containing evidence of observed UPX packing on a Python payload."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user Pam on Scranton (10.0.1.4)",
+                            "images": [
+                                "SecureWorks-APT29-13751.png"
+                            ],
+                            "note": "Telemetry showed a valid logon on Scranton (10.0.1.4) as user Pam."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1564.004": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the schemas ADS via Get-Content and IEX",
+                            "images": [
+                                "SecureWorks-APT29-6929.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing the schemas ADS with Get-Content and IEX."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the schemas ADS via Get-Content and IEX",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Defense Evasion - NTFS File Attributes\" occurred containing evidence of PowerShell executing schemas ADS via Get-Content and IEX."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1497.001": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
+                            "images": [
+                                "SecureWorks-APT29-17607.png",
+                                "SecureWorks-APT29-17610.png"
+                            ],
+                            "note": "Telemetry showed the PowerShell gwmi query for Win32_BIOS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
+                            "images": [
+                                "SecureWorks-APT29-6931.png",
+                                "SecureWorks-APT29-6932.png",
+                                "SecureWorks-APT29-6933.png",
+                                "SecureWorks-APT29-6934.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"WMI Queries Win32_Bios\" was generated for a PowerShell gwmi query for Win32_BIOS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - Virtualization/Sandbox Evasion\" occurred for the PowerShell gwmi query for Win32_BIOS."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.006": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe modifying the creation, last access, and last write times of kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-13769.png",
+                                "SecureWorks-APT29-13770.png"
+                            ],
+                            "note": "Telemetry showed script block with commands to timestomp kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe modifying the creation, last access, and last write times of kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-7018.png",
+                                "SecureWorks-APT29-7019.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"FileTimestomped\" was generated due to timestamp modifications of kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe modifying the creation, last access, and last write times of kxwn.lock",
+                            "images": [
+                                "SecureWorks-APT29-12639.png",
+                                "SecureWorks-APT29-12640.png",
+                                "SecureWorks-APT29-12641.png",
+                                "SecureWorks-APT29-12642.png",
+                                "SecureWorks-APT29-12643.png"
+                            ],
+                            "note": "An MSSP detection for \"Defense Evasion - Timestomp\" occurred containing evidence of the modification of creation, last access, and last write times of kxwn.lock."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Set-WmiInstance",
+                            "images": [
+                                "SecureWorks-APT29-7069.png"
+                            ],
+                            "note": "Telemetry showed PowerShell writing encoded content into the WMI class."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Set-WmiInstance",
+                            "images": [
+                                "SecureWorks-APT29-12656.png",
+                                "SecureWorks-APT29-12657.png",
+                                "SecureWorks-APT29-12658.png"
+                            ],
+                            "note": "An MSSP detection for \"Defense Evasion - Obfuscated Files or Information\" occurred containing evidence of PowerShell Set-WmiInstance to write encoded content to Win32_AuditCode."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Set-Content",
+                            "images": [
+                                "SecureWorks-APT29-7152.png",
+                                "SecureWorks-APT29-7153.png"
+                            ],
+                            "note": "Telemetry showed PowerShell appending the GIF file header to the compressed file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Set-Content",
+                            "images": [
+                                "SecureWorks-APT29-13787.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell appending the GIF file header to the compressed file."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "command-and-control": {
+            "T1095": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 1234",
+                            "images": [
+                                "SecureWorks-APT29-7230.png"
+                            ],
+                            "note": "Telemetry showed the rcs.3aka3.doc process connecting to 192.168.0.5 on TCP port 1234."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 1234",
+                            "images": [
+                                "SecureWorks-APT29-12582.png",
+                                "SecureWorks-APT29-12782.png"
+                            ],
+                            "note": "An MSSP detection occurred for the rcs.3aka3.doc process connecting to 192.168.0.5 on TCP port 1234."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1043": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "SecureWorks-APT29-6693.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe connecting to 192.168.0.5 on TCP port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "SecureWorks-APT29-12589.png"
+                            ],
+                            "note": "An MSSP detection occurred for powershell.exe connecting to 192.168.0.5 on TCP 443 using shellcode that loads WinInet."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "SecureWorks-APT29-6999.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe making a network connection to the C2 (192.168.0.4) over port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Command and Control - Commonly Used Port\" occurred containing evidence of PowerShell making network connection to C2 (192.168.0.4) over port 443."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1071.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the network data sent over the C2 channel is HTTPS",
+                            "images": [
+                                "SecureWorks-APT29-12589.png"
+                            ],
+                            "note": "An MSSP detection occurred for powershell.exe connecting to 192.168.0.5 on TCP 443 using shellcode that loads WinInet."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1105": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file SysinternalsSuite.zip",
+                            "images": [
+                                "SecureWorks-APT29-12595.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of a remote file write of the ZIP by PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe downloading and/or the file write of m.exe",
+                            "images": [
+                                "SecureWorks-APT29-7069.png"
+                            ],
+                            "note": "Telemetry showed the PowerShell command to download m.exe into the System32 folder."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe downloading and/or the file write of m.exe",
+                            "images": [
+                                "SecureWorks-APT29-13773.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of Powershell creating m.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1102": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe with command-line arguments then making a network connection to a public IP over port 443",
+                            "images": [
+                                "SecureWorks-APT29-7170.png",
+                                "SecureWorks-APT29-7174.png"
+                            ],
+                            "note": "Telemetry showed net.exe with command-line arguments to connect to a OneDrive URL as well as net.exe subsequently making a network connection to public IPs over port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe with command-line arguments then making a network connection to a public IP over port 443",
+                            "images": [
+                                "SecureWorks-APT29-13787.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of net.exe mounting a share from OneDrive and connecting to a Microsoft IP."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1083": {
+                "d": {
+                    "count": 10,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-6534.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-13734.png"
+                            ],
+                            "note": "An MSSP detection occurred showing evidence of powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:TEMP",
+                            "images": [
+                                "SecureWorks-APT29-6627.png",
+                                "SecureWorks-APT29-6628.png"
+                            ],
+                            "note": "Telemetry showed Powershell.exe executing: $env:TEMP."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:TEMP",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - File and Directory Discovery\" occurred containing evidence of powershell.exe executing: $env:TEMP."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-6795.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-12630.png",
+                                "SecureWorks-APT29-12631.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - File and Directory Discovery\" occurred containing evidence of powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-Item -Path \".\\\" -Verbose).FullName",
+                            "images": [
+                                "SecureWorks-APT29-13765.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing Get-Item for the current path."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-Item -Path \".\\\" -Verbose).FullName",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - File and Directory Discovery\" occurred for the PowerShell executing Get-Item to query the current path."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (gci ((gci env:windir).Value + '\\system32')",
+                            "images": [
+                                "SecureWorks-APT29-7015.png"
+                            ],
+                            "note": "Telemetry showed PowerShell enumeration of System32."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (gci ((gci env:windir).Value + '\\system32')",
+                            "images": [
+                                "SecureWorks-APT29-12639.png",
+                                "SecureWorks-APT29-12640.png",
+                                "SecureWorks-APT29-12641.png",
+                                "SecureWorks-APT29-12642.png",
+                                "SecureWorks-APT29-12643.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - File and Directory Discovery\" occurred containing evidence of PowerShell enumeration of System32."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1057": {
+                "d": {
+                    "count": 13,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "SecureWorks-APT29-6634.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing Get-Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "SecureWorks-APT29-12596.png"
+                            ],
+                            "note": "An MSSP detection for \"Process Discovery\" occurred containing evidence of powershell.exe executing Get-Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $PID",
+                            "images": [
+                                "SecureWorks-APT29-6627.png",
+                                "SecureWorks-APT29-6628.png"
+                            ],
+                            "note": "Telemetry showed Powershell.exe executing: $env:PID."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $PID",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - Process Discovery\" occurred containing evidence of powershell.exe executing: $env:PID."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "SecureWorks-APT29-6746.png",
+                                "SecureWorks-APT29-6747.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing Get-Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "SecureWorks-APT29-12618.png",
+                                "SecureWorks-APT29-12619.png"
+                            ],
+                            "note": "An MSSP detection for \"PowerShell cmdlet with Get-Process\" occurred containing evidence of powershell.exe executing Get-Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_Process",
+                            "images": [
+                                "SecureWorks-APT29-17633.png",
+                                "SecureWorks-APT29-17634.png"
+                            ],
+                            "note": "Telemetry showed the PowerShell gwmi query for Win32_Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_Process",
+                            "images": [
+                                "SecureWorks-APT29-6946.png",
+                                "SecureWorks-APT29-6947.png",
+                                "SecureWorks-APT29-6948.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"WMI Queries Win32_Process\", was generated for a PowerShell gwmi query for Win32_Process.."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_Process",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - Process Discovery\" occurred for the PowerShell gwmi query for Win32_Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CreateToolhelp32Snapshot API",
+                            "images": [
+                                "SecureWorks-APT29-7039.png"
+                            ],
+                            "note": "Telemetry showed PowerShell calling the CreateToolhelp32Snapshot API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CreateToolhelp32Snapshot API",
+                            "images": [
+                                "SecureWorks-APT29-13771.png"
+                            ],
+                            "note": "An MSSP detection  occurred containing evidence of PowerShell calling the CreateToolhelp32Snapshot API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "SecureWorks-APT29-7057.png",
+                                "SecureWorks-APT29-7061.png",
+                                "SecureWorks-APT29-7062.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing Get-Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "SecureWorks-APT29-12652.png",
+                                "SecureWorks-APT29-12653.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - Process Discovery\" occurred containing evidence of PowerShell Get-Process."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1033": {
+                "d": {
+                    "count": 11,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:USERNAME",
+                            "images": [
+                                "SecureWorks-APT29-6627.png",
+                                "SecureWorks-APT29-6628.png"
+                            ],
+                            "note": "Telemetry showed Powershell.exe executing: $env:USERNAME."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:USERNAME",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - System Owner/User Discovery\" occurred containing evidence of powershell.exe executing: $env:USERNAME."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-17611.png",
+                                "SecureWorks-APT29-17612.png"
+                            ],
+                            "note": "Telemetry showed the PowerShell gwmi query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-6943.png",
+                                "SecureWorks-APT29-6944.png",
+                                "SecureWorks-APT29-6945.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"WMI Queries Win32_ComputerSystem\" was generated for a PowerShell gwmi query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - System Owner/User Discovery\" occurred for the PowerShell gwmi query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetUserNameEx API",
+                            "images": [
+                                "SecureWorks-APT29-7036.png"
+                            ],
+                            "note": "Telemetry showed PowerShell calling the GetUserNameEx API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetUserNameEx API",
+                            "images": [
+                                "SecureWorks-APT29-13771.png"
+                            ],
+                            "note": "An MSSP detection  occurred containing evidence of PowerShell calling the GetUserNameEx API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:UserName",
+                            "images": [
+                                "SecureWorks-APT29-13776.png",
+                                "SecureWorks-APT29-13777.png"
+                            ],
+                            "note": "Telemetry showed PowerShell script block executing $env:UserName."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:UserName",
+                            "images": [
+                                "SecureWorks-APT29-12659.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - System Owner/User Discovery\" occurred containing evidence of PowerShell $env:UserName."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ConvertSidToStringSid API",
+                            "images": [
+                                "SecureWorks-APT29-7112.png",
+                                "SecureWorks-APT29-7114.png",
+                                "SecureWorks-APT29-7155.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing the ConvertSidToStringSid API function."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ConvertSidToStringSid API",
+                            "images": [
+                                "SecureWorks-APT29-13781.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - System Owner/User Discovery\" occurred containing evidence of PowerShell reflectively loading Advapi32.dll and executing APIs to identify the current user's SID."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1082": {
+                "d": {
+                    "count": 11,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:COMPUTERNAME",
+                            "images": [
+                                "SecureWorks-APT29-6627.png",
+                                "SecureWorks-APT29-6628.png"
+                            ],
+                            "note": "Telemetry showed Powershell.exe executing: $env:COMPUTERNAME."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:COMPUTERNAME",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - System Information Discovery\" occurred containing evidence of powershell.exe executing: $env:COMPUTERNAME."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Gwmi Win32_OperatingSystem",
+                            "images": [
+                                "SecureWorks-APT29-13738.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing: Gwmi Win32_OperatingSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Gwmi Win32_OperatingSystem",
+                            "images": [
+                                "SecureWorks-APT29-13737.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) for System Information Discovery was generated for Powershell.exe executing Gwmi Win32_OperatingSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Gwmi Win32_OperatingSystem",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - System Information Discovery\" occurred containing evidence of powershell.exe executing: Gwmi Win32_OperatingSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject gwmi queries for Win32_BIOS and Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-17607.png",
+                                "SecureWorks-APT29-17610.png",
+                                "SecureWorks-APT29-17611.png",
+                                "SecureWorks-APT29-17612.png"
+                            ],
+                            "note": "Telemetry showed the PowerShell gwmi queries for Win32_BIOS and Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject gwmi queries for Win32_BIOS and Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-6931.png",
+                                "SecureWorks-APT29-6932.png",
+                                "SecureWorks-APT29-6933.png",
+                                "SecureWorks-APT29-6934.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"WMI Queries Win32_Bios\" was generated due to PowerShell gwmi queries for Win32_BIOS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject gwmi queries for Win32_BIOS and Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-6943.png",
+                                "SecureWorks-APT29-6944.png",
+                                "SecureWorks-APT29-6945.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"WMI Queries Win32_ComputerSystem\" was generated due to PowerShell gwmi queries for Win32_ComputerSystem ."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject gwmi queries for Win32_BIOS and Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - System Information Discovery\" occurred for the PowerShell gwmi queries for Win32_BIOS and Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetComputerNameEx API",
+                            "images": [
+                                "SecureWorks-APT29-7033.png"
+                            ],
+                            "note": "Telemetry showed PowerShell calling the GetComputerNameEx API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetComputerNameEx API",
+                            "images": [
+                                "SecureWorks-APT29-13771.png"
+                            ],
+                            "note": "An MSSP detection  occurred containing evidence of PowerShell calling the GetComputerNameEx API."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1016": {
+                "d": {
+                    "count": 7,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:USERDOMAIN",
+                            "images": [
+                                "SecureWorks-APT29-6627.png",
+                                "SecureWorks-APT29-6628.png"
+                            ],
+                            "note": "Telemetry showed Powershell.exe executing: $env:USERDOMAIN."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing $env:USERDOMAIN",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - System System Network Configuration Discovery\" occurred containing evidence of powershell.exe executing: $env:USERDOMAIN."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-17611.png",
+                                "SecureWorks-APT29-17612.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe gwmi query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-6943.png",
+                                "SecureWorks-APT29-6944.png",
+                                "SecureWorks-APT29-6945.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"WMI Queries Win32_ComputerSystem\" was generated for a PowerShell gwmi query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - System Network Configuration Discovery\" occurred for the PowerShell gwmi query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetWkstaGetInfo API",
+                            "images": [
+                                "SecureWorks-APT29-7034.png"
+                            ],
+                            "note": "Telemetry showed PowerShell calling the NetWkstaGetInfo API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetWkstaGetInfo API",
+                            "images": [
+                                "SecureWorks-APT29-13771.png"
+                            ],
+                            "note": "An MSSP detection  occurred containing evidence of PowerShell calling the NetWkstaGetInfo API."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1518.001": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiObject ... -Class AntiVirusProduct",
+                            "images": [
+                                "SecureWorks-APT29-13738.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing: Get-WmiObject ... -Class AntiVirusProduct."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiObject ... -Class AntiVirusProduct",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - Security Software Discovery\" occurred containing evidence of powershell.exe Get-WmiObject ... -Class AntiVirusProduct."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiObject ... -Class FireWallProduct",
+                            "images": [
+                                "SecureWorks-APT29-13739.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing Get-WmiObject ... -Class FireWallProduct."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-WmiObject ... -Class FireWallProduct",
+                            "images": [
+                                "SecureWorks-APT29-13736.png"
+                            ],
+                            "note": "A MSSP detection for \"Discovery - Security Software Discovery\" occurred containing evidence of powershell.exe Get-WmiObject ... -Class FireWallProduct."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for AntiVirusProduct",
+                            "images": [
+                                "SecureWorks-APT29-7024.png",
+                                "SecureWorks-APT29-7026.png"
+                            ],
+                            "note": "Telemetry showed PowerShell gwmi query for AntiVirusProduct."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for AntiVirusProduct",
+                            "images": [
+                                "SecureWorks-APT29-7023.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"Security Software Discovery - Enumerating AntiVirus Software\" was generated due to the PowerShell  gwmi query for AntiVirusProduct."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetUserGetGroups API",
+                            "images": [
+                                "SecureWorks-APT29-6581.png",
+                                "SecureWorks-APT29-6627.png"
+                            ],
+                            "note": "Telemetry showed the NetUserGetGroups API calls and dll loads."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetUserGetLocalGroups API",
+                            "images": [
+                                "SecureWorks-APT29-6580.png",
+                                "SecureWorks-APT29-6627.png"
+                            ],
+                            "note": "Telemetry showed the NetUserGetLocalGroups API calls."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1018": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 to the Domain Controller (10.0.0.4)",
+                            "images": [
+                                "SecureWorks-APT29-6742.png",
+                                "SecureWorks-APT29-6775.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe establishing a connection to NewYork (10.0.0.4) over TCP port 389."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 to the Domain Controller (10.0.0.4)",
+                            "images": [
+                                "SecureWorks-APT29-13750.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - Remote System Discovery\" occurred containing evidence of LDAP queries from Nashua to NewYork (Domain Controller - 10.0.0.4)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 via functions from System.DirectoryServices.dll",
+                            "images": [
+                                "SecureWorks-APT29-7111.png",
+                                "SecureWorks-APT29-7115.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing the Get-NetDomainController cmdlet and subsequently making a network connection to the domain controller NewYork (10.0.0.4) over TCP port 389."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 via functions from System.DirectoryServices.dll",
+                            "images": [
+                                "SecureWorks-APT29-13780.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - Remote System Discovery\" occurred containing evidence of PowerShell executing LDAP queries via functions from System.DirectoryServices namespace."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1120": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_PnPEntity",
+                            "images": [
+                                "SecureWorks-APT29-17625.png",
+                                "SecureWorks-APT29-17626.png"
+                            ],
+                            "note": "Telemetry showed the PowerShell gwmi query for Win32_PnPEntity."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_PnPEntity",
+                            "images": [
+                                "SecureWorks-APT29-6935.png",
+                                "SecureWorks-APT29-6936.png",
+                                "SecureWorks-APT29-6937.png"
+                            ],
+                            "note": "A Technique detection alert (info severity) called \"WMI Queries Win32_PnPEntity\" was generated due to the WMI query for Win32_PnPEntity."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_PnPEntity",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Discovery - Peripheral Device Discovery\" occurred for the PowerShell gwmi query for Win32_PnPEntity."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1012": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Registry query for HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+                            "images": [
+                                "SecureWorks-APT29-17644.png"
+                            ],
+                            "note": "Telemetry showed script block with registry query for installed software."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Registry query for HKLM\\SOFTWARE\\Wow6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+                            "images": [
+                                "SecureWorks-APT29-10444.png",
+                                "SecureWorks-APT29-7028.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"Discovery - PowerShell Querying the Registry Key\" was generated due to the registry query for installed software."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Registry query for HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+                            "images": [
+                                "SecureWorks-APT29-17644.png"
+                            ],
+                            "note": "Telemetry showed script block with registry query for installed software."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Registry query for HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall",
+                            "images": [
+                                "SecureWorks-APT29-10444.png",
+                                "SecureWorks-APT29-7028.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"Discovery - PowerShell Querying the Registry Key\" was generated due to the registry query for installed software."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "collection": {
+            "T1119": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-6534.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing Get-ChildItem"
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-13734.png"
+                            ],
+                            "note": "An MSSP detection occurred showing evidence of powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-6795.png"
+                            ],
+                            "note": "Telemetry showed Powershell.exe executing ChildItem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing (Get-)ChildItem",
+                            "images": [
+                                "SecureWorks-APT29-12630.png",
+                                "SecureWorks-APT29-12631.png"
+                            ],
+                            "note": "A MSSP detection for \"Collection - Automated Collection\" occurred containing evidence of powershell.exe executing ChildItem."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1560.001": {
+                "d": {
+                    "count": 10,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-Archive",
+                            "images": [
+                                "SecureWorks-APT29-6534.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe compressing via Compress-Archive."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-Archive",
+                            "images": [
+                                "SecureWorks-APT29-13734.png"
+                            ],
+                            "note": "An MSSP detection occurred showing evidence of powershell.exe compressing via Compress-Archive."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-7Zip with the password argument used for encryption",
+                            "images": [
+                                "SecureWorks-APT29-6740.png",
+                                "SecureWorks-APT29-6741.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing Compress-7Zip with arguments for encryption."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-7Zip with the password argument used for encryption",
+                            "images": [
+                                "SecureWorks-APT29-13748.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of powershell.exe compressing and encrypting data for exfiltration."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe with the -a parameter for a password to use for encryption",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing rar.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe with the -a parameter for a password to use for encryption",
+                            "images": [
+                                "SecureWorks-APT29-6799.png",
+                                "SecureWorks-APT29-6800.png",
+                                "SecureWorks-APT29-6801.png"
+                            ],
+                            "note": "A Technique alert detection (medium severity) called \"Suspicious RAR Archive Command 8 Data Encrypted (T1022)\" was generated when rar.exe was used to create an encrypted zip archive."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe",
+                            "images": [],
+                            "note": "Telemetry showed powershell.exe executing rar.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe",
+                            "images": [
+                                "SecureWorks-APT29-6882.png",
+                                "SecureWorks-APT29-6883.png",
+                                "SecureWorks-APT29-6884.png",
+                                "SecureWorks-APT29-6885.png"
+                            ],
+                            "note": "A Technique detection alert (medium severity) called \"Suspicious RAR Archive Command 8 Data Compressed (T1002)\" was generated due to powershell.exe executing rar.exe with command-line arguments indicative of compression."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ZipFile.CreateFromDirectory .NET method",
+                            "images": [
+                                "SecureWorks-APT29-7152.png",
+                                "SecureWorks-APT29-7153.png"
+                            ],
+                            "note": "Telemetry showed PowerShell compressing collection via the ZipFile.CreateFromDirectory .NET method."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ZipFile.CreateFromDirectory .NET method",
+                            "images": [
+                                "SecureWorks-APT29-13787.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell compressing collection."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1113": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CopyFromScreen function from System.Drawing.dll",
+                            "images": [
+                                "SecureWorks-APT29-13747.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing CopyFromScreen from System.Drawing.dll."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CopyFromScreen function from System.Drawing.dll",
+                            "images": [
+                                "SecureWorks-APT29-12608.png"
+                            ],
+                            "note": "An MSSP detection for \"Collection - Screen Capture\"  occurred showing evidence of a PowerShell script attempting to take screenshots."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1115": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Clipboard",
+                            "images": [
+                                "SecureWorks-APT29-6667.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing Get-Clipboard."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Clipboard",
+                            "images": [
+                                "SecureWorks-APT29-12609.png"
+                            ],
+                            "note": "An MSSP detection for \"Collection - Clipboard Data\" occurred containing evidence of powershell.exe executing Get-Clipboard."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1056.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetAsyncKeyState API",
+                            "images": [
+                                "SecureWorks-APT29-6656.png"
+                            ],
+                            "note": "Telemetry showed PowerShell calling the GetAsyncKeyState API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetAsyncKeyState API",
+                            "images": [
+                                "SecureWorks-APT29-12610.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of input capture."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1114": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "outlook.exe spawning from svchost.exe or powershell.exe",
+                            "images": [
+                                "SecureWorks-APT29-7146.png",
+                                "SecureWorks-APT29-7147.png"
+                            ],
+                            "note": "Telemetry showed outlook.exe spawning from svchost.exe with command-line arguments."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "outlook.exe spawning from svchost.exe or powershell.exe",
+                            "images": [
+                                "SecureWorks-APT29-13787.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell enumerating Outlook emails via COM."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "privilege-escalation": {
+            "T1546.015": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "SecureWorks-APT29-6620.png",
+                                "SecureWorks-APT29-6622.png",
+                                "SecureWorks-APT29-6623.png"
+                            ],
+                            "note": "Telemetry showed PowerShell command to add DelegateExecute Registry Value."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "SecureWorks-APT29-12589.png",
+                                "SecureWorks-APT29-12593.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of addition of DelegateExecute subkey."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "SecureWorks-APT29-7056.png"
+                            ],
+                            "note": "Telemetry showed the addition of the DelegateExecute subkey."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "SecureWorks-APT29-12650.png",
+                                "SecureWorks-APT29-12651.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of the addition of DelegateExecute subkey."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1548.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powershell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "SecureWorks-APT29-6544.png"
+                            ],
+                            "note": "Telemetry showed control.exe creating a high integrity powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powershell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "SecureWorks-APT29-12589.png"
+                            ],
+                            "note": "A MSSP detection occurred for a new high integrity PowerShell callback spawned from control.exe using sdclt.exe"
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powrshell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "SecureWorks-APT29-7051.png",
+                                "SecureWorks-APT29-7055.png"
+                            ],
+                            "note": "Telemetry showed a new High Integrity PowerShell callback spawned from control.exe (spawned from sdclt.exe)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powrshell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "SecureWorks-APT29-12785.png",
+                                "SecureWorks-APT29-13772.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell elevated privileges by bypassing UAC."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1543.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the Javamtsup service",
+                            "images": [
+                                "SecureWorks-APT29-6681.png",
+                                "SecureWorks-APT29-6682.png",
+                                "SecureWorks-APT29-6683.png"
+                            ],
+                            "note": "Telemetry showed the creation of the javamtsup service."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the Javamtsup service",
+                            "images": [
+                                "SecureWorks-APT29-13740.png",
+                                "SecureWorks-APT29-13741.png",
+                                "SecureWorks-APT29-13742.png"
+                            ],
+                            "note": "An MSSP detection for \"Persistence - New Service\" occurred for the creation of the javamtsup service."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.001": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file hostui.lnk in the Startup folder",
+                            "images": [
+                                "SecureWorks-APT29-6672.png",
+                                "SecureWorks-APT29-6673.png",
+                                "SecureWorks-APT29-6676.png",
+                                "SecureWorks-APT29-6677.png"
+                            ],
+                            "note": "Telemetry showed the file write of hostui.lnk in the Startup folder."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file hostui.lnk in the Startup folder",
+                            "images": [
+                                "SecureWorks-APT29-13740.png",
+                                "SecureWorks-APT29-13741.png",
+                                "SecureWorks-APT29-13742.png"
+                            ],
+                            "note": "An MSSP detection for \"Persistence - Registry Run Keys / Startup Folder\" occurred for the creation of the hostui.lnk file in the Startup folder."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that the file hostui.lnk (which executes hostui.bat as a byproduct) was executed from the Startup Folder",
+                            "images": [
+                                "SecureWorks-APT29-13763.png"
+                            ],
+                            "note": "Telemetry showed hostui.bat executing from a persistent Startup Menu shortcut."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "SecureWorks-APT29-6974.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe adding Run key persistence into the Registry."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "SecureWorks-APT29-6970.png",
+                                "SecureWorks-APT29-6971.png",
+                                "SecureWorks-APT29-6972.png",
+                                "SecureWorks-APT29-6973.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"Powerduke Persistence 2\"  was generated for a persistence event associated with a run key used by PowerDuke."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "SecureWorks-APT29-13766.png",
+                                "SecureWorks-APT29-13767.png",
+                                "SecureWorks-APT29-13768.png"
+                            ],
+                            "note": "An MSSP detection for \"Persistence- Registry Run Keys / Startup Folder\" occurred for PowerShell registering a Registry Run key."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1546.003": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "SecureWorks-APT29-13776.png",
+                                "SecureWorks-APT29-13777.png"
+                            ],
+                            "note": "Telemetry showed the creation of the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "SecureWorks-APT29-13790.png",
+                                "SecureWorks-APT29-13791.png"
+                            ],
+                            "note": "A Technique detection alert (info severity) called \"WMI Filter to Consumer Binding\" was generated due to the WindowsParentalControlMigration WMI filter and consumer."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "SecureWorks-APT29-13778.png",
+                                "SecureWorks-APT29-13779.png"
+                            ],
+                            "note": "A Technique detection alert (high severity) called \"WMI Persistence for Encoded PowerShell 2\" was generated due to the WindowsParentalControlMigration WMI filter and consumer."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "SecureWorks-APT29-7105.png",
+                                "SecureWorks-APT29-7106.png",
+                                "SecureWorks-APT29-7108.png"
+                            ],
+                            "note": "A Technique detection alert (info severity) called \"WMI event consumer with base64 content\" was generated due to the WindowsParentalControlMigration WMI filter and consumer."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The WMI process (wmiprvse.exe) executing powershell.exe",
+                            "images": [
+                                "SecureWorks-APT29-17652.png",
+                                "SecureWorks-APT29-17653.png"
+                            ],
+                            "note": "Telemetry showed wmiprvse.exe executing the PowerShell stager."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The WMI process (wmiprvse.exe) executing powershell.exe",
+                            "images": [
+                                "SecureWorks-APT29-7275.png",
+                                "SecureWorks-APT29-7276.png",
+                                "SecureWorks-APT29-7277.png"
+                            ],
+                            "note": "A Technique alert detection (medium severity) was generated for WMI launching a PowerShell downloader."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1136.001": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe adding the user Toby",
+                            "images": [
+                                "SecureWorks-APT29-7308.png"
+                            ],
+                            "note": "Telemetry showed addition of the new user Toby based on Windows Event ID 4720."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe adding the user Toby",
+                            "images": [
+                                "SecureWorks-APT29-7302.png",
+                                "SecureWorks-APT29-7303.png"
+                            ],
+                            "note": "A General alert detection (low severity) called \"Suspicious WinRM Remote PowerShell Net Process\" was generated for wsmprovhost.exe spawning net.exe with the command-line arguments to add the new user Toby."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe adding the user Toby",
+                            "images": [
+                                "SecureWorks-APT29-13795.png",
+                                "SecureWorks-APT29-13796.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) was generated for an account creation."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "credential-access": {
+            "T1552.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "accesschk.exe reading files within %APPDATALOCAL%\\Google\\chrome\\user data\\default\\",
+                            "images": [
+                                "SecureWorks-APT29-13743.png"
+                            ],
+                            "note": "An MSSP detection occurred identifying the executed accesschk.exe binary as a tool for reading the Chrome database file for credentials."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe injecting into lsass.exe OR lsass.exe reading Registry keys under HKLM:\\SAM\\SAM\\Domains\\Account\\Users\\",
+                            "images": [
+                                "SecureWorks-APT29-6641.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe injecting into lsass.exe"
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe injecting into lsass.exe OR lsass.exe reading Registry keys under HKLM:\\SAM\\SAM\\Domains\\Account\\Users\\",
+                            "images": [
+                                "SecureWorks-APT29-6639.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"Credential Dumping T1003\" was generated due to powershell.exe injecting into lsass.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.001": {
+                "d": {
+                    "count": 7,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "SecureWorks-APT29-7077.png",
+                                "SecureWorks-APT29-7078.png",
+                                "SecureWorks-APT29-7079.png",
+                                "SecureWorks-APT29-7080.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"Credential Dumping\" was generated for m.exe executing with command-line arguments indicative of Mimikatz credential dumping."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "SecureWorks-APT29-7071.png",
+                                "SecureWorks-APT29-7072.png",
+                                "SecureWorks-APT29-7073.png",
+                                "SecureWorks-APT29-7074.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"Credential Dumping\" was generated for m.exe executing with command-line arguments indicative of Mimikatz credential dumping."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "SecureWorks-APT29-12656.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell executing Mimikatz to obtain login credentials."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "SecureWorks-APT29-13785.png",
+                                "SecureWorks-APT29-13786.png"
+                            ],
+                            "note": "Telemetry showed m.exe injecting a thread into lsass.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "SecureWorks-APT29-13783.png",
+                                "SecureWorks-APT29-13784.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"Mimikatz Activity - privilege\" was generated for m.exe with command-line arguments indicative of Mimikatz credential theft."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "SecureWorks-APT29-7126.png",
+                                "SecureWorks-APT29-7127.png",
+                                "SecureWorks-APT29-7128.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"Mimikatz lsadump PowerShell Script Block\" was generated due to a script block event associated with Mimikatz dumping local secrets."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "SecureWorks-APT29-7129.png",
+                                "SecureWorks-APT29-7130.png",
+                                "SecureWorks-APT29-7131.png",
+                                "SecureWorks-APT29-7132.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) called \"Mimikatz Activity - lsadump\" was generated for m.exe with command-line arguments indicative of Mimikatz credential dumping."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "exfiltration": {
+            "T1048.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell executing Copy-Item pointing to an attack-controlled WebDav network share (192.168.0.4:80)",
+                            "images": [
+                                "SecureWorks-APT29-6740.png",
+                                "SecureWorks-APT29-6741.png",
+                                "SecureWorks-APT29-6760.png"
+                            ],
+                            "note": "Telemetry showed PoweShell Copy-Item to remote a remote adversary WebDav network share (192.168.0.4)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell executing Copy-Item pointing to an attack-controlled WebDav network share (192.168.0.4:80)",
+                            "images": [
+                                "SecureWorks-APT29-13749.png"
+                            ],
+                            "note": "An MSSP detection for \"Exfiltration - Exfiltration Over Alternative Protocol\" occurred containing evidence of PoweShell Copy-Item to remote WebDav network share (192.168.0.4:80)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1567.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Copy-Item pointing to drive mapped to an attack-controlled OneDrive account",
+                            "images": [
+                                "SecureWorks-APT29-16055.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing Copy-Item to exfiltrate data to a previously mapped OneDrive account."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Copy-Item pointing to drive mapped to an attack-controlled OneDrive account",
+                            "images": [
+                                "SecureWorks-APT29-13787.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell executing Copy-Item to exfiltrate data to a previously mapped OneDrive account."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "lateral-movement": {
+            "T1021.006": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "SecureWorks-APT29-6900.png",
+                                "SecureWorks-APT29-6902.png",
+                                "SecureWorks-APT29-6904.png"
+                            ],
+                            "note": "Telemetry showed a connection to Scranton (10.0.1.4) over TCP port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "SecureWorks-APT29-6701.png",
+                                "SecureWorks-APT29-6702.png",
+                                "SecureWorks-APT29-6703.png"
+                            ],
+                            "note": "A Technique alert detection (info severity) called \"Windows Remote Management - WinRM Usage\" was generated due to a connection to remote host Scranton over port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to NewYork (10.0.0.4) over port 5985",
+                            "images": [
+                                "SecureWorks-APT29-7117.png",
+                                "SecureWorks-APT29-7119.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing the PowerShell Invoke-Command WinRM cmdlet then the subsequent connection to remote host NewYork (10.0.0.4) over port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to NewYork (10.0.0.4) over port 5985",
+                            "images": [
+                                "SecureWorks-APT29-13782.png"
+                            ],
+                            "note": "An MSSP detection for \"Execution - Windows Remote Management\" occurred containing evidence of PowerShell executing the PowerShell Invoke-Command WinRM cmdlet then the subsequent connection to remote host NewYork (10.0.0.4)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "SecureWorks-APT29-7298.png",
+                                "SecureWorks-APT29-7312.png"
+                            ],
+                            "note": "Telemetry showed PowerShell execution of Enter-PSSession and the correpsonding powershell.exe network connection to remote host Scranton (10.0.1.4) over port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "SecureWorks-APT29-12672.png"
+                            ],
+                            "note": "An MSSP detection for \"Windows Remote Management\" occurred containing evidence of PowerShell using Enter-PSSession to create WinRM session."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "SMB session to Scranton (10.0.1.4) over TCP port 445/135 OR evidence of usage of a Windows share",
+                            "images": [
+                                "SecureWorks-APT29-6756.png"
+                            ],
+                            "note": "Telemetry showed an SMB session from Nashua (10.0.1.6) to Scranton (10.0.1.4) over TCP port 135."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SMB session to Scranton (10.0.1.4) over TCP port 445/135 OR evidence of usage of a Windows share",
+                            "images": [
+                                "SecureWorks-APT29-13755.png"
+                            ],
+                            "note": "An MSSP detection for \"Lateral Movement - Windows Admin Shares\" occurred containing evidence of an SMB session from Nashua (10.0.1.6) to Scranton (10.0.1.4) over TCP port 445."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1550.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Invoke-Mimikatz with command-line arguments to create a golden ticket",
+                            "images": [
+                                "SecureWorks-APT29-17657.png"
+                            ],
+                            "note": "Telemetry showed PowerShell executing Invoke-Mimikatz to create and inject a golden ticket into the current session."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Invoke-Mimikatz with command-line arguments to create a golden ticket",
+                            "images": [
+                                "SecureWorks-APT29-7288.png",
+                                "SecureWorks-APT29-7290.png",
+                                "SecureWorks-APT29-7291.png"
+                            ],
+                            "note": "A Technique alert detection (critical severity) was generated for \"Mimikatz Creating Golden Ticket.\""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "initial-access": {
+            "T1078.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user MScott on NewYork (10.0.0.4)",
+                            "images": [
+                                "SecureWorks-APT29-7118.png",
+                                "SecureWorks-APT29-7143.png"
+                            ],
+                            "note": "Telemetry showed a successful logon on NewYork (10.0.0.4) as user MScott."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user MScott on NewYork (10.0.0.4)",
+                            "images": [
+                                "SecureWorks-APT29-13782.png"
+                            ],
+                            "note": "An MSSP detection for \"Privilege Escalation- Valid Accounts\" occurred containing evidence of PowerShell executing the PowerShell Invoke-Command WinRM cmdlet with valid credentials then logging onto the remote host NewYork (10.0.0.4)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        }
+    },
+    "filename": "secureworks_engenuity.json",
+    "capability_name": "secureworks",
+    "counts": {
+        "detect": 55,
+        "protect": 0
+    }
+}

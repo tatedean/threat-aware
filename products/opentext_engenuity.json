@@ -1,0 +1,2503 @@
+{
+    "scores": {
+        "execution": {
+            "T1204": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe spawns winword.exe when user clicks 1-list.rtf",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.1_2.png",
+                                "Carbanak-FIN7_OT_1.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe spawns winword.exe when user clicks 2-list.rtf",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.1.png",
+                                "Carbanak-FIN7_OT_11.A.1_1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1559.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe loads VBE7.DLL",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.2_1.png",
+                                "Carbanak-FIN7_OT_1.A.2_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe loads VBE7.DLL",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.2.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting (DLL)\" was generated when winword.exe loaded the VBE7.DLL."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns verclsid.exe and loads VBE7.DLL, VBEUI.DLL, and VBE7INTL.DLL",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.7.png",
+                                "Carbanak-FIN7_OT_11.A.7_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns verclsid.exe and loads VBE7.DLL, VBEUI.DLL, and VBE7INTL.DLL",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.7_2.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting (DLL)\" was generated when winword.exe loaded VBE7.DLL, VBEUI.DLL, and VBE7INTL.DLL."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.005": {
+                "d": {
+                    "count": 13,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.3_3.png",
+                                "Carbanak-FIN7_OT_1.A.3_4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.3_5.png"
+                            ],
+                            "note": "A General detection named \"Deobfuscate/Decode Files or Information (WSH Access or Runs Suspicious File)\" was generated when wscript.exe spawned unprotected.vbe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.3.png"
+                            ],
+                            "note": "A General detection named \"Spear-phishing Attachment (Suspicious Process from Office)\" was generated when wscript.exe spawned unprotected.vbe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.3_1.png"
+                            ],
+                            "note": "A Tactic detection named \"Dynamic Data Exchange\" was generated when wscript.exe spawned unprotected.vbe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes unprotected.vbe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting\" was generated when wscript.exe spawned unprotected.vbe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.7.png",
+                                "Carbanak-FIN7_OT_1.A.7_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.7_3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when wscript.exe executed starter.vbs."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe executes starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.7_2.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting\" was generated when wscript.exe executed starter.vbs."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns Java-Update.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_8.A.1.png",
+                                "Carbanak-FIN7_OT_8.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns Java-Update.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_8.A.1_3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when Java-Update.exe spawned from wscript.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns Java-Update.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_8.A.1_2.png",
+                                "Carbanak-FIN7_OT_8.A.1_5.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting\" was generated when Java-Update.exe spawned from wscript.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe executes an embedded VBScript payload",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe executes an embedded VBScript payload",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.4_1.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting (DLL)\" was generated when mshta.exe loaded a VBS related DLL inorder to execute an embedded VBScript payload."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.003": {
+                "d": {
+                    "count": 51,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.8.png",
+                                "Carbanak-FIN7_OT_1.A.8_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.8_5.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.8_3.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.8_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Office Parent)\" was generated when wscript.exe spawned cmd.exe from a process tree that included winword.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.8_4.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.2_3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.2_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.2_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.1_1.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.1_3.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when wscript.exe spawns cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.1_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.2.png",
+                                "Carbanak-FIN7_OT_3.B.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.2_2.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.2_4.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.2_3.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when wscript.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns smrs.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns smrs.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.6_3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when cmd.exe executed smrs.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns smrs.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.6_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when cmd.exe executed smrs.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns smrs.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.6_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when cmd.exe executed smrs.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.6_3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.6_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.6_1.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns tiny.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.C.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.A.2_1.png",
+                                "Carbanak-FIN7_OT_7.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.A.2_4.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when tiny.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.A.2_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when tiny.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.A.2_3.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when tiny.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.A.2.png",
+                                "Carbanak-FIN7_OT_13.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.A.2_2.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.A.2_4.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.A.2_3.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.2.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.2_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.2_3.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.1.png",
+                                "Carbanak-FIN7_OT_14.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.1_3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.1_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.1_4.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when Adb156.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.3_3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.3_1.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when powershell.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.3_3.png",
+                                "Carbanak-FIN7_OT_17.A.3_4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.3.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land Binaries (LOLBAS)\" was generated when svchost.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.3_1.png"
+                            ],
+                            "note": "A Tactic detection named \"Scripting (Process)\" was generated when svchost.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.3_5.png",
+                                "Carbanak-FIN7_OT_17.A.3_6.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (svchost.exe spawns cmd.exe)\" was generated when svchost.exe spawned cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe spawns cmd.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Command-Line Interface (Process)\" was generated when svchost.exe spawned cmd.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.007": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns wscript.exe to execute TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.9.png",
+                                "Carbanak-FIN7_OT_1.A.9_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns wscript.exe to execute TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.9_2.png"
+                            ],
+                            "note": "A General detection named \"Living Off The Land (LOLBAS)\" was generated when cmd.exe spawned wscript.exe to execute TransBaseOdbcDriver.js."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns wscript.exe to execute TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.9_3.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting (Process)\" was generated when cmd.exe spawned wscript.exe to execute TransBaseOdbcDriver.js."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe loads scrobj.dll and executes sql-rat.js using Jscript",
+                            "images": [
+                                "Carbanak-FIN7_OT_12.A.2.png",
+                                "Carbanak-FIN7_OT_12.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe loads scrobj.dll and executes sql-rat.js using Jscript",
+                            "images": [
+                                "Carbanak-FIN7_OT_12.A.2_2.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting (DLL)\" was generated when Adb156.exe loaded scrobj.dll in order to execute sql-rat.js using Jscript."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 17,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.3_1.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Process)\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.3.png",
+                                "Carbanak-FIN7_OT_3.B.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Process)\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes rad353F7.ps1",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes rad353F7.ps1",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.3_1.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Process)\" was generated when powershell.exe executed rad353F7.ps1."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe loads system.management.automation.dll",
+                            "images": [
+                                "Carbanak-FIN7_OT_6.A.1_1.png",
+                                "Carbanak-FIN7_OT_6.A.1_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe loads system.management.automation.dll",
+                            "images": [
+                                "Carbanak-FIN7_OT_6.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Hosted)\" was generated when tiny.exe loaded system.management.automation.dll."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.3.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Process)\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.2.png",
+                                "Carbanak-FIN7_OT_14.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.2_2.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Process)\" was generated when cmd.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes the decoded payload using Invoke-Expression (IEX)",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.4.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Process)\" was generated when powershell.exe spawned powershell.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns powershell.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.B.1_1.png"
+                            ],
+                            "note": "A Technique detection named \"PowerShell (Process)\" was generated when powershell.exe spawned powershell.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1106": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes the shellcode from the Registry by calling the CreateThread() API",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.6.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns from a service executable in C:\\Windows\\",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.C.3.png",
+                                "Carbanak-FIN7_OT_5.C.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns from a service executable in C:\\Windows\\",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.C.3_2.png",
+                                "Carbanak-FIN7_OT_5.C.3_4.png"
+                            ],
+                            "note": "A General detection named \"New Service\" was generated when a new service was created to execute cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns from a service executable in C:\\Windows\\",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.C.3_3.png"
+                            ],
+                            "note": "A General detection named \"New Service (event log)\" was generated when a new service was created to execute cmd.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Windows service started PAExec-{PID}-HOTELMANAGER.exe, which executes hollow.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.6_1.png",
+                                "Carbanak-FIN7_OT_16.A.6_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Windows service started PAExec-{PID}-HOTELMANAGER.exe, which executes hollow.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.6_3.png"
+                            ],
+                            "note": "A General detection named \"New Service\" was generated when Windows service started PAExec-{PID}-HOTELMANAGER.exe, which executes sharphollow.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Windows service started PAExec-{PID}-HOTELMANAGER.exe, which executes hollow.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.6.png"
+                            ],
+                            "note": "A General detection named \"New Service (event log)\" was generated when Windows service started PAExec-{PID}-HOTELMANAGER.exe, which executes sharphollow.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.005": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns mshta.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns mshta.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.3_1.png"
+                            ],
+                            "note": "A General detection named \"Spear-phishing Attachment (Suspicious Process from Office)\" was generated when winword.exe spawned mshta.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "winword.exe spawns mshta.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Scripting (via Mshta)\" was generated when winword.exe spawned mshta.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe loads taskschd.dll and creates a scheduled task to execute in 5 minutes",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.8_1.png"
+                            ],
+                            "note": "A Technique detection named \"Scheduled Task (Created) (File)\" was generated when mshta.exe loads taskschd.dll and creates a scheduled task to execute in 5 minutes."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe loads taskschd.dll and creates a scheduled task to execute in 5 minutes",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.8.png"
+                            ],
+                            "note": "A Technique detection named \"Scheduled Task (DLL)\" was generated when mshta.exe loaded taskschd.dll."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe loads taskschd.dll and creates a scheduled task to execute in 5 minutes",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.8_2.png"
+                            ],
+                            "note": "A Technique detection named \"Scheduled Task (Created)\" was generated when mshta.exe loaded taskschd.dll and created a scheduled task to execute in 5 minutes."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe (-s Schedule) spawns Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_12.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe (-s Schedule) spawns Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_12.A.1.png"
+                            ],
+                            "note": "A Technique detection named \"Scheduled Task (Started)\" was generated when svchost.exe (-s Schedule) spawned Adb156.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "defense-evasion": {
+            "T1140": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe decodes content and creates starter.vbs",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe decodes content and creates TransBaseOdbcDriver.js",
+                            "images": [
+                                "Carbanak-FIN7_OT_1.A.6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe decrypts, decompresses, and base64 decodes the Registry value into plaintext shellcode",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.5.png",
+                                "Carbanak-FIN7_OT_3.B.5_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe assembles text embedded within 2-list.rtf into a JS payload",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.5.png",
+                                "Carbanak-FIN7_OT_11.A.5_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe decodes an embedded DLL payload",
+                            "images": [
+                                "Carbanak-FIN7_OT_14.A.3.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1112": {
+                "d": {
+                    "count": 12,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns reg.exe to add a value under HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.2.png",
+                                "Carbanak-FIN7_OT_3.A.2_1.png",
+                                "Carbanak-FIN7_OT_3.A.2_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns reg.exe to add a value under HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.2_4.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry (Startup and RunOnce)\" was generated when cmd.exe spawned reg.exe to add a value to the registry key."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe spawns reg.exe to add a value under HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.2_3.png",
+                                "Carbanak-FIN7_OT_3.A.2_5.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry (reg.exe)\" was generated when cmd.exe spawned reg.exe to add a value to the registry key."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe adds a value under HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command via New-Item and New-ItemProperty",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.4_1.png",
+                                "Carbanak-FIN7_OT_4.B.4_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe adds a value under HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command via New-Item and New-ItemProperty",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.4.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry\" was generated when powershell.exe added a value to the Registry via New-Item and New-ItemProperty."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Addition of subkeys in HKLM\\Software\\TightVNC\\Server",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.5_1.png",
+                                "Carbanak-FIN7_OT_10.A.5_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Addition of subkeys in HKLM\\Software\\TightVNC\\Server",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.5.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry\" was generated when subkeys added to HKLM\\Software\\TightVNC\\Server via vnc-settings.reg."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Deletion of the Java-Update subkey in HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.6.png",
+                                "Carbanak-FIN7_OT_10.A.6_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Deletion of the Java-Update subkey in HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.6_3.png"
+                            ],
+                            "note": "A General detection named \"Registry Run Keys/Startup Folder\" was generated when Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Deletion of the Java-Update subkey in HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.6_4.png"
+                            ],
+                            "note": "A General detection named \"Modify Registry\" was generated when Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Deletion of the Java-Update subkey in HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.6_2.png",
+                                "Carbanak-FIN7_OT_10.A.6_7.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry (reg.exe)\" was generated when reg.exe was spawned to delete the Java-Update subkey in HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Deletion of the Java-Update subkey in HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.6_5.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry (Startup and Runonce)\" was generated when Java-Update subkey at HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run was deleted."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Value added to Registry is base64 encoded",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.A.3.png",
+                                "Carbanak-FIN7_OT_3.A.3_1.png",
+                                "Carbanak-FIN7_OT_3.A.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes base64 encoded commands",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.B.2.png",
+                                "Carbanak-FIN7_OT_19.B.2_1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to bankdc (10.0.0.4)",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.A.4.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055": {
+                "d": {
+                    "count": 7,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update.exe injects into explorer.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.A.3.png",
+                                "Carbanak-FIN7_OT_9.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update.exe injects into explorer.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.A.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Process Injection (Remote Thread)\" was generated when Java-Update.exe injected into explorer.exe with CreateRemoteThread."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe injects into explorer.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_OT_18.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe injects into mstsc.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_OT_18.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe injects into mstsc.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_OT_18.A.3_1.png",
+                                "Carbanak-FIN7_OT_18.A.3_3.png"
+                            ],
+                            "note": "A Technique detection named \"Process Injection (Remote Thread)\" was generated when explorer.exe injects into mstsc.exe with CreateRemoteThread."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "AccountingIQ.exe injects into SyncHost.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "AccountingIQ.exe injects into SyncHost.exe with CreateRemoteThread",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.A.2_1.png"
+                            ],
+                            "note": "A Technique detection named \"Process Injection (Remote Thread)\" was generated when AccountingIQ.exe injected into SyncHost.exe with CreateRemoteThread."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.004": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe deletes files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.B.3.png",
+                                "Carbanak-FIN7_OT_9.B.3_1.png",
+                                "Carbanak-FIN7_OT_9.B.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe deletes files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.B.3_3.png"
+                            ],
+                            "note": "A Technique detection named \"File Deletion\" was generated when powershell.exe deleted files from C:\\Users\\jsmith\\AppData\\Local\\Temp\\."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1562.004": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "netsh adds Service Host rule for TCP port 5900",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.3_1.png",
+                                "Carbanak-FIN7_OT_10.A.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "netsh adds Service Host rule for TCP port 5900",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.3.png"
+                            ],
+                            "note": "A Technique detection named \"Disabling Security Tools (Netsh Running from CMD or PowerShell)\" was generated when netsh.exe added 'Service Host' rule to allow TCP port 5900 inbound."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe makes a copy of the legitimate wscript.exe as Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.6.png",
+                                "Carbanak-FIN7_OT_11.A.6_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "mshta.exe makes a copy of the legitimate wscript.exe as Adb156.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_11.A.6_2.png",
+                                "Carbanak-FIN7_OT_11.A.6_3.png"
+                            ],
+                            "note": "A Technique detection named \"Masquerading (WSH)\" was generated when Adb156.exe was executed and identified as a copy of the legitimate wscript.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055.012": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "hollow.exe spawns svchost.exe and unmaps its memory image via: NtUnmapViewOfSection",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.7.png",
+                                "Carbanak-FIN7_OT_16.A.7_1.png"
+                            ],
+                            "note": "A General detection named \"Process Hollowing (svchost.exe)\" was generated when sharphollow.exe spawns svchost.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "srrstr.dll is not the legitimate Windows System Protection Configuration Library",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.2.png",
+                                "Carbanak-FIN7_OT_17.A.2_1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "command-and-control": {
+            "T1105": {
+                "d": {
+                    "count": 30,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe downloads screenshot__.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe downloads LanCradDriver.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe downloads LanCradDriver.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.1_1.png",
+                                "Carbanak-FIN7_OT_3.B.1_2.png"
+                            ],
+                            "note": "A Technique detection named \"Remote File Copy (WSH Created Suspicious File)\" was generated when wscript.exe downloaded LanCradDriver.ps1 from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads rad353F7.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads smrs.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads pscp.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads psexec.py from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads psexec.py from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.2_1.png"
+                            ],
+                            "note": "A General detection named \"Scripting (Script File Modified)\" was generated when powershell.exe downloaded psexec.py from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads runtime from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads plink.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads tiny.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.A.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe downloads plink.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "scp.exe downloads Java-Update.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.1.png",
+                                "Carbanak-FIN7_OT_7.C.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "scp.exe downloads Java-Update.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.1_2.png"
+                            ],
+                            "note": "A Technique detection named \"Remote File Copy (SCP Usage)\" was generated when scp.exe downloaded Java-Update.exe from 192.168.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe downloads Java-Update.vbs from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update.exe downloads DefenderUpgradeExec.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.A.1.png",
+                                "Carbanak-FIN7_OT_9.A.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe downloads infosMin48.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe downloads tightvnc-2.8.27-gpl-setup-64bit.msi from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe downloads vnc-settings.reg from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe downloads stager.ps1 from 192.168.0.6",
+                            "images": [
+                                "Carbanak-FIN7_OT_12.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe downloads takeScreenshot.ps1 from 192.168.0.6 via MSSQL transactions",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads samcat.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads uac-samcats.ps1 from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads paexec.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads hollow.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "svchost.exe downloads srrstr.dll from 192.168.0.4 (port 443)",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads dll329.dll from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.B.3.png",
+                                "Carbanak-FIN7_OT_19.B.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe downloads sdbE376.tmp from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.B.4.png",
+                                "Carbanak-FIN7_OT_19.B.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "rundll32.exe downloads debug.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "rundll32.exe downloads 7za.exe from 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.B.3.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1095": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe transmits data to 192.168.0.4 over TCP",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.7.png",
+                                "Carbanak-FIN7_OT_3.B.7_1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1219": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tvnserver.exe accepts a connection from 192.168.0.4 over TCP port 5900",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.B.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tvnserver.exe accepts a connection from 192.168.0.4 over TCP port 5900",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.B.1_1.png"
+                            ],
+                            "note": "A Technique detection named \"Remote Access Tools (TightVNC Server)\" was generated when tvnserver.exe began listening for connections ."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "collection": {
+            "T1113": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes CopyFromScreen()",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.4.png",
+                                "Carbanak-FIN7_OT_2.B.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes CopyFromScreen()",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.4_4.png",
+                                "Carbanak-FIN7_OT_2.B.4_5.png"
+                            ],
+                            "note": "A Technique detection named \"Screen Capture (PowerShell CopyFromScreen)\" was generated when powershell.exe executed CopyFromScreen()."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes CopyFromScreen()",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes CopyFromScreen()",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.4.png"
+                            ],
+                            "note": "A Technique detection named \"Screen Catpure (PowerShell CopyFromScreen)\" was generated when powershell.exe executed CopyFromScreen()."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1005": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe reads C:\\Users\\jsmith\\AppData\\Local\\Temp\\Klog2.txt over to 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.A.5_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "explorer.exe reads C:\\Users\\jsmith\\AppData\\Local\\Temp\\Klog2.txt over to 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.A.5_2.png"
+                            ],
+                            "note": "A Technique detection named \"Data from Local System (File Reads)\" was generated when explorer.exe read Klog2.txt."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "exfiltration": {
+            "T1041": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "wscript.exe reads and uploads screenshot__.png to 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_2.B.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Adb156.exe reads and uploads image.png to 192.168.0.6 via MSSQL transactions",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.B.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "rundll32.exe reads and uploads log.7z to 192.168.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.B.5.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1560.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "7za.exe creates C:\\Users\\Public\\log.7z",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.B.4.png",
+                                "Carbanak-FIN7_OT_20.B.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "7za.exe creates C:\\Users\\Public\\log.7z",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.B.4_3.png"
+                            ],
+                            "note": "A General detection named \"Data Staged\" was generated when 7za.exe created C:\\Users\\Public\\log.7z."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "7za.exe creates C:\\Users\\Public\\log.7z",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.B.4_2.png"
+                            ],
+                            "note": "A Technique detection named \"Data Compressed (File Changes)\" was generated when 7za.exe created C:\\Users\\Public\\log.7z."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "7za.exe creates C:\\Users\\Public\\log.7z",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.B.4_4.png"
+                            ],
+                            "note": "A Technique detection named \"Data Compressed (Process)\" was generated when 7za.exe created C:\\Users\\Public\\log.7z."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1012": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe reads HKCU\\Software\\InternetExplorer\\AppDataLow\\Software\\Microsoft\\InternetExplorer via Get-ItemProperty",
+                            "images": [
+                                "Carbanak-FIN7_OT_3.B.4.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1083": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe calls the FindFirstFileW() and FindNextFileW() APIs",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.A.1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe calls the FindFirstFileW() and FindNextFileW() APIs",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.A.1_1.png"
+                            ],
+                            "note": "A General detection named \"Data from Local System (File reads)\" was generated when powershell.exe read various files via the FindFirstFileW() and FindNextFileW() APIs."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "dir lists the contents of C:\\Users\\Public",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.2.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1018": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes Get-NetComputer to query LDAP (port 389) via a network connection to 10.0.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes Get-NetComputer to query LDAP (port 389) via a network connection to 10.0.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.A.2.png",
+                                "Carbanak-FIN7_OT_4.A.2_2.png"
+                            ],
+                            "note": "A Technique detection named \"Remote System Discovery (PowerShell)\" was generated when powershell.exe executed Get-NetComputer to query LDAP (port 389) via a network connection to 10.0.0.4."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "PowerShell executes Get-ADComputer",
+                            "images": [
+                                "Carbanak-FIN7_OT_6.A.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "PowerShell executes Get-ADComputer",
+                            "images": [
+                                "Carbanak-FIN7_OT_6.A.2.png",
+                                "Carbanak-FIN7_OT_6.A.2_2.png"
+                            ],
+                            "note": "A Technique detection named \"Remote System Discovery (PowerShell)\" was generated when PowerShell executed Get-ADComputer."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe spawns nslookup.exe, which queries the DC (10.0.1.4) over DNS (port 53)",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.8.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "PowerShell executes Get-NetUser",
+                            "images": [
+                                "Carbanak-FIN7_OT_6.A.3_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "PowerShell executes Get-NetUser",
+                            "images": [
+                                "Carbanak-FIN7_OT_6.A.3.png",
+                                "Carbanak-FIN7_OT_6.A.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Account Discovery (PowerShell)\" was generated when PowerShell executed Get-NetUser."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1033": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes qwinsta /server:cfo",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.B.1.png",
+                                "Carbanak-FIN7_OT_7.B.1_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes qwinsta /server:cfo",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.B.1_2.png",
+                                "Carbanak-FIN7_OT_7.B.1_4.png"
+                            ],
+                            "note": "A Technique detection named \"System Owner/User Discovery\" was generated when powershell.exe executed qwinsta /server:cfo."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1135": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe executes net view",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.A.3_1.png",
+                                "Carbanak-FIN7_OT_13.A.3_2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe executes net view",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.A.3_3.png",
+                                "Carbanak-FIN7_OT_13.A.3_4.png"
+                            ],
+                            "note": "A Technique detection named \"Remote System Discovery\" was generated when cmd.exe executed net view."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "cmd.exe executes net view",
+                            "images": [
+                                "Carbanak-FIN7_OT_13.A.3.png",
+                                "Carbanak-FIN7_OT_13.A.3_5.png"
+                            ],
+                            "note": "A Technique detection named \"Network Share Discovery\" was generated when cmd.exe executed net view."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1057": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe calls the CreateToolhelp32Snapshot() API",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.1_1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "credential-access": {
+            "T1110.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes Find-LocalAdminAccess, which attempts a DCOM/RPC (port 135) connection to multiple hosts to check for access",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.A.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe executes Find-LocalAdminAccess, which attempts a DCOM/RPC (port 135) connection to multiple hosts to check for access",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.A.3_1.png",
+                                "Carbanak-FIN7_OT_4.A.3_2.png"
+                            ],
+                            "note": "A Technique detection named \"Brute Force (PowerShell)\" was generated when powershell.exe executed Find-LocalAdminAccess, which connected to multiple hosts over port 135 to check for access."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "smrs.exe opens and reads lsass.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.7_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "smrs.exe opens and reads lsass.exe",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.B.7.png",
+                                "Carbanak-FIN7_OT_4.B.7_2.png"
+                            ],
+                            "note": "A Technique detection named \"Credential Dumping (Lsass memory read)\" was generated when smrs.exe opened and read lsass.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "samcat.exe opens and reads the SAM via LSASS",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.6.png"
+                            ],
+                            "note": "A General detection named \"Process Injection (Other)\" was generated when samcat.exe injected into lsass.exe."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "samcat.exe opens and reads the SAM via LSASS",
+                            "images": [
+                                "Carbanak-FIN7_OT_15.A.6_1.png",
+                                "Carbanak-FIN7_OT_15.A.6_2.png"
+                            ],
+                            "note": "A Technique detection named \"Credential Dumping (SAM registry opens)\" was generated when samcat.exe opened and read the SAM."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1555.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "infosMin48.exe calls the VaultEnumerateItems API from vaultcli.dll",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.B.2_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "infosMin48.exe calls the VaultEnumerateItems API from vaultcli.dll",
+                            "images": [
+                                "Carbanak-FIN7_OT_9.B.2.png"
+                            ],
+                            "note": "A Tactic detection named \"Credential Access (DLL)\" was generated when infosMin48.exe loaded a DLL associated with credential access."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1078.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "powershell.exe successfully logs in to host 10.0.0.4 or 10.0.0.5 as user kmitnick",
+                            "images": [
+                                "Carbanak-FIN7_OT_4.A.4.png",
+                                "Carbanak-FIN7_OT_4.A.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to cfo (10.0.0.5)",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.B.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to itadmin (10.0.1.6)",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.4.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "User kmitnick logs on to accounting (10.0.1.7)",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.A.1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.001": {
+                "d": {
+                    "count": 8,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update subkey is added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.4.png",
+                                "Carbanak-FIN7_OT_7.C.4_1.png",
+                                "Carbanak-FIN7_OT_7.C.4_4.png",
+                                "Carbanak-FIN7_OT_7.C.4_6.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update subkey is added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.4_5.png"
+                            ],
+                            "note": "A General detection named \"Modify Registry\" was generated when the Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update subkey is added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.4_3.png"
+                            ],
+                            "note": "A General detection named \"Modify Registry (reg.exe)\" was generated when reg.exe was executed to add the Java-Update subkey to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update subkey is added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.4_2.png"
+                            ],
+                            "note": "A Technique detection named \"Registry Run Keys/Startup Folder\" was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "Java-Update subkey is added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.C.4_7.png"
+                            ],
+                            "note": "A Technique detection named \"Modify Registry (Startup and RunOnce)\" was generated when Java-Update subkey was added to HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "msiexec.exe adds the tvncontrol subkey in HKLM\\Software\\Microsoft\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.4_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "msiexec.exe adds the tvncontrol subkey in HKLM\\Software\\Microsoft\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.4_2.png"
+                            ],
+                            "note": "A General detection named \"Modify Registry\" was generated when tvncontrol subkey was added to HKLM\\Software\\Microsoft\\CurrentVersion\\Run."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "msiexec.exe adds the tvncontrol subkey in HKLM\\Software\\Microsoft\\CurrentVersion\\Run",
+                            "images": [
+                                "Carbanak-FIN7_OT_10.A.4.png"
+                            ],
+                            "note": "A Technique detection named \"Registry Run Keys/Startup Folder\" was generated when tvncontrol subkey was added to HKLM\\Software\\Microsoft\\CurrentVersion\\Run."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1546.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "sdbinst.exe installs sdbE376.tmp shim",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.B.5_1.png",
+                                "Carbanak-FIN7_OT_19.B.5_2.png",
+                                "Carbanak-FIN7_OT_19.B.5_3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "sdbinst.exe installs sdbE376.tmp shim",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.B.5.png",
+                                "Carbanak-FIN7_OT_19.B.5_4.png"
+                            ],
+                            "note": "A Technique detection named \"Application Shimming (Command)\" was generated when sdbinst.exe installed the sdbE376.tmp shim."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "AccountingIQ.exe queries HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\AppCompatFlags\\InstalledSDB\\ and loads dll329.dll",
+                            "images": [
+                                "Carbanak-FIN7_OT_20.A.1.png",
+                                "Carbanak-FIN7_OT_20.A.1_2.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "lateral-movement": {
+            "T1550.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "psexec.py creates a logon to 10.0.0.4 as user kmitnick",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.C.1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "psexec.py connects to SMB shares on 10.0.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.C.2.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "SMB session from 10.0.1.5 to 10.0.1.6 over TCP port 135 or 445 with admin shares accessed",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.5.png",
+                                "Carbanak-FIN7_OT_16.A.5_1.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "SMB session from 10.0.1.5 to 10.0.1.6 over TCP port 135 or 445 with admin shares accessed",
+                            "images": [
+                                "Carbanak-FIN7_OT_16.A.5_2.png"
+                            ],
+                            "note": "A Tactic detection named \"Remote File Copy (UNC File Created)\" was generated when a file was created in ADMIN$ over a UNC path from 10.0.1.5 to 10.0.1.6."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1570": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "tiny.exe is created on 10.0.0.4",
+                            "images": [
+                                "Carbanak-FIN7_OT_5.C.4.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from the localhost over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.A.5.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.0.4 to 10.0.0.5 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.B.3.png"
+                            ],
+                            "note": ""
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.0.4 to 10.0.0.5 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_OT_7.B.3_1.png"
+                            ],
+                            "note": "A Technique detection named \"Remote Desktop Protocol (Process)\" was generated when an RDP session was created from bankdc (10.0.0.4) to cfo (10.0.0.5) over port 3389."
+                        },
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "RDP session from 10.0.1.6 to 10.0.1.7 over TCP port 3389",
+                            "images": [
+                                "Carbanak-FIN7_OT_19.A.2.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "privilege-escalation": {
+            "T1574.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Carbanak+FIN7",
+                            "criteria": "SystemPropertiesAdvanced.exe executes code in the illegitimate srrstr.dll",
+                            "images": [
+                                "Carbanak-FIN7_OT_17.A.4.png",
+                                "Carbanak-FIN7_OT_17.A.4_1.png"
+                            ],
+                            "note": ""
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        }
+    },
+    "filename": "opentext_engenuity.json",
+    "capability_name": "opentext",
+    "counts": {
+        "detect": 44,
+        "protect": 0
+    }
+}

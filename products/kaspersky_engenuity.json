@@ -1,0 +1,1763 @@
+{
+    "scores": {
+        "execution": {
+            "T1204.002": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process spawning from explorer.exe",
+                            "images": [
+                                "Kaspersky-APT29-2623.png"
+                            ],
+                            "note": "Telemetry showed explorer.exe executing rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process spawning from explorer.exe",
+                            "images": [
+                                "Kaspersky-APT29-2623.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called \"User Execution\" was generated due to execution of rcs.3aka3.doc file by explorer.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process spawning from explorer.exe",
+                            "images": [
+                                "Kaspersky-APT29-17985.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of \"User Execution\" due to execution of rcs.3aka3.doc by explorer.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from explorer.exe",
+                            "images": [
+                                "Kaspersky-APT29-13802.png"
+                            ],
+                            "note": "Telemetry showed explorer.exe spawning powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from explorer.exe",
+                            "images": [
+                                "Kaspersky-APT29-3118.png"
+                            ],
+                            "note": "A Technique alert detection (yellow tag) called \"User Execution\" was generated due to the execution of powershell.exe from explorer.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe spawning from the rcs.3aka3.doc process",
+                            "images": [
+                                "Kaspersky-APT29-2636.png"
+                            ],
+                            "note": "Telemetry showed rcs.3aka3.doc spawning from cmd.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe spawning from the rcs.3aka3.doc process",
+                            "images": [
+                                "Kaspersky-APT29-2636.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called  \"Command Line Interface\" was generated due to cmd.exe spawning from rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "cmd.exe spawning from the rcs.3aka3.doc process",
+                            "images": [
+                                "Kaspersky-APT29-17987.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of rcs.3aka3.doc spawning cmd.exe"
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 16,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "Kaspersky-APT29-2637.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe spawning from cmd.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "Kaspersky-APT29-2637.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called PowerShell was generated due to the execution of powershell.exe by cmd.exe. The alert was correlated to a parent alert for command line execution."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from cmd.exe",
+                            "images": [
+                                "Kaspersky-APT29-11767.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of cmd.exe spawning powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-2735.png"
+                            ],
+                            "note": "Telemetry showed a new powershell.exe spawning from powershell.exe. The detection  was correlated to a parent alert for suspicious PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-13797.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called \"PowerShell\" was generated due to powershell.exe spawning a new powershell.exe. The detection  was correlated to a parent alert for suspicious PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-11777.png",
+                                "Kaspersky-APT29-11778.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of powershell.exe spawning from powershell.exe and indicated the new PowerShell process was a meterpreter shell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from python.exe",
+                            "images": [
+                                "Kaspersky-APT29-2926.png"
+                            ],
+                            "note": "Telemetry showed python.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from python.exe",
+                            "images": [
+                                "Kaspersky-APT29-2926.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called \"T1086_PowerShell\" was generated due to python.exe spawning powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from python.exe",
+                            "images": [
+                                "Kaspersky-APT29-18007.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of python spawning powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "Kaspersky-APT29-13802.png",
+                                "Kaspersky-APT29-13810.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe spawned from a PowerShell stager."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "Kaspersky-APT29-3155.png"
+                            ],
+                            "note": "A General alert detection (high severity) called \"PDM:Exploit.Win32.Generic\" was generated for a potential threat."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "Kaspersky-APT29-13802.png",
+                                "Kaspersky-APT29-13810.png"
+                            ],
+                            "note": "A Technique alert detection (yellow indicator) for \"PowerShell\" was generated for powershell.exe spawned from a PowerShell stager."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe spawning from from the schemas ADS (powershell.exe)",
+                            "images": [
+                                "Kaspersky-APT29-18014.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell executing from schemas ADS."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SYSTEM-level powershell.exe spawned from the powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-3363.png"
+                            ],
+                            "note": "Telemetry showed execution of SYSTEM level PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SYSTEM-level powershell.exe spawned from the powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-3363.png"
+                            ],
+                            "note": "A Technique alert detection (red; high severity) called PowerShell was generated due to powershell executing a SYSTEM-level powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SYSTEM-level powershell.exe spawned from the powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-18022.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell spawned from a WMI event subscription."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe spawned by PSEXESVC.exe",
+                            "images": [
+                                "Kaspersky-APT29-13410.png"
+                            ],
+                            "note": "Telemetry showed PSEXESVC.exe with command-line arguments to execute python.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe spawned by PSEXESVC.exe",
+                            "images": [
+                                "Kaspersky-APT29-11796.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of the execution of psexecsvc.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "javamtsup.exe spawning from services.exe",
+                            "images": [
+                                "Kaspersky-APT29-2982.png"
+                            ],
+                            "note": "Telemetry showed javamtsup.exe with parent process services.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "javamtsup.exe spawning from services.exe",
+                            "images": [
+                                "Kaspersky-APT29-12573.png",
+                                "Kaspersky-APT29-12574.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of javamtsup.exe spawning from services.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1047": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "WMI Process (WmiPrvSE.exe) executing powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-3210.png"
+                            ],
+                            "note": "Telemetry showed WmiPrvSE.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "WMI Process (WmiPrvSE.exe) executing powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-3208.png",
+                                "Kaspersky-APT29-3210.png"
+                            ],
+                            "note": "A Technique alert detection (red; high severity) called \"commandline_wmi_event_consumer_triggered\"  was generated due to WmiPrvSE.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "WMI Process (WmiPrvSE.exe) executing powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-12398.png",
+                                "Kaspersky-APT29-12399.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of WmiPrvSE.exe executing powershell.exe to execute the Win32_AuditCode WMI class."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "Kaspersky-APT29-3355.png"
+                            ],
+                            "note": "Telemetry showed rundll32.exe executing kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "Kaspersky-APT29-3355.png"
+                            ],
+                            "note": "A Technique alert detection (yellow, medium severity) called Rundll32 Execution was generated due to rundll32.exe executing kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "rundll32.exe executing kxwn.lock",
+                            "images": [
+                                "Kaspersky-APT29-12421.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of rundll32.exe executing kxwn.lock."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "defense-evasion": {
+            "T1036.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "Kaspersky-APT29-2631.png"
+                            ],
+                            "note": "Telemetry showed the original filename cod.3aka.scr as well as the RTLO ASCII characters."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "Kaspersky-APT29-2631.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called Masquerading was generated due to altered file name by the RTLO character."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence of the right-to-left override character (U+202E) in the rcs.3aka.doc process OR the original filename (cod.3aka.scr)",
+                            "images": [
+                                "Kaspersky-APT29-17986.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of \"Defense Evasion\" contained evidence of RTLO character in rcs.3aka.doc."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "Kaspersky-APT29-2693.png"
+                            ],
+                            "note": "Telemetry showed PowerShell extracting and executing the code embedded within monkey.png."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "Kaspersky-APT29-2693.png",
+                                "Kaspersky-APT29-2694.png"
+                            ],
+                            "note": "A Technique alert detection (red; high severity) for suspicious command-line obfuscation was generated for PowerShell extracting and executing the code embedded within monkey.png. The detection was correlated to a parent alert for suspicious PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that a PowerShell payload was within monkey.png",
+                            "images": [
+                                "Kaspersky-APT29-17989.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of a PowerShell script in monkey.png."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1140": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Expand-Archive",
+                            "images": [
+                                "Kaspersky-APT29-2734.png",
+                                "Kaspersky-APT29-2735.png"
+                            ],
+                            "note": "Telemetry showed PowerShell writing the files that were decompressed from the ZIP."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Expand-Archive",
+                            "images": [
+                                "Kaspersky-APT29-17993.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of powershell.exe decompressing SysinternalsSuite.zip via Expand-Archive."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "Kaspersky-APT29-3145.png"
+                            ],
+                            "note": "Telemetry showed the certutil.exe process and corresponding file write of the kxwn.lock payload."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "Kaspersky-APT29-3145.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called \"suspicious_certutil_usage_decoding\" was generated due to certutil.exe decoding kxwn.lock."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "certutil.exe decoding kxwn.lock",
+                            "images": [
+                                "Kaspersky-APT29-18012.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of certutil.exe decoding the kxwn.lock payload."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.004": {
+                "d": {
+                    "count": 9,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rcs.3aka3.doc",
+                            "images": [
+                                "Kaspersky-APT29-2752.png"
+                            ],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rcs.3aka3.doc",
+                            "images": [
+                                "Kaspersky-APT29-17994.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of sdelete64.exe deleting rcs.3aka3.doc."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file draft.zip",
+                            "images": [
+                                "Kaspersky-APT29-2755.png"
+                            ],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file draft.zip",
+                            "images": [
+                                "Kaspersky-APT29-17994.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of sdelete64.exe deleting Draft.Zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file SysinternalsSuite.zip",
+                            "images": [
+                                "Kaspersky-APT29-2758.png"
+                            ],
+                            "note": "Telemetry showed sdelete.exe running with command-line arguments to delete the file."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file SysinternalsSuite.zip",
+                            "images": [
+                                "Kaspersky-APT29-17994.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of sdelete64.exe deleting SysinternalsSuite.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file rar.exe",
+                            "images": [
+                                "Kaspersky-APT29-2949.png"
+                            ],
+                            "note": "Telemetry showed sdelete64.exe with command-line arguments to delete rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\Desktop\\working.zip",
+                            "images": [
+                                "Kaspersky-APT29-2952.png"
+                            ],
+                            "note": "Telemetry showed sdelete64.exe with command-line arguments to delete Desktop\\working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "sdelete64.exe deleting the file \\AppData\\Roaming\\working.zip",
+                            "images": [
+                                "Kaspersky-APT29-2950.png"
+                            ],
+                            "note": "Telemetry showed sdelete64.exe with command-line arguments to delete Roaming\\working.zip."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.005": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that accesschk.exe is not the legitimate Sysinternals tool",
+                            "images": [
+                                "Kaspersky-APT29-2804.png"
+                            ],
+                            "note": "Telemetry showed hash of accesschk.exe which can be used to verify it is not the legitimate Sysinternals tool."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Evidence that accesschk.exe is not the legitimate Sysinternals tool",
+                            "images": [
+                                "Kaspersky-APT29-17997.png"
+                            ],
+                            "note": "An MSSP detection contained evidence showing accesschk.exe is not the legitimate Sysinternals tool."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user Pam on Scranton (10.0.1.4)",
+                            "images": [
+                                "Kaspersky-APT29-13410.png",
+                                "Kaspersky-APT29-2891.png"
+                            ],
+                            "note": "Telemetry showed a valid logon on Scranton (10.0.1.4) as user Pam."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user Pam on Scranton (10.0.1.4)",
+                            "images": [
+                                "Kaspersky-APT29-18003.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of a valid logon on Scranton (10.0.1.4) as user Pam."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1564.004": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the schemas ADS via Get-Content and IEX",
+                            "images": [
+                                "Kaspersky-APT29-3118.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe executing the schemas ADS with Get-Content and IEX."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the schemas ADS via Get-Content and IEX",
+                            "images": [
+                                "Kaspersky-APT29-3118.png"
+                            ],
+                            "note": "A Technique alert detection (yellow; medium severity) called NTFS File Attributes was generated due to execution of schemas ADS by powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the schemas ADS via Get-Content and IEX",
+                            "images": [
+                                "Kaspersky-APT29-12375.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell executing schemas ADS via Get-Content and IEX."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1497.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_BIOS",
+                            "images": [
+                                "Kaspersky-APT29-18009.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of execution of an WMI query for Win32_BIOS."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.006": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe modifying the creation, last access, and last write times of kxwn.lock",
+                            "images": [
+                                "Kaspersky-APT29-12388.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of timestomping of kxwn.lock."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1027": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Set-Content",
+                            "images": [
+                                "Kaspersky-APT29-12413.png",
+                                "Kaspersky-APT29-12414.png"
+                            ],
+                            "note": "An MSSP detection contained evidence that WindowsParentalControlMigration.tmp was a ZIP archive with a gif file header."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "command-and-control": {
+            "T1095": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 1234",
+                            "images": [
+                                "Kaspersky-APT29-2632.png"
+                            ],
+                            "note": "Telemetry showed the rcs.3aka3.doc process connecting to 192.168.0.5 on TCP port 1234."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1105": {
+                "d": {
+                    "count": 9,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "The rcs.3aka3.doc process creating the file monkey.png",
+                            "images": [
+                                "Kaspersky-APT29-2681.png"
+                            ],
+                            "note": "Telemetry showed rcs.3aka3.doc creating monkey.png. The event was correlated to a parent detection for masquerading."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file SysinternalsSuite.zip",
+                            "images": [
+                                "Kaspersky-APT29-2729.png"
+                            ],
+                            "note": "Telemetry showed the file write of the ZIP by PowerShell. The detection was correlated to a parent alert for suspicious PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file SysinternalsSuite.zip",
+                            "images": [
+                                "Kaspersky-APT29-11776.png",
+                                "Kaspersky-APT29-11777.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the file write of the ZIP by PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The file python.exe created on Scranton (10.0.1.4)",
+                            "images": [
+                                "Kaspersky-APT29-18002.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of remote file copy of python.exe to Scranton (10.0.1.4)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file rar.exe",
+                            "images": [
+                                "Kaspersky-APT29-13798.png"
+                            ],
+                            "note": "Telemetry showed a file create event for python.exe creating rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file rar.exe",
+                            "images": [
+                                "Kaspersky-APT29-18005.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the creation of rar.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file sdelete64.exe",
+                            "images": [
+                                "Kaspersky-APT29-2917.png"
+                            ],
+                            "note": "Telemetry showed a file create event for python.exe creating sdelete64.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "python.exe creating the file sdelete64.exe",
+                            "images": [
+                                "Kaspersky-APT29-18006.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the creation of sdelete64.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe downloading and/or the file write of m.exe",
+                            "images": [
+                                "Kaspersky-APT29-3225.png",
+                                "Kaspersky-APT29-3227.png"
+                            ],
+                            "note": "Telemetry showed the file create event for m.exe into the System32 folder."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1043": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Kaspersky-APT29-2717.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe connecting to 192.168.0.5 on port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Kaspersky-APT29-2717.png"
+                            ],
+                            "note": "A Technique alert detection (red; high severity) called \"Commonly Used Port\" was generated due to powershell.exe connecting to 192.168.0.5 on TCP 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Kaspersky-APT29-3166.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe making a network connection to the C2 (192.168.0.4) over port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Kaspersky-APT29-3172.png"
+                            ],
+                            "note": "A Technique alert detection (red indicator) called Commonly Used Port was generated for powershell.exe making a network connection to the C2 (192.168.0.4) over port 443."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Established network channel over port 443",
+                            "images": [
+                                "Kaspersky-APT29-12385.png",
+                                "Kaspersky-APT29-18015.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell establishing C2 with 192.168.0.4 over TCP port 443."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1102": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe with command-line arguments then making a network connection to a public IP over port 443",
+                            "images": [
+                                "Kaspersky-APT29-13803.png"
+                            ],
+                            "note": "Telemetry showed net.exe with command-line arguments to connect to a OneDrive URL as well as net.exe subsequently making a network connection to public IPs over port 443."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "collection": {
+            "T1560.001": {
+                "d": {
+                    "count": 11,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-Archive",
+                            "images": [
+                                "Kaspersky-APT29-3419.png"
+                            ],
+                            "note": "A Technique alert detection (green indicator; low severity) called Data Compressed was generated due to the creation of Draft.Zip by powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Compress-Archive",
+                            "images": [
+                                "Kaspersky-APT29-17988.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of draft.zip being created and compressed by PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file draft.zip",
+                            "images": [
+                                "Kaspersky-APT29-2650.png"
+                            ],
+                            "note": "Telemetry showed the creation of Draft.Zip. The event was correlated to a parent Technique detection for a suspicious PowerShell process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file draft.zip",
+                            "images": [
+                                "Kaspersky-APT29-17988.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the creation of Draft.Zip by powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file OfficeSupplies.7z",
+                            "images": [
+                                "Kaspersky-APT29-2861.png"
+                            ],
+                            "note": "Telemetry showed the file write event for OfficeSupplies.7z. The detection was correlated to a parent alert for suspicious PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file OfficeSupplies.7z",
+                            "images": [
+                                "Kaspersky-APT29-18000.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of the file create of OfficeSupplies.7z."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe with the -a parameter for a password to use for encryption",
+                            "images": [
+                                "Kaspersky-APT29-2931.png"
+                            ],
+                            "note": "A Technique alert detection (green; low severity) called Data Encrypted was generated due to powershell.exe executing rar.exe with command-line arguments to encrypt working.zip. The event was correlated to a parent Technique detection on powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe with the -a parameter for a password to use for encryption",
+                            "images": [
+                                "Kaspersky-APT29-18008.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of execution of rar.exe with command line arguments to encrypt working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe",
+                            "images": [
+                                "Kaspersky-APT29-2931.png"
+                            ],
+                            "note": "A Technique alert detection (green; low severity) called \"T1002_Data_Compressed\" was generated due to powershell.exe executing rar.exe with command-line arguments indicative of compression."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing rar.exe",
+                            "images": [
+                                "Kaspersky-APT29-18008.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of execution of rar.exe with command line arguments to compress working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the ZipFile.CreateFromDirectory .NET method",
+                            "images": [
+                                "Kaspersky-APT29-12412.png"
+                            ],
+                            "note": "An MSSP detection occurred contained evidence of data compression."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1113": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CopyFromScreen function from System.Drawing.dll",
+                            "images": [
+                                "Kaspersky-APT29-17998.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell loading .Net assemblies to capture screenshots."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1056.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetAsyncKeyState API",
+                            "images": [
+                                "Kaspersky-APT29-17999.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell loading .NET assemblies to capture key strokes."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1074.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file working.zip",
+                            "images": [
+                                "Kaspersky-APT29-2929.png"
+                            ],
+                            "note": "Telemetry showed a file create event for powershell.exe creating working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file working.zip",
+                            "images": [
+                                "Kaspersky-APT29-18007.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the creation of working.zip."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file \\WindowsParentalControlMigration\\MITRE-ATTACK-EVALS.HTML",
+                            "images": [
+                                "Kaspersky-APT29-3296.png"
+                            ],
+                            "note": "Telemetry showed the file create event for MITRE-ATTACK-EVALS.HTML."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file \\WindowsParentalControlMigration\\MITRE-ATTACK-EVALS.HTML",
+                            "images": [
+                                "Kaspersky-APT29-18020.png"
+                            ],
+                            "note": "An MSSP detection occurred containing the file write event for WindowsParentalControlMigration\\MITRE-ATTACK-EVALS.HTML."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1114": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "outlook.exe spawning from svchost.exe or powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-3287.png",
+                                "Kaspersky-APT29-3289.png"
+                            ],
+                            "note": "Telemetry showed outlook.exe spawning from svchost.exe, which is indicative of programmatic access to Outlook emails."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "outlook.exe spawning from svchost.exe or powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-12410.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell interacting with Outlook."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "privilege-escalation": {
+            "T1546.015": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "Kaspersky-APT29-17990.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the addition of DelegateExecute value in the Registry."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the DelegateExecute subkey in HKCU\\Software\\Classes\\Folder\\shell\\open\\command",
+                            "images": [
+                                "Kaspersky-APT29-12397.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence for a well-known UAC bypass technique."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1548.002": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powershell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Kaspersky-APT29-2709.png"
+                            ],
+                            "note": "Telemetry showed PowerShell spawning from control.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powershell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Kaspersky-APT29-2709.png",
+                                "Kaspersky-APT29-2710.png"
+                            ],
+                            "note": "A General alert detection (red; high severity) for \"Suspicious PowerShell\" was generated due to execution of powershell.exe by control.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powershell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Kaspersky-APT29-17991.png"
+                            ],
+                            "note": "An MSSP detection for \"Possible UAC Bypass\" contained evidence of a new highiIntegrity PowerShell callback spawning from control.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powrshell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Kaspersky-APT29-17915.png"
+                            ],
+                            "note": "A General alert detection (red; high severity) for \"Suspicious PowerShell\" was generated due to execution of powershell.exe by control.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "High integrity powrshell.exe spawning from control.exe (spawned from sdclt.exe)",
+                            "images": [
+                                "Kaspersky-APT29-12397.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of High Integrity PowerShell process spawned from control.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1543.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the Javamtsup service",
+                            "images": [
+                                "Kaspersky-APT29-2777.png",
+                                "Kaspersky-APT29-2798.png"
+                            ],
+                            "note": "Telemetry showed a registry event for the creation of javamtsup service. The event was correlated to a parent General detection for suspicious PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the Javamtsup service",
+                            "images": [
+                                "Kaspersky-APT29-17995.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the creation of the javamtsup service."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.001": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file hostui.lnk in the Startup folder",
+                            "images": [
+                                "Kaspersky-APT29-2798.png",
+                                "Kaspersky-APT29-2802.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe creating the hostui.lnk file in the Startup folder. The event was correlated to a parent General detection for suspicious PowerShell."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the file hostui.lnk in the Startup folder",
+                            "images": [
+                                "Kaspersky-APT29-17996.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the creation of hostui.lnk."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Kaspersky-APT29-3117.png",
+                                "Kaspersky-APT29-3155.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe adding Run key persistence into the Registry."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Kaspersky-APT29-3152.png",
+                                "Kaspersky-APT29-3155.png"
+                            ],
+                            "note": "A Technique alert detection (yellow tag) called Registy Run Keys Startup Folder  was generated due to powershell.exe adding the Webcache subkey Run key persistence into the Registry."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Addition of the Webcache subkey in HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+                            "images": [
+                                "Kaspersky-APT29-18013.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the Webcache subkey added to the Registry to establish persistence."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1546.003": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating the WindowsParentalControlMigration WMI filter, consumer, and binding created in root/subscription",
+                            "images": [
+                                "Kaspersky-APT29-12404.png",
+                                "Kaspersky-APT29-12405.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of WMI persistence established for user Oscar."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The WMI process (wmiprvse.exe) executing powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-3357.png",
+                                "Kaspersky-APT29-3360.png"
+                            ],
+                            "note": "Telemetry showed wmiprvse.exe executing the PowerShell stager."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The WMI process (wmiprvse.exe) executing powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-3360.png"
+                            ],
+                            "note": "A Technique alert detection (red; high severity) called \"WMI Event Consumer Triggered\" was generated due to wmiprvse.exe executing powershell.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "The WMI process (wmiprvse.exe) executing powershell.exe",
+                            "images": [
+                                "Kaspersky-APT29-12422.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of wmiprvse.exe executing the PowerShell stager."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1136.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "net.exe adding the user Toby",
+                            "images": [
+                                "Kaspersky-APT29-18023.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the creation of the user Toby on Scranton (10.0.1.4)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "credential-access": {
+            "T1552.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe creating a certificate file exported from the system",
+                            "images": [
+                                "Kaspersky-APT29-2821.png"
+                            ],
+                            "note": "Telemetry showed file create event for a $RandomFileName.pfx file by powershell.exe. The event was correlated to a parent General detection for suspicious PowerShell."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.001": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Kaspersky-APT29-3231.png"
+                            ],
+                            "note": "A Technique alert detection (red; high severity) called \"mimikatz_command_patterns\" was generated for m.exe executing with command-line arguments indicative of Mimikatz credential dumping."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Kaspersky-APT29-12403.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of Mimikatz dumping credentials."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Kaspersky-APT29-3265.png"
+                            ],
+                            "note": "A Technique alert detection (red; high severity) for Credential Dumping was generated for m.exe with command-line arguments indicative of Mimikatz credential dumping."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "m.exe injecting into lsass.exe to dump credentials",
+                            "images": [
+                                "Kaspersky-APT29-12409.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of Mimikatz command-line arguments to dump credentials."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "exfiltration": {
+            "T1048.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell executing Copy-Item pointing to an attack-controlled WebDav network share (192.168.0.4:80)",
+                            "images": [
+                                "Kaspersky-APT29-11792.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of OfficeSupplies.7z being uploaded to 192.168.0.4 using WebDav."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1018": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 to the Domain Controller (10.0.0.4)",
+                            "images": [
+                                "Kaspersky-APT29-2875.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe establishing a connection to NewYork (10.0.0.4) over port 389."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe making LDAP queries over port 389 via functions from System.DirectoryServices.dll",
+                            "images": [
+                                "Kaspersky-APT29-18018.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of System.DirectoryServices.ni.dll loaded into PowerShell, which can be used to execute LDAP queries."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1082": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject gwmi queries for Win32_BIOS and Win32_ComputerSystem",
+                            "images": [
+                                "Kaspersky-APT29-18009.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of execution of WMI queries for Win32_BIOS and Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetComputerNameEx API",
+                            "images": [
+                                "Kaspersky-APT29-12390.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell executing the GetComputerNameEx API."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1120": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_PnPEntity",
+                            "images": [
+                                "Kaspersky-APT29-12376.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence for the execution of an WMI query for Win32_PnPEntity."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1033": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "Kaspersky-APT29-18010.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of execution of an WMI query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the GetUserNameEx API",
+                            "images": [
+                                "Kaspersky-APT29-12393.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell executing the GetUserNameEx API."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1016": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_ComputerSystem",
+                            "images": [
+                                "Kaspersky-APT29-18010.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of execution of an WMI query for Win32_ComputerSystem."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the NetWkstaGetInfo API",
+                            "images": [
+                                "Kaspersky-APT29-18016.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell executing the NetWKstaGetInfo API."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1057": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for Win32_Process",
+                            "images": [
+                                "Kaspersky-APT29-18011.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of execution of an WMI query for Win32_Process."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing the CreateToolhelp32Snapshot API",
+                            "images": [
+                                "Kaspersky-APT29-12396.png",
+                                "Kaspersky-APT29-18017.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of PowerShell executing the CreateToolhelp32Snapshot API."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Get-Process",
+                            "images": [
+                                "Kaspersky-APT29-12402.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of PowerShell collecting information about running processes."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1518.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing a Get-WmiObject query for AntiVirusProduct",
+                            "images": [
+                                "Kaspersky-APT29-12389.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of a PowerShell gwmi query for AntiVirusProduct."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "lateral-movement": {
+            "T1021.006": {
+                "d": {
+                    "count": 6,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "Kaspersky-APT29-2880.png"
+                            ],
+                            "note": "Telemetry showed a connection to Scranton (10.0.1.4) over port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "Kaspersky-APT29-2880.png"
+                            ],
+                            "note": "A General alert detection (red; high severity) was generated for \"PowerShell with network activity\"."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to NewYork (10.0.0.4) over port 5985",
+                            "images": [
+                                "Kaspersky-APT29-18093.png"
+                            ],
+                            "note": "Telemetry showed powershell.exe making a network connection to remote host NewYork (10.0.0.4) over port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to NewYork (10.0.0.4) over port 5985",
+                            "images": [
+                                "Kaspersky-APT29-3256.png"
+                            ],
+                            "note": "A General detection alert (red; high severity) for PowerShell with network activity was generated for to powershell.exe making a network connection to remote host NewYork (10.0.0.4) over port 5985."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to NewYork (10.0.0.4) over port 5985",
+                            "images": [
+                                "Kaspersky-APT29-12408.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of a WinRM connection on NewYork (10.0.0.4)."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Network connection to Scranton (10.0.1.4) over port 5985",
+                            "images": [
+                                "Kaspersky-APT29-12428.png",
+                                "Kaspersky-APT29-12429.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of a WinRM session to remote host SchruteFarms (10.0.1.7)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "SMB session to Scranton (10.0.1.4) over TCP port 445/135 OR evidence of usage of a Windows share",
+                            "images": [
+                                "Kaspersky-APT29-2895.png"
+                            ],
+                            "note": "Telemetry showed an SMB session from Nashua (10.0.1.6) to Scranton (10.0.1.4) over TCP port 135."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "SMB session to Scranton (10.0.1.4) over TCP port 445/135 OR evidence of usage of a Windows share",
+                            "images": [
+                                "Kaspersky-APT29-18004.png"
+                            ],
+                            "note": "An MSSP detection occurred containing evidence of psexec64 establishing an IPC share on Scranton (10.0.1.4)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1570": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "File write of m.exe by the WinRM process (wsmprovhost.exe)",
+                            "images": [
+                                "Kaspersky-APT29-3261.png",
+                                "Kaspersky-APT29-3263.png"
+                            ],
+                            "note": "Telemetry showed the creation of m.exe in the System32 directory by wsmprovhost.exe."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "File write of m.exe by the WinRM process (wsmprovhost.exe)",
+                            "images": [
+                                "Kaspersky-APT29-12409.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the write of m.exe to the System32 directory by wsmprovhost.exe."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1550.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "powershell.exe executing Invoke-Mimikatz with command-line arguments to create a golden ticket",
+                            "images": [
+                                "Kaspersky-APT29-3413.png",
+                                "Kaspersky-APT29-3414.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of use of a suspicious Kerberos ticket."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "initial-access": {
+            "T1078.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user MScott on NewYork (10.0.0.4)",
+                            "images": [
+                                "Kaspersky-APT29-3246.png"
+                            ],
+                            "note": "Telemetry showed a successful logon on NewYork (10.0.0.4) as user MScott."
+                        },
+                        {
+                            "threat": "APT29",
+                            "criteria": "Successful logon as user MScott on NewYork (10.0.0.4)",
+                            "images": [
+                                "Kaspersky-APT29-12408.png"
+                            ],
+                            "note": "An MSSP detection contained evidence of the successful logon of MScott on NewYork (10.0.0.4)."
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        }
+    },
+    "filename": "kaspersky_engenuity.json",
+    "capability_name": "kaspersky",
+    "counts": {
+        "detect": 45,
+        "protect": 0
+    }
+}

@@ -1,0 +1,3932 @@
+{
+    "version": "13.1",
+    "techniques": {
+        "T1016discovery": {
+            "count": 235,
+            "tcode": "T1016",
+            "tactic": "discovery"
+        },
+        "T1003.001credential-access": {
+            "count": 57,
+            "tcode": "T1003.001",
+            "tactic": "credential-access"
+        },
+        "T1573.002command-and-control": {
+            "count": 59,
+            "tcode": "T1573.002",
+            "tactic": "command-and-control"
+        },
+        "T1016.001discovery": {
+            "count": 17,
+            "tcode": "T1016.001",
+            "tactic": "discovery"
+        },
+        "T1090.004command-and-control": {
+            "count": 6,
+            "tcode": "T1090.004",
+            "tactic": "command-and-control"
+        },
+        "T1124discovery": {
+            "count": 72,
+            "tcode": "T1124",
+            "tactic": "discovery"
+        },
+        "T1082discovery": {
+            "count": 342,
+            "tcode": "T1082",
+            "tactic": "discovery"
+        },
+        "T1539credential-access": {
+            "count": 12,
+            "tcode": "T1539",
+            "tactic": "credential-access"
+        },
+        "T1547.009persistence": {
+            "count": 34,
+            "tcode": "T1547.009",
+            "tactic": "persistence"
+        },
+        "T1547.009privilege-escalation": {
+            "count": 34,
+            "tcode": "T1547.009",
+            "tactic": "privilege-escalation"
+        },
+        "T1547.001persistence": {
+            "count": 224,
+            "tcode": "T1547.001",
+            "tactic": "persistence"
+        },
+        "T1547.001privilege-escalation": {
+            "count": 224,
+            "tcode": "T1547.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1007discovery": {
+            "count": 60,
+            "tcode": "T1007",
+            "tactic": "discovery"
+        },
+        "T1071.001command-and-control": {
+            "count": 316,
+            "tcode": "T1071.001",
+            "tactic": "command-and-control"
+        },
+        "T1027defense-evasion": {
+            "count": 383,
+            "tcode": "T1027",
+            "tactic": "defense-evasion"
+        },
+        "T1204.001execution": {
+            "count": 62,
+            "tcode": "T1204.001",
+            "tactic": "execution"
+        },
+        "T1053.005execution": {
+            "count": 133,
+            "tcode": "T1053.005",
+            "tactic": "execution"
+        },
+        "T1053.005persistence": {
+            "count": 133,
+            "tcode": "T1053.005",
+            "tactic": "persistence"
+        },
+        "T1053.005privilege-escalation": {
+            "count": 133,
+            "tcode": "T1053.005",
+            "tactic": "privilege-escalation"
+        },
+        "T1070.004defense-evasion": {
+            "count": 236,
+            "tcode": "T1070.004",
+            "tactic": "defense-evasion"
+        },
+        "T1059.001execution": {
+            "count": 162,
+            "tcode": "T1059.001",
+            "tactic": "execution"
+        },
+        "T1486impact": {
+            "count": 50,
+            "tcode": "T1486",
+            "tactic": "impact"
+        },
+        "T1497.003defense-evasion": {
+            "count": 40,
+            "tcode": "T1497.003",
+            "tactic": "defense-evasion"
+        },
+        "T1497.003discovery": {
+            "count": 40,
+            "tcode": "T1497.003",
+            "tactic": "discovery"
+        },
+        "T1571command-and-control": {
+            "count": 38,
+            "tcode": "T1571",
+            "tactic": "command-and-control"
+        },
+        "T1059.005execution": {
+            "count": 101,
+            "tcode": "T1059.005",
+            "tactic": "execution"
+        },
+        "T1021.002lateral-movement": {
+            "count": 45,
+            "tcode": "T1021.002",
+            "tactic": "lateral-movement"
+        },
+        "T1083discovery": {
+            "count": 285,
+            "tcode": "T1083",
+            "tactic": "discovery"
+        },
+        "T1569.002execution": {
+            "count": 57,
+            "tcode": "T1569.002",
+            "tactic": "execution"
+        },
+        "T1560collection": {
+            "count": 125,
+            "tcode": "T1560",
+            "tactic": "collection"
+        },
+        "T1102.001command-and-control": {
+            "count": 19,
+            "tcode": "T1102.001",
+            "tactic": "command-and-control"
+        },
+        "T1548.003privilege-escalation": {
+            "count": 4,
+            "tcode": "T1548.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1548.003defense-evasion": {
+            "count": 4,
+            "tcode": "T1548.003",
+            "tactic": "defense-evasion"
+        },
+        "T1588.003resource-development": {
+            "count": 7,
+            "tcode": "T1588.003",
+            "tactic": "resource-development"
+        },
+        "T1071.004command-and-control": {
+            "count": 50,
+            "tcode": "T1071.004",
+            "tactic": "command-and-control"
+        },
+        "T1025collection": {
+            "count": 24,
+            "tcode": "T1025",
+            "tactic": "collection"
+        },
+        "T1091lateral-movement": {
+            "count": 24,
+            "tcode": "T1091",
+            "tactic": "lateral-movement"
+        },
+        "T1091initial-access": {
+            "count": 24,
+            "tcode": "T1091",
+            "tactic": "initial-access"
+        },
+        "T1106execution": {
+            "count": 161,
+            "tcode": "T1106",
+            "tactic": "execution"
+        },
+        "T1564.005defense-evasion": {
+            "count": 6,
+            "tcode": "T1564.005",
+            "tactic": "defense-evasion"
+        },
+        "T1033discovery": {
+            "count": 192,
+            "tcode": "T1033",
+            "tactic": "discovery"
+        },
+        "T1134.002defense-evasion": {
+            "count": 13,
+            "tcode": "T1134.002",
+            "tactic": "defense-evasion"
+        },
+        "T1134.002privilege-escalation": {
+            "count": 13,
+            "tcode": "T1134.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1105command-and-control": {
+            "count": 409,
+            "tcode": "T1105",
+            "tactic": "command-and-control"
+        },
+        "T1553.002defense-evasion": {
+            "count": 60,
+            "tcode": "T1553.002",
+            "tactic": "defense-evasion"
+        },
+        "T1614discovery": {
+            "count": 31,
+            "tcode": "T1614",
+            "tactic": "discovery"
+        },
+        "T1059execution": {
+            "count": 439,
+            "tcode": "T1059",
+            "tactic": "execution"
+        },
+        "T1027.010defense-evasion": {
+            "count": 53,
+            "tcode": "T1027.010",
+            "tactic": "defense-evasion"
+        },
+        "T1560.001collection": {
+            "count": 50,
+            "tcode": "T1560.001",
+            "tactic": "collection"
+        },
+        "T1012discovery": {
+            "count": 100,
+            "tcode": "T1012",
+            "tactic": "discovery"
+        },
+        "T1566.002initial-access": {
+            "count": 61,
+            "tcode": "T1566.002",
+            "tactic": "initial-access"
+        },
+        "T1583.006resource-development": {
+            "count": 17,
+            "tcode": "T1583.006",
+            "tactic": "resource-development"
+        },
+        "T1112defense-evasion": {
+            "count": 141,
+            "tcode": "T1112",
+            "tactic": "defense-evasion"
+        },
+        "T1047execution": {
+            "count": 98,
+            "tcode": "T1047",
+            "tactic": "execution"
+        },
+        "T1059.003execution": {
+            "count": 310,
+            "tcode": "T1059.003",
+            "tactic": "execution"
+        },
+        "T1547.008persistence": {
+            "count": 3,
+            "tcode": "T1547.008",
+            "tactic": "persistence"
+        },
+        "T1547.008privilege-escalation": {
+            "count": 3,
+            "tcode": "T1547.008",
+            "tactic": "privilege-escalation"
+        },
+        "T1046discovery": {
+            "count": 52,
+            "tcode": "T1046",
+            "tactic": "discovery"
+        },
+        "T1036.005defense-evasion": {
+            "count": 151,
+            "tcode": "T1036.005",
+            "tactic": "defense-evasion"
+        },
+        "T1584.006resource-development": {
+            "count": 3,
+            "tcode": "T1584.006",
+            "tactic": "resource-development"
+        },
+        "T1133persistence": {
+            "count": 25,
+            "tcode": "T1133",
+            "tactic": "persistence"
+        },
+        "T1133initial-access": {
+            "count": 25,
+            "tcode": "T1133",
+            "tactic": "initial-access"
+        },
+        "T1003.003credential-access": {
+            "count": 17,
+            "tcode": "T1003.003",
+            "tactic": "credential-access"
+        },
+        "T1056.004collection": {
+            "count": 12,
+            "tcode": "T1056.004",
+            "tactic": "collection"
+        },
+        "T1056.004credential-access": {
+            "count": 12,
+            "tcode": "T1056.004",
+            "tactic": "credential-access"
+        },
+        "T1057discovery": {
+            "count": 246,
+            "tcode": "T1057",
+            "tactic": "discovery"
+        },
+        "T1518.001discovery": {
+            "count": 106,
+            "tcode": "T1518.001",
+            "tactic": "discovery"
+        },
+        "T1003.006credential-access": {
+            "count": 5,
+            "tcode": "T1003.006",
+            "tactic": "credential-access"
+        },
+        "T1114.002collection": {
+            "count": 17,
+            "tcode": "T1114.002",
+            "tactic": "collection"
+        },
+        "T1562.001defense-evasion": {
+            "count": 77,
+            "tcode": "T1562.001",
+            "tactic": "defense-evasion"
+        },
+        "T1201discovery": {
+            "count": 9,
+            "tcode": "T1201",
+            "tactic": "discovery"
+        },
+        "T1056.001collection": {
+            "count": 133,
+            "tcode": "T1056.001",
+            "tactic": "collection"
+        },
+        "T1056.001credential-access": {
+            "count": 133,
+            "tcode": "T1056.001",
+            "tactic": "credential-access"
+        },
+        "T1573.001command-and-control": {
+            "count": 139,
+            "tcode": "T1573.001",
+            "tactic": "command-and-control"
+        },
+        "T1555.004credential-access": {
+            "count": 13,
+            "tcode": "T1555.004",
+            "tactic": "credential-access"
+        },
+        "T1558.003credential-access": {
+            "count": 10,
+            "tcode": "T1558.003",
+            "tactic": "credential-access"
+        },
+        "T1490impact": {
+            "count": 34,
+            "tcode": "T1490",
+            "tactic": "impact"
+        },
+        "T1140defense-evasion": {
+            "count": 227,
+            "tcode": "T1140",
+            "tactic": "defense-evasion"
+        },
+        "T1588.006resource-development": {
+            "count": 2,
+            "tcode": "T1588.006",
+            "tactic": "resource-development"
+        },
+        "T1566.001initial-access": {
+            "count": 119,
+            "tcode": "T1566.001",
+            "tactic": "initial-access"
+        },
+        "T1497defense-evasion": {
+            "count": 93,
+            "tcode": "T1497",
+            "tactic": "defense-evasion"
+        },
+        "T1497discovery": {
+            "count": 93,
+            "tcode": "T1497",
+            "tactic": "discovery"
+        },
+        "T1550.003defense-evasion": {
+            "count": 7,
+            "tcode": "T1550.003",
+            "tactic": "defense-evasion"
+        },
+        "T1550.003lateral-movement": {
+            "count": 7,
+            "tcode": "T1550.003",
+            "tactic": "lateral-movement"
+        },
+        "T1543.003persistence": {
+            "count": 116,
+            "tcode": "T1543.003",
+            "tactic": "persistence"
+        },
+        "T1543.003privilege-escalation": {
+            "count": 116,
+            "tcode": "T1543.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1542.003persistence": {
+            "count": 10,
+            "tcode": "T1542.003",
+            "tactic": "persistence"
+        },
+        "T1542.003defense-evasion": {
+            "count": 10,
+            "tcode": "T1542.003",
+            "tactic": "defense-evasion"
+        },
+        "T1592.004reconnaissance": {
+            "count": 2,
+            "tcode": "T1592.004",
+            "tactic": "reconnaissance"
+        },
+        "T1087.003discovery": {
+            "count": 12,
+            "tcode": "T1087.003",
+            "tactic": "discovery"
+        },
+        "T1129execution": {
+            "count": 17,
+            "tcode": "T1129",
+            "tactic": "execution"
+        },
+        "T1543.001persistence": {
+            "count": 19,
+            "tcode": "T1543.001",
+            "tactic": "persistence"
+        },
+        "T1543.001privilege-escalation": {
+            "count": 19,
+            "tcode": "T1543.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1055.004defense-evasion": {
+            "count": 10,
+            "tcode": "T1055.004",
+            "tactic": "defense-evasion"
+        },
+        "T1055.004privilege-escalation": {
+            "count": 10,
+            "tcode": "T1055.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1090.003command-and-control": {
+            "count": 20,
+            "tcode": "T1090.003",
+            "tactic": "command-and-control"
+        },
+        "T1059.006execution": {
+            "count": 39,
+            "tcode": "T1059.006",
+            "tactic": "execution"
+        },
+        "T1189initial-access": {
+            "count": 35,
+            "tcode": "T1189",
+            "tactic": "initial-access"
+        },
+        "T1557.001credential-access": {
+            "count": 8,
+            "tcode": "T1557.001",
+            "tactic": "credential-access"
+        },
+        "T1557.001collection": {
+            "count": 8,
+            "tcode": "T1557.001",
+            "tactic": "collection"
+        },
+        "T1041exfiltration": {
+            "count": 138,
+            "tcode": "T1041",
+            "tactic": "exfiltration"
+        },
+        "T1102.002command-and-control": {
+            "count": 48,
+            "tcode": "T1102.002",
+            "tactic": "command-and-control"
+        },
+        "T1219command-and-control": {
+            "count": 19,
+            "tcode": "T1219",
+            "tactic": "command-and-control"
+        },
+        "T1005collection": {
+            "count": 171,
+            "tcode": "T1005",
+            "tactic": "collection"
+        },
+        "T1567.002exfiltration": {
+            "count": 26,
+            "tcode": "T1567.002",
+            "tactic": "exfiltration"
+        },
+        "T1218.010defense-evasion": {
+            "count": 30,
+            "tcode": "T1218.010",
+            "tactic": "defense-evasion"
+        },
+        "T1589reconnaissance": {
+            "count": 18,
+            "tcode": "T1589",
+            "tactic": "reconnaissance"
+        },
+        "T1574.002persistence": {
+            "count": 53,
+            "tcode": "T1574.002",
+            "tactic": "persistence"
+        },
+        "T1574.002privilege-escalation": {
+            "count": 53,
+            "tcode": "T1574.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.002defense-evasion": {
+            "count": 53,
+            "tcode": "T1574.002",
+            "tactic": "defense-evasion"
+        },
+        "T1078.002defense-evasion": {
+            "count": 17,
+            "tcode": "T1078.002",
+            "tactic": "defense-evasion"
+        },
+        "T1078.002persistence": {
+            "count": 17,
+            "tcode": "T1078.002",
+            "tactic": "persistence"
+        },
+        "T1078.002privilege-escalation": {
+            "count": 17,
+            "tcode": "T1078.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1078.002initial-access": {
+            "count": 17,
+            "tcode": "T1078.002",
+            "tactic": "initial-access"
+        },
+        "T1562.006defense-evasion": {
+            "count": 6,
+            "tcode": "T1562.006",
+            "tactic": "defense-evasion"
+        },
+        "T1480defense-evasion": {
+            "count": 19,
+            "tcode": "T1480",
+            "tactic": "defense-evasion"
+        },
+        "T1125collection": {
+            "count": 32,
+            "tcode": "T1125",
+            "tactic": "collection"
+        },
+        "T1027.005defense-evasion": {
+            "count": 18,
+            "tcode": "T1027.005",
+            "tactic": "defense-evasion"
+        },
+        "T1040credential-access": {
+            "count": 16,
+            "tcode": "T1040",
+            "tactic": "credential-access"
+        },
+        "T1040discovery": {
+            "count": 16,
+            "tcode": "T1040",
+            "tactic": "discovery"
+        },
+        "T1568command-and-control": {
+            "count": 41,
+            "tcode": "T1568",
+            "tactic": "command-and-control"
+        },
+        "T1018discovery": {
+            "count": 74,
+            "tcode": "T1018",
+            "tactic": "discovery"
+        },
+        "T1069.002discovery": {
+            "count": 28,
+            "tcode": "T1069.002",
+            "tactic": "discovery"
+        },
+        "T1135discovery": {
+            "count": 52,
+            "tcode": "T1135",
+            "tactic": "discovery"
+        },
+        "T1055defense-evasion": {
+            "count": 144,
+            "tcode": "T1055",
+            "tactic": "defense-evasion"
+        },
+        "T1055privilege-escalation": {
+            "count": 144,
+            "tcode": "T1055",
+            "tactic": "privilege-escalation"
+        },
+        "T1567exfiltration": {
+            "count": 31,
+            "tcode": "T1567",
+            "tactic": "exfiltration"
+        },
+        "T1552.001credential-access": {
+            "count": 27,
+            "tcode": "T1552.001",
+            "tactic": "credential-access"
+        },
+        "T1218.007defense-evasion": {
+            "count": 23,
+            "tcode": "T1218.007",
+            "tactic": "defense-evasion"
+        },
+        "T1110.001credential-access": {
+            "count": 12,
+            "tcode": "T1110.001",
+            "tactic": "credential-access"
+        },
+        "T1113collection": {
+            "count": 142,
+            "tcode": "T1113",
+            "tactic": "collection"
+        },
+        "T1564.001defense-evasion": {
+            "count": 48,
+            "tcode": "T1564.001",
+            "tactic": "defense-evasion"
+        },
+        "T1021.003lateral-movement": {
+            "count": 5,
+            "tcode": "T1021.003",
+            "tactic": "lateral-movement"
+        },
+        "T1559.001execution": {
+            "count": 15,
+            "tcode": "T1559.001",
+            "tactic": "execution"
+        },
+        "T1496impact": {
+            "count": 14,
+            "tcode": "T1496",
+            "tactic": "impact"
+        },
+        "T1652discovery": {
+            "count": 3,
+            "tcode": "T1652",
+            "tactic": "discovery"
+        },
+        "T1001.001command-and-control": {
+            "count": 15,
+            "tcode": "T1001.001",
+            "tactic": "command-and-control"
+        },
+        "T1200initial-access": {
+            "count": 2,
+            "tcode": "T1200",
+            "tactic": "initial-access"
+        },
+        "T1052.001exfiltration": {
+            "count": 8,
+            "tcode": "T1052.001",
+            "tactic": "exfiltration"
+        },
+        "T1078defense-evasion": {
+            "count": 63,
+            "tcode": "T1078",
+            "tactic": "defense-evasion"
+        },
+        "T1078persistence": {
+            "count": 63,
+            "tcode": "T1078",
+            "tactic": "persistence"
+        },
+        "T1078privilege-escalation": {
+            "count": 63,
+            "tcode": "T1078",
+            "tactic": "privilege-escalation"
+        },
+        "T1078initial-access": {
+            "count": 63,
+            "tcode": "T1078",
+            "tactic": "initial-access"
+        },
+        "T1210lateral-movement": {
+            "count": 24,
+            "tcode": "T1210",
+            "tactic": "lateral-movement"
+        },
+        "T1555credential-access": {
+            "count": 89,
+            "tcode": "T1555",
+            "tactic": "credential-access"
+        },
+        "T1564.003defense-evasion": {
+            "count": 37,
+            "tcode": "T1564.003",
+            "tactic": "defense-evasion"
+        },
+        "T1548.002privilege-escalation": {
+            "count": 52,
+            "tcode": "T1548.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1548.002defense-evasion": {
+            "count": 52,
+            "tcode": "T1548.002",
+            "tactic": "defense-evasion"
+        },
+        "T1588.001resource-development": {
+            "count": 12,
+            "tcode": "T1588.001",
+            "tactic": "resource-development"
+        },
+        "T1569execution": {
+            "count": 61,
+            "tcode": "T1569",
+            "tactic": "execution"
+        },
+        "T1489impact": {
+            "count": 33,
+            "tcode": "T1489",
+            "tactic": "impact"
+        },
+        "T1069.001discovery": {
+            "count": 25,
+            "tcode": "T1069.001",
+            "tactic": "discovery"
+        },
+        "T1014defense-evasion": {
+            "count": 26,
+            "tcode": "T1014",
+            "tactic": "defense-evasion"
+        },
+        "T1497.001defense-evasion": {
+            "count": 51,
+            "tcode": "T1497.001",
+            "tactic": "defense-evasion"
+        },
+        "T1497.001discovery": {
+            "count": 51,
+            "tcode": "T1497.001",
+            "tactic": "discovery"
+        },
+        "T1589.001reconnaissance": {
+            "count": 7,
+            "tcode": "T1589.001",
+            "tactic": "reconnaissance"
+        },
+        "T1090command-and-control": {
+            "count": 100,
+            "tcode": "T1090",
+            "tactic": "command-and-control"
+        },
+        "T1003.005credential-access": {
+            "count": 9,
+            "tcode": "T1003.005",
+            "tactic": "credential-access"
+        },
+        "T1120discovery": {
+            "count": 46,
+            "tcode": "T1120",
+            "tactic": "discovery"
+        },
+        "T1587.001resource-development": {
+            "count": 13,
+            "tcode": "T1587.001",
+            "tactic": "resource-development"
+        },
+        "T1074.001collection": {
+            "count": 89,
+            "tcode": "T1074.001",
+            "tactic": "collection"
+        },
+        "T1485impact": {
+            "count": 24,
+            "tcode": "T1485",
+            "tactic": "impact"
+        },
+        "T1055.001defense-evasion": {
+            "count": 59,
+            "tcode": "T1055.001",
+            "tactic": "defense-evasion"
+        },
+        "T1055.001privilege-escalation": {
+            "count": 59,
+            "tcode": "T1055.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1190initial-access": {
+            "count": 29,
+            "tcode": "T1190",
+            "tactic": "initial-access"
+        },
+        "T1137.005persistence": {
+            "count": 2,
+            "tcode": "T1137.005",
+            "tactic": "persistence"
+        },
+        "T1566.003initial-access": {
+            "count": 12,
+            "tcode": "T1566.003",
+            "tactic": "initial-access"
+        },
+        "T1059.007execution": {
+            "count": 40,
+            "tcode": "T1059.007",
+            "tactic": "execution"
+        },
+        "T1036defense-evasion": {
+            "count": 227,
+            "tcode": "T1036",
+            "tactic": "defense-evasion"
+        },
+        "T1115collection": {
+            "count": 35,
+            "tcode": "T1115",
+            "tactic": "collection"
+        },
+        "T1036.004defense-evasion": {
+            "count": 72,
+            "tcode": "T1036.004",
+            "tactic": "defense-evasion"
+        },
+        "T1559.002execution": {
+            "count": 20,
+            "tcode": "T1559.002",
+            "tactic": "execution"
+        },
+        "T1090.002command-and-control": {
+            "count": 20,
+            "tcode": "T1090.002",
+            "tactic": "command-and-control"
+        },
+        "T1550.002defense-evasion": {
+            "count": 15,
+            "tcode": "T1550.002",
+            "tactic": "defense-evasion"
+        },
+        "T1550.002lateral-movement": {
+            "count": 15,
+            "tcode": "T1550.002",
+            "tactic": "lateral-movement"
+        },
+        "T1546.015privilege-escalation": {
+            "count": 13,
+            "tcode": "T1546.015",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.015persistence": {
+            "count": 13,
+            "tcode": "T1546.015",
+            "tactic": "persistence"
+        },
+        "T1555.003credential-access": {
+            "count": 73,
+            "tcode": "T1555.003",
+            "tactic": "credential-access"
+        },
+        "T1095command-and-control": {
+            "count": 69,
+            "tcode": "T1095",
+            "tactic": "command-and-control"
+        },
+        "T1030exfiltration": {
+            "count": 16,
+            "tcode": "T1030",
+            "tactic": "exfiltration"
+        },
+        "T1560.003collection": {
+            "count": 37,
+            "tcode": "T1560.003",
+            "tactic": "collection"
+        },
+        "T1137.001persistence": {
+            "count": 4,
+            "tcode": "T1137.001",
+            "tactic": "persistence"
+        },
+        "T1123collection": {
+            "count": 29,
+            "tcode": "T1123",
+            "tactic": "collection"
+        },
+        "T1055.012defense-evasion": {
+            "count": 31,
+            "tcode": "T1055.012",
+            "tactic": "defense-evasion"
+        },
+        "T1055.012privilege-escalation": {
+            "count": 31,
+            "tcode": "T1055.012",
+            "tactic": "privilege-escalation"
+        },
+        "T1547.004persistence": {
+            "count": 11,
+            "tcode": "T1547.004",
+            "tactic": "persistence"
+        },
+        "T1547.004privilege-escalation": {
+            "count": 11,
+            "tcode": "T1547.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1070defense-evasion": {
+            "count": 275,
+            "tcode": "T1070",
+            "tactic": "defense-evasion"
+        },
+        "T1518discovery": {
+            "count": 125,
+            "tcode": "T1518",
+            "tactic": "discovery"
+        },
+        "T1203execution": {
+            "count": 51,
+            "tcode": "T1203",
+            "tactic": "execution"
+        },
+        "T1021.001lateral-movement": {
+            "count": 44,
+            "tcode": "T1021.001",
+            "tactic": "lateral-movement"
+        },
+        "T1566initial-access": {
+            "count": 137,
+            "tcode": "T1566",
+            "tactic": "initial-access"
+        },
+        "T1608.004resource-development": {
+            "count": 6,
+            "tcode": "T1608.004",
+            "tactic": "resource-development"
+        },
+        "T1574.007persistence": {
+            "count": 3,
+            "tcode": "T1574.007",
+            "tactic": "persistence"
+        },
+        "T1574.007privilege-escalation": {
+            "count": 3,
+            "tcode": "T1574.007",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.007defense-evasion": {
+            "count": 3,
+            "tcode": "T1574.007",
+            "tactic": "defense-evasion"
+        },
+        "T1204.002execution": {
+            "count": 151,
+            "tcode": "T1204.002",
+            "tactic": "execution"
+        },
+        "T1222.002defense-evasion": {
+            "count": 13,
+            "tcode": "T1222.002",
+            "tactic": "defense-evasion"
+        },
+        "T1136.001persistence": {
+            "count": 24,
+            "tcode": "T1136.001",
+            "tactic": "persistence"
+        },
+        "T1564defense-evasion": {
+            "count": 107,
+            "tcode": "T1564",
+            "tactic": "defense-evasion"
+        },
+        "T1056.002collection": {
+            "count": 11,
+            "tcode": "T1056.002",
+            "tactic": "collection"
+        },
+        "T1056.002credential-access": {
+            "count": 11,
+            "tcode": "T1056.002",
+            "tactic": "credential-access"
+        },
+        "T1222.001defense-evasion": {
+            "count": 10,
+            "tcode": "T1222.001",
+            "tactic": "defense-evasion"
+        },
+        "T1068privilege-escalation": {
+            "count": 33,
+            "tcode": "T1068",
+            "tactic": "privilege-escalation"
+        },
+        "T1585.002resource-development": {
+            "count": 11,
+            "tcode": "T1585.002",
+            "tactic": "resource-development"
+        },
+        "T1491.001impact": {
+            "count": 7,
+            "tcode": "T1491.001",
+            "tactic": "impact"
+        },
+        "T1202defense-evasion": {
+            "count": 4,
+            "tcode": "T1202",
+            "tactic": "defense-evasion"
+        },
+        "T1546.011privilege-escalation": {
+            "count": 5,
+            "tcode": "T1546.011",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.011persistence": {
+            "count": 5,
+            "tcode": "T1546.011",
+            "tactic": "persistence"
+        },
+        "T1562.009defense-evasion": {
+            "count": 4,
+            "tcode": "T1562.009",
+            "tactic": "defense-evasion"
+        },
+        "T1003.002credential-access": {
+            "count": 23,
+            "tcode": "T1003.002",
+            "tactic": "credential-access"
+        },
+        "T1027.003defense-evasion": {
+            "count": 27,
+            "tcode": "T1027.003",
+            "tactic": "defense-evasion"
+        },
+        "T1613discovery": {
+            "count": 4,
+            "tcode": "T1613",
+            "tactic": "discovery"
+        },
+        "T1071.002command-and-control": {
+            "count": 17,
+            "tcode": "T1071.002",
+            "tactic": "command-and-control"
+        },
+        "T1620defense-evasion": {
+            "count": 14,
+            "tcode": "T1620",
+            "tactic": "defense-evasion"
+        },
+        "T1573command-and-control": {
+            "count": 188,
+            "tcode": "T1573",
+            "tactic": "command-and-control"
+        },
+        "T1027.001defense-evasion": {
+            "count": 35,
+            "tcode": "T1027.001",
+            "tactic": "defense-evasion"
+        },
+        "T1048.003exfiltration": {
+            "count": 27,
+            "tcode": "T1048.003",
+            "tactic": "exfiltration"
+        },
+        "T1218.011defense-evasion": {
+            "count": 82,
+            "tcode": "T1218.011",
+            "tactic": "defense-evasion"
+        },
+        "T1134.001defense-evasion": {
+            "count": 16,
+            "tcode": "T1134.001",
+            "tactic": "defense-evasion"
+        },
+        "T1134.001privilege-escalation": {
+            "count": 16,
+            "tcode": "T1134.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1001.003command-and-control": {
+            "count": 14,
+            "tcode": "T1001.003",
+            "tactic": "command-and-control"
+        },
+        "T1071.003command-and-control": {
+            "count": 21,
+            "tcode": "T1071.003",
+            "tactic": "command-and-control"
+        },
+        "T1588.002resource-development": {
+            "count": 62,
+            "tcode": "T1588.002",
+            "tactic": "resource-development"
+        },
+        "T1505.003persistence": {
+            "count": 29,
+            "tcode": "T1505.003",
+            "tactic": "persistence"
+        },
+        "T1132.001command-and-control": {
+            "count": 93,
+            "tcode": "T1132.001",
+            "tactic": "command-and-control"
+        },
+        "T1556.003credential-access": {
+            "count": 3,
+            "tcode": "T1556.003",
+            "tactic": "credential-access"
+        },
+        "T1556.003defense-evasion": {
+            "count": 3,
+            "tcode": "T1556.003",
+            "tactic": "defense-evasion"
+        },
+        "T1556.003persistence": {
+            "count": 3,
+            "tcode": "T1556.003",
+            "tactic": "persistence"
+        },
+        "T1110.003credential-access": {
+            "count": 14,
+            "tcode": "T1110.003",
+            "tactic": "credential-access"
+        },
+        "T1027.002defense-evasion": {
+            "count": 84,
+            "tcode": "T1027.002",
+            "tactic": "defense-evasion"
+        },
+        "T1087.001discovery": {
+            "count": 50,
+            "tcode": "T1087.001",
+            "tactic": "discovery"
+        },
+        "T1570lateral-movement": {
+            "count": 27,
+            "tcode": "T1570",
+            "tactic": "lateral-movement"
+        },
+        "T1001.002command-and-control": {
+            "count": 12,
+            "tcode": "T1001.002",
+            "tactic": "command-and-control"
+        },
+        "T1036.001defense-evasion": {
+            "count": 9,
+            "tcode": "T1036.001",
+            "tactic": "defense-evasion"
+        },
+        "T1048exfiltration": {
+            "count": 36,
+            "tcode": "T1048",
+            "tactic": "exfiltration"
+        },
+        "T1621credential-access": {
+            "count": 3,
+            "tcode": "T1621",
+            "tactic": "credential-access"
+        },
+        "T1482discovery": {
+            "count": 19,
+            "tcode": "T1482",
+            "tactic": "discovery"
+        },
+        "T1087.002discovery": {
+            "count": 40,
+            "tcode": "T1087.002",
+            "tactic": "discovery"
+        },
+        "T1583.001resource-development": {
+            "count": 29,
+            "tcode": "T1583.001",
+            "tactic": "resource-development"
+        },
+        "T1565.002impact": {
+            "count": 5,
+            "tcode": "T1565.002",
+            "tactic": "impact"
+        },
+        "T1049discovery": {
+            "count": 81,
+            "tcode": "T1049",
+            "tactic": "discovery"
+        },
+        "T1008command-and-control": {
+            "count": 50,
+            "tcode": "T1008",
+            "tactic": "command-and-control"
+        },
+        "T1070.006defense-evasion": {
+            "count": 45,
+            "tcode": "T1070.006",
+            "tactic": "defense-evasion"
+        },
+        "T1029exfiltration": {
+            "count": 18,
+            "tcode": "T1029",
+            "tactic": "exfiltration"
+        },
+        "T1213.001collection": {
+            "count": 2,
+            "tcode": "T1213.001",
+            "tactic": "collection"
+        },
+        "T1584.004resource-development": {
+            "count": 7,
+            "tcode": "T1584.004",
+            "tactic": "resource-development"
+        },
+        "T1010discovery": {
+            "count": 30,
+            "tcode": "T1010",
+            "tactic": "discovery"
+        },
+        "T1546.016privilege-escalation": {
+            "count": 2,
+            "tcode": "T1546.016",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.016persistence": {
+            "count": 2,
+            "tcode": "T1546.016",
+            "tactic": "persistence"
+        },
+        "T1020exfiltration": {
+            "count": 21,
+            "tcode": "T1020",
+            "tactic": "exfiltration"
+        },
+        "T1574.012persistence": {
+            "count": 3,
+            "tcode": "T1574.012",
+            "tactic": "persistence"
+        },
+        "T1574.012privilege-escalation": {
+            "count": 3,
+            "tcode": "T1574.012",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.012defense-evasion": {
+            "count": 3,
+            "tcode": "T1574.012",
+            "tactic": "defense-evasion"
+        },
+        "T1608.001resource-development": {
+            "count": 16,
+            "tcode": "T1608.001",
+            "tactic": "resource-development"
+        },
+        "T1564.002defense-evasion": {
+            "count": 4,
+            "tcode": "T1564.002",
+            "tactic": "defense-evasion"
+        },
+        "T1218.005defense-evasion": {
+            "count": 26,
+            "tcode": "T1218.005",
+            "tactic": "defense-evasion"
+        },
+        "T1055.002defense-evasion": {
+            "count": 8,
+            "tcode": "T1055.002",
+            "tactic": "defense-evasion"
+        },
+        "T1055.002privilege-escalation": {
+            "count": 8,
+            "tcode": "T1055.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1529impact": {
+            "count": 16,
+            "tcode": "T1529",
+            "tactic": "impact"
+        },
+        "T1059.004execution": {
+            "count": 32,
+            "tcode": "T1059.004",
+            "tactic": "execution"
+        },
+        "T1552.006credential-access": {
+            "count": 4,
+            "tcode": "T1552.006",
+            "tactic": "credential-access"
+        },
+        "T1003credential-access": {
+            "count": 92,
+            "tcode": "T1003",
+            "tactic": "credential-access"
+        },
+        "T1070.001defense-evasion": {
+            "count": 28,
+            "tcode": "T1070.001",
+            "tactic": "defense-evasion"
+        },
+        "T1217discovery": {
+            "count": 14,
+            "tcode": "T1217",
+            "tactic": "discovery"
+        },
+        "T1197defense-evasion": {
+            "count": 14,
+            "tcode": "T1197",
+            "tactic": "defense-evasion"
+        },
+        "T1197persistence": {
+            "count": 14,
+            "tcode": "T1197",
+            "tactic": "persistence"
+        },
+        "T1598reconnaissance": {
+            "count": 16,
+            "tcode": "T1598",
+            "tactic": "reconnaissance"
+        },
+        "T1610defense-evasion": {
+            "count": 5,
+            "tcode": "T1610",
+            "tactic": "defense-evasion"
+        },
+        "T1610execution": {
+            "count": 5,
+            "tcode": "T1610",
+            "tactic": "execution"
+        },
+        "T1090.001command-and-control": {
+            "count": 24,
+            "tcode": "T1090.001",
+            "tactic": "command-and-control"
+        },
+        "T1595.002reconnaissance": {
+            "count": 10,
+            "tcode": "T1595.002",
+            "tactic": "reconnaissance"
+        },
+        "T1598.003reconnaissance": {
+            "count": 14,
+            "tcode": "T1598.003",
+            "tactic": "reconnaissance"
+        },
+        "T1534lateral-movement": {
+            "count": 6,
+            "tcode": "T1534",
+            "tactic": "lateral-movement"
+        },
+        "T1561.002impact": {
+            "count": 12,
+            "tcode": "T1561.002",
+            "tactic": "impact"
+        },
+        "T1195.002initial-access": {
+            "count": 11,
+            "tcode": "T1195.002",
+            "tactic": "initial-access"
+        },
+        "T1484.001defense-evasion": {
+            "count": 7,
+            "tcode": "T1484.001",
+            "tactic": "defense-evasion"
+        },
+        "T1484.001privilege-escalation": {
+            "count": 7,
+            "tcode": "T1484.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.009privilege-escalation": {
+            "count": 2,
+            "tcode": "T1546.009",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.009persistence": {
+            "count": 2,
+            "tcode": "T1546.009",
+            "tactic": "persistence"
+        },
+        "T1497.002defense-evasion": {
+            "count": 5,
+            "tcode": "T1497.002",
+            "tactic": "defense-evasion"
+        },
+        "T1497.002discovery": {
+            "count": 5,
+            "tcode": "T1497.002",
+            "tactic": "discovery"
+        },
+        "T1530collection": {
+            "count": 3,
+            "tcode": "T1530",
+            "tactic": "collection"
+        },
+        "T1119collection": {
+            "count": 51,
+            "tcode": "T1119",
+            "tactic": "collection"
+        },
+        "T1560.002collection": {
+            "count": 15,
+            "tcode": "T1560.002",
+            "tactic": "collection"
+        },
+        "T1104command-and-control": {
+            "count": 10,
+            "tcode": "T1104",
+            "tactic": "command-and-control"
+        },
+        "T1585.001resource-development": {
+            "count": 12,
+            "tcode": "T1585.001",
+            "tactic": "resource-development"
+        },
+        "T1609execution": {
+            "count": 6,
+            "tcode": "T1609",
+            "tactic": "execution"
+        },
+        "T1098.004persistence": {
+            "count": 6,
+            "tcode": "T1098.004",
+            "tactic": "persistence"
+        },
+        "T1569.001execution": {
+            "count": 6,
+            "tcode": "T1569.001",
+            "tactic": "execution"
+        },
+        "T1110.002credential-access": {
+            "count": 6,
+            "tcode": "T1110.002",
+            "tactic": "credential-access"
+        },
+        "T1584.001resource-development": {
+            "count": 8,
+            "tcode": "T1584.001",
+            "tactic": "resource-development"
+        },
+        "T1557credential-access": {
+            "count": 12,
+            "tcode": "T1557",
+            "tactic": "credential-access"
+        },
+        "T1557collection": {
+            "count": 12,
+            "tcode": "T1557",
+            "tactic": "collection"
+        },
+        "T1543.004persistence": {
+            "count": 9,
+            "tcode": "T1543.004",
+            "tactic": "persistence"
+        },
+        "T1543.004privilege-escalation": {
+            "count": 9,
+            "tcode": "T1543.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1614.001discovery": {
+            "count": 23,
+            "tcode": "T1614.001",
+            "tactic": "discovery"
+        },
+        "T1552.004credential-access": {
+            "count": 14,
+            "tcode": "T1552.004",
+            "tactic": "credential-access"
+        },
+        "T1615discovery": {
+            "count": 5,
+            "tcode": "T1615",
+            "tactic": "discovery"
+        },
+        "T1136persistence": {
+            "count": 32,
+            "tcode": "T1136",
+            "tactic": "persistence"
+        },
+        "T1080lateral-movement": {
+            "count": 11,
+            "tcode": "T1080",
+            "tactic": "lateral-movement"
+        },
+        "T1562.004defense-evasion": {
+            "count": 29,
+            "tcode": "T1562.004",
+            "tactic": "defense-evasion"
+        },
+        "T1199initial-access": {
+            "count": 9,
+            "tcode": "T1199",
+            "tactic": "initial-access"
+        },
+        "T1053execution": {
+            "count": 149,
+            "tcode": "T1053",
+            "tactic": "execution"
+        },
+        "T1053persistence": {
+            "count": 149,
+            "tcode": "T1053",
+            "tactic": "persistence"
+        },
+        "T1053privilege-escalation": {
+            "count": 149,
+            "tcode": "T1053",
+            "tactic": "privilege-escalation"
+        },
+        "T1021.004lateral-movement": {
+            "count": 17,
+            "tcode": "T1021.004",
+            "tactic": "lateral-movement"
+        },
+        "T1053.003execution": {
+            "count": 13,
+            "tcode": "T1053.003",
+            "tactic": "execution"
+        },
+        "T1053.003persistence": {
+            "count": 13,
+            "tcode": "T1053.003",
+            "tactic": "persistence"
+        },
+        "T1053.003privilege-escalation": {
+            "count": 13,
+            "tcode": "T1053.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1074.002collection": {
+            "count": 10,
+            "tcode": "T1074.002",
+            "tactic": "collection"
+        },
+        "T1207defense-evasion": {
+            "count": 2,
+            "tcode": "T1207",
+            "tactic": "defense-evasion"
+        },
+        "T1092command-and-control": {
+            "count": 4,
+            "tcode": "T1092",
+            "tactic": "command-and-control"
+        },
+        "T1205.001defense-evasion": {
+            "count": 4,
+            "tcode": "T1205.001",
+            "tactic": "defense-evasion"
+        },
+        "T1205.001persistence": {
+            "count": 4,
+            "tcode": "T1205.001",
+            "tactic": "persistence"
+        },
+        "T1205.001command-and-control": {
+            "count": 4,
+            "tcode": "T1205.001",
+            "tactic": "command-and-control"
+        },
+        "T1526discovery": {
+            "count": 3,
+            "tcode": "T1526",
+            "tactic": "discovery"
+        },
+        "T1102command-and-control": {
+            "count": 95,
+            "tcode": "T1102",
+            "tactic": "command-and-control"
+        },
+        "T1591.002reconnaissance": {
+            "count": 4,
+            "tcode": "T1591.002",
+            "tactic": "reconnaissance"
+        },
+        "T1574.001persistence": {
+            "count": 31,
+            "tcode": "T1574.001",
+            "tactic": "persistence"
+        },
+        "T1574.001privilege-escalation": {
+            "count": 31,
+            "tcode": "T1574.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.001defense-evasion": {
+            "count": 31,
+            "tcode": "T1574.001",
+            "tactic": "defense-evasion"
+        },
+        "T1048.002exfiltration": {
+            "count": 4,
+            "tcode": "T1048.002",
+            "tactic": "exfiltration"
+        },
+        "T1553.006defense-evasion": {
+            "count": 6,
+            "tcode": "T1553.006",
+            "tactic": "defense-evasion"
+        },
+        "T1134.003defense-evasion": {
+            "count": 4,
+            "tcode": "T1134.003",
+            "tactic": "defense-evasion"
+        },
+        "T1134.003privilege-escalation": {
+            "count": 4,
+            "tcode": "T1134.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.012privilege-escalation": {
+            "count": 4,
+            "tcode": "T1546.012",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.012persistence": {
+            "count": 4,
+            "tcode": "T1546.012",
+            "tactic": "persistence"
+        },
+        "T1053.002execution": {
+            "count": 7,
+            "tcode": "T1053.002",
+            "tactic": "execution"
+        },
+        "T1053.002persistence": {
+            "count": 7,
+            "tcode": "T1053.002",
+            "tactic": "persistence"
+        },
+        "T1053.002privilege-escalation": {
+            "count": 7,
+            "tcode": "T1053.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1568.002command-and-control": {
+            "count": 23,
+            "tcode": "T1568.002",
+            "tactic": "command-and-control"
+        },
+        "T1078.003defense-evasion": {
+            "count": 14,
+            "tcode": "T1078.003",
+            "tactic": "defense-evasion"
+        },
+        "T1078.003persistence": {
+            "count": 14,
+            "tcode": "T1078.003",
+            "tactic": "persistence"
+        },
+        "T1078.003privilege-escalation": {
+            "count": 14,
+            "tcode": "T1078.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1078.003initial-access": {
+            "count": 14,
+            "tcode": "T1078.003",
+            "tactic": "initial-access"
+        },
+        "T1102.003command-and-control": {
+            "count": 6,
+            "tcode": "T1102.003",
+            "tactic": "command-and-control"
+        },
+        "T1547persistence": {
+            "count": 246,
+            "tcode": "T1547",
+            "tactic": "persistence"
+        },
+        "T1547privilege-escalation": {
+            "count": 246,
+            "tcode": "T1547",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.013privilege-escalation": {
+            "count": 2,
+            "tcode": "T1546.013",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.013persistence": {
+            "count": 2,
+            "tcode": "T1546.013",
+            "tactic": "persistence"
+        },
+        "T1027.011defense-evasion": {
+            "count": 28,
+            "tcode": "T1027.011",
+            "tactic": "defense-evasion"
+        },
+        "T1572command-and-control": {
+            "count": 21,
+            "tcode": "T1572",
+            "tactic": "command-and-control"
+        },
+        "T1546.010privilege-escalation": {
+            "count": 5,
+            "tcode": "T1546.010",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.010persistence": {
+            "count": 5,
+            "tcode": "T1546.010",
+            "tactic": "persistence"
+        },
+        "T1611privilege-escalation": {
+            "count": 6,
+            "tcode": "T1611",
+            "tactic": "privilege-escalation"
+        },
+        "T1552.002credential-access": {
+            "count": 8,
+            "tcode": "T1552.002",
+            "tactic": "credential-access"
+        },
+        "T1588.004resource-development": {
+            "count": 5,
+            "tcode": "T1588.004",
+            "tactic": "resource-development"
+        },
+        "T1546.003privilege-escalation": {
+            "count": 18,
+            "tcode": "T1546.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.003persistence": {
+            "count": 18,
+            "tcode": "T1546.003",
+            "tactic": "persistence"
+        },
+        "T1586.002resource-development": {
+            "count": 9,
+            "tcode": "T1586.002",
+            "tactic": "resource-development"
+        },
+        "T1110credential-access": {
+            "count": 41,
+            "tcode": "T1110",
+            "tactic": "credential-access"
+        },
+        "T1546.001privilege-escalation": {
+            "count": 3,
+            "tcode": "T1546.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.001persistence": {
+            "count": 3,
+            "tcode": "T1546.001",
+            "tactic": "persistence"
+        },
+        "T1218.008defense-evasion": {
+            "count": 3,
+            "tcode": "T1218.008",
+            "tactic": "defense-evasion"
+        },
+        "T1072execution": {
+            "count": 6,
+            "tcode": "T1072",
+            "tactic": "execution"
+        },
+        "T1072lateral-movement": {
+            "count": 6,
+            "tcode": "T1072",
+            "tactic": "lateral-movement"
+        },
+        "T1568.001command-and-control": {
+            "count": 7,
+            "tcode": "T1568.001",
+            "tactic": "command-and-control"
+        },
+        "T1132.002command-and-control": {
+            "count": 10,
+            "tcode": "T1132.002",
+            "tactic": "command-and-control"
+        },
+        "T1557.002credential-access": {
+            "count": 3,
+            "tcode": "T1557.002",
+            "tactic": "credential-access"
+        },
+        "T1557.002collection": {
+            "count": 3,
+            "tcode": "T1557.002",
+            "tactic": "collection"
+        },
+        "T1003.004credential-access": {
+            "count": 18,
+            "tcode": "T1003.004",
+            "tactic": "credential-access"
+        },
+        "T1564.004defense-evasion": {
+            "count": 16,
+            "tcode": "T1564.004",
+            "tactic": "defense-evasion"
+        },
+        "T1543.002persistence": {
+            "count": 8,
+            "tcode": "T1543.002",
+            "tactic": "persistence"
+        },
+        "T1543.002privilege-escalation": {
+            "count": 8,
+            "tcode": "T1543.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1021.005lateral-movement": {
+            "count": 11,
+            "tcode": "T1021.005",
+            "tactic": "lateral-movement"
+        },
+        "T1601.001defense-evasion": {
+            "count": 2,
+            "tcode": "T1601.001",
+            "tactic": "defense-evasion"
+        },
+        "T1595.003reconnaissance": {
+            "count": 2,
+            "tcode": "T1595.003",
+            "tactic": "reconnaissance"
+        },
+        "T1587resource-development": {
+            "count": 15,
+            "tcode": "T1587",
+            "tactic": "resource-development"
+        },
+        "T1591.001reconnaissance": {
+            "count": 2,
+            "tcode": "T1591.001",
+            "tactic": "reconnaissance"
+        },
+        "T1185collection": {
+            "count": 12,
+            "tcode": "T1185",
+            "tactic": "collection"
+        },
+        "T1027.004defense-evasion": {
+            "count": 8,
+            "tcode": "T1027.004",
+            "tactic": "defense-evasion"
+        },
+        "T1098persistence": {
+            "count": 22,
+            "tcode": "T1098",
+            "tactic": "persistence"
+        },
+        "T1649credential-access": {
+            "count": 4,
+            "tcode": "T1649",
+            "tactic": "credential-access"
+        },
+        "T1213collection": {
+            "count": 11,
+            "tcode": "T1213",
+            "tactic": "collection"
+        },
+        "T1495impact": {
+            "count": 3,
+            "tcode": "T1495",
+            "tactic": "impact"
+        },
+        "T1037.001persistence": {
+            "count": 7,
+            "tcode": "T1037.001",
+            "tactic": "persistence"
+        },
+        "T1037.001privilege-escalation": {
+            "count": 7,
+            "tcode": "T1037.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1550.001defense-evasion": {
+            "count": 5,
+            "tcode": "T1550.001",
+            "tactic": "defense-evasion"
+        },
+        "T1550.001lateral-movement": {
+            "count": 5,
+            "tcode": "T1550.001",
+            "tactic": "lateral-movement"
+        },
+        "T1553.005defense-evasion": {
+            "count": 5,
+            "tcode": "T1553.005",
+            "tactic": "defense-evasion"
+        },
+        "T1071command-and-control": {
+            "count": 346,
+            "tcode": "T1071",
+            "tactic": "command-and-control"
+        },
+        "T1114.001collection": {
+            "count": 14,
+            "tcode": "T1114.001",
+            "tactic": "collection"
+        },
+        "T1218.004defense-evasion": {
+            "count": 6,
+            "tcode": "T1218.004",
+            "tactic": "defense-evasion"
+        },
+        "T1221defense-evasion": {
+            "count": 11,
+            "tcode": "T1221",
+            "tactic": "defense-evasion"
+        },
+        "T1574persistence": {
+            "count": 86,
+            "tcode": "T1574",
+            "tactic": "persistence"
+        },
+        "T1574privilege-escalation": {
+            "count": 86,
+            "tcode": "T1574",
+            "tactic": "privilege-escalation"
+        },
+        "T1574defense-evasion": {
+            "count": 86,
+            "tcode": "T1574",
+            "tactic": "defense-evasion"
+        },
+        "T1011.001exfiltration": {
+            "count": 2,
+            "tcode": "T1011.001",
+            "tactic": "exfiltration"
+        },
+        "T1589.002reconnaissance": {
+            "count": 14,
+            "tcode": "T1589.002",
+            "tactic": "reconnaissance"
+        },
+        "T1134defense-evasion": {
+            "count": 43,
+            "tcode": "T1134",
+            "tactic": "defense-evasion"
+        },
+        "T1134privilege-escalation": {
+            "count": 43,
+            "tcode": "T1134",
+            "tactic": "privilege-escalation"
+        },
+        "T1547.012persistence": {
+            "count": 4,
+            "tcode": "T1547.012",
+            "tactic": "persistence"
+        },
+        "T1547.012privilege-escalation": {
+            "count": 4,
+            "tcode": "T1547.012",
+            "tactic": "privilege-escalation"
+        },
+        "T1111credential-access": {
+            "count": 5,
+            "tcode": "T1111",
+            "tactic": "credential-access"
+        },
+        "T1213.003collection": {
+            "count": 3,
+            "tcode": "T1213.003",
+            "tactic": "collection"
+        },
+        "T1591reconnaissance": {
+            "count": 8,
+            "tcode": "T1591",
+            "tactic": "reconnaissance"
+        },
+        "T1555.005credential-access": {
+            "count": 6,
+            "tcode": "T1555.005",
+            "tactic": "credential-access"
+        },
+        "T1505.004persistence": {
+            "count": 4,
+            "tcode": "T1505.004",
+            "tactic": "persistence"
+        },
+        "T1074collection": {
+            "count": 95,
+            "tcode": "T1074",
+            "tactic": "collection"
+        },
+        "T1547.006persistence": {
+            "count": 3,
+            "tcode": "T1547.006",
+            "tactic": "persistence"
+        },
+        "T1547.006privilege-escalation": {
+            "count": 3,
+            "tcode": "T1547.006",
+            "tactic": "privilege-escalation"
+        },
+        "T1187credential-access": {
+            "count": 4,
+            "tcode": "T1187",
+            "tactic": "credential-access"
+        },
+        "T1574.009persistence": {
+            "count": 3,
+            "tcode": "T1574.009",
+            "tactic": "persistence"
+        },
+        "T1574.009privilege-escalation": {
+            "count": 3,
+            "tcode": "T1574.009",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.009defense-evasion": {
+            "count": 3,
+            "tcode": "T1574.009",
+            "tactic": "defense-evasion"
+        },
+        "T1027.009defense-evasion": {
+            "count": 8,
+            "tcode": "T1027.009",
+            "tactic": "defense-evasion"
+        },
+        "T1036.008defense-evasion": {
+            "count": 4,
+            "tcode": "T1036.008",
+            "tactic": "defense-evasion"
+        },
+        "T1218.009defense-evasion": {
+            "count": 2,
+            "tcode": "T1218.009",
+            "tactic": "defense-evasion"
+        },
+        "T1134.004defense-evasion": {
+            "count": 5,
+            "tcode": "T1134.004",
+            "tactic": "defense-evasion"
+        },
+        "T1134.004privilege-escalation": {
+            "count": 5,
+            "tcode": "T1134.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1584.005resource-development": {
+            "count": 3,
+            "tcode": "T1584.005",
+            "tactic": "resource-development"
+        },
+        "T1608.005resource-development": {
+            "count": 3,
+            "tcode": "T1608.005",
+            "tactic": "resource-development"
+        },
+        "T1218.012defense-evasion": {
+            "count": 2,
+            "tcode": "T1218.012",
+            "tactic": "defense-evasion"
+        },
+        "T1594reconnaissance": {
+            "count": 5,
+            "tcode": "T1594",
+            "tactic": "reconnaissance"
+        },
+        "T1586.001resource-development": {
+            "count": 2,
+            "tcode": "T1586.001",
+            "tactic": "resource-development"
+        },
+        "T1585resource-development": {
+            "count": 16,
+            "tcode": "T1585",
+            "tactic": "resource-development"
+        },
+        "T1592.002reconnaissance": {
+            "count": 4,
+            "tcode": "T1592.002",
+            "tactic": "reconnaissance"
+        },
+        "T1069discovery": {
+            "count": 53,
+            "tcode": "T1069",
+            "tactic": "discovery"
+        },
+        "T1218.001defense-evasion": {
+            "count": 8,
+            "tcode": "T1218.001",
+            "tactic": "defense-evasion"
+        },
+        "T1556.007credential-access": {
+            "count": 3,
+            "tcode": "T1556.007",
+            "tactic": "credential-access"
+        },
+        "T1556.007defense-evasion": {
+            "count": 3,
+            "tcode": "T1556.007",
+            "tactic": "defense-evasion"
+        },
+        "T1556.007persistence": {
+            "count": 3,
+            "tcode": "T1556.007",
+            "tactic": "persistence"
+        },
+        "T1216.001defense-evasion": {
+            "count": 2,
+            "tcode": "T1216.001",
+            "tactic": "defense-evasion"
+        },
+        "T1213.002collection": {
+            "count": 6,
+            "tcode": "T1213.002",
+            "tactic": "collection"
+        },
+        "T1546.004privilege-escalation": {
+            "count": 3,
+            "tcode": "T1546.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.004persistence": {
+            "count": 3,
+            "tcode": "T1546.004",
+            "tactic": "persistence"
+        },
+        "T1003.008credential-access": {
+            "count": 2,
+            "tcode": "T1003.008",
+            "tactic": "credential-access"
+        },
+        "T1132command-and-control": {
+            "count": 105,
+            "tcode": "T1132",
+            "tactic": "command-and-control"
+        },
+        "T1070.009defense-evasion": {
+            "count": 11,
+            "tcode": "T1070.009",
+            "tactic": "defense-evasion"
+        },
+        "T1136.003persistence": {
+            "count": 4,
+            "tcode": "T1136.003",
+            "tactic": "persistence"
+        },
+        "T1553.001defense-evasion": {
+            "count": 6,
+            "tcode": "T1553.001",
+            "tactic": "defense-evasion"
+        },
+        "T1136.002persistence": {
+            "count": 8,
+            "tcode": "T1136.002",
+            "tactic": "persistence"
+        },
+        "T1098.005persistence": {
+            "count": 4,
+            "tcode": "T1098.005",
+            "tactic": "persistence"
+        },
+        "T1587.003resource-development": {
+            "count": 3,
+            "tcode": "T1587.003",
+            "tactic": "resource-development"
+        },
+        "T1137.004persistence": {
+            "count": 3,
+            "tcode": "T1137.004",
+            "tactic": "persistence"
+        },
+        "T1021.006lateral-movement": {
+            "count": 9,
+            "tcode": "T1021.006",
+            "tactic": "lateral-movement"
+        },
+        "T1564.006defense-evasion": {
+            "count": 4,
+            "tcode": "T1564.006",
+            "tactic": "defense-evasion"
+        },
+        "T1651execution": {
+            "count": 3,
+            "tcode": "T1651",
+            "tactic": "execution"
+        },
+        "T1480.001defense-evasion": {
+            "count": 7,
+            "tcode": "T1480.001",
+            "tactic": "defense-evasion"
+        },
+        "T1593.001reconnaissance": {
+            "count": 4,
+            "tcode": "T1593.001",
+            "tactic": "reconnaissance"
+        },
+        "T1218.003defense-evasion": {
+            "count": 3,
+            "tcode": "T1218.003",
+            "tactic": "defense-evasion"
+        },
+        "T1583.003resource-development": {
+            "count": 6,
+            "tcode": "T1583.003",
+            "tactic": "resource-development"
+        },
+        "T1134.005defense-evasion": {
+            "count": 3,
+            "tcode": "T1134.005",
+            "tactic": "defense-evasion"
+        },
+        "T1134.005privilege-escalation": {
+            "count": 3,
+            "tcode": "T1134.005",
+            "tactic": "privilege-escalation"
+        },
+        "T1039collection": {
+            "count": 12,
+            "tcode": "T1039",
+            "tactic": "collection"
+        },
+        "T1591.004reconnaissance": {
+            "count": 4,
+            "tcode": "T1591.004",
+            "tactic": "reconnaissance"
+        },
+        "T1078.001defense-evasion": {
+            "count": 4,
+            "tcode": "T1078.001",
+            "tactic": "defense-evasion"
+        },
+        "T1078.001persistence": {
+            "count": 4,
+            "tcode": "T1078.001",
+            "tactic": "persistence"
+        },
+        "T1078.001privilege-escalation": {
+            "count": 4,
+            "tcode": "T1078.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1078.001initial-access": {
+            "count": 4,
+            "tcode": "T1078.001",
+            "tactic": "initial-access"
+        },
+        "T1554persistence": {
+            "count": 8,
+            "tcode": "T1554",
+            "tactic": "persistence"
+        },
+        "T1114collection": {
+            "count": 28,
+            "tcode": "T1114",
+            "tactic": "collection"
+        },
+        "T1547.013persistence": {
+            "count": 3,
+            "tcode": "T1547.013",
+            "tactic": "persistence"
+        },
+        "T1547.013privilege-escalation": {
+            "count": 3,
+            "tcode": "T1547.013",
+            "tactic": "privilege-escalation"
+        },
+        "T1137.006persistence": {
+            "count": 3,
+            "tcode": "T1137.006",
+            "tactic": "persistence"
+        },
+        "T1055.013defense-evasion": {
+            "count": 4,
+            "tcode": "T1055.013",
+            "tactic": "defense-evasion"
+        },
+        "T1055.013privilege-escalation": {
+            "count": 4,
+            "tcode": "T1055.013",
+            "tactic": "privilege-escalation"
+        },
+        "T1564.010defense-evasion": {
+            "count": 3,
+            "tcode": "T1564.010",
+            "tactic": "defense-evasion"
+        },
+        "T1542.002persistence": {
+            "count": 3,
+            "tcode": "T1542.002",
+            "tactic": "persistence"
+        },
+        "T1542.002defense-evasion": {
+            "count": 3,
+            "tcode": "T1542.002",
+            "tactic": "defense-evasion"
+        },
+        "T1565.001impact": {
+            "count": 3,
+            "tcode": "T1565.001",
+            "tactic": "impact"
+        },
+        "T1547.005persistence": {
+            "count": 5,
+            "tcode": "T1547.005",
+            "tactic": "persistence"
+        },
+        "T1547.005privilege-escalation": {
+            "count": 5,
+            "tcode": "T1547.005",
+            "tactic": "privilege-escalation"
+        },
+        "T1558.001credential-access": {
+            "count": 5,
+            "tcode": "T1558.001",
+            "tactic": "credential-access"
+        },
+        "T1556.001credential-access": {
+            "count": 3,
+            "tcode": "T1556.001",
+            "tactic": "credential-access"
+        },
+        "T1556.001defense-evasion": {
+            "count": 3,
+            "tcode": "T1556.001",
+            "tactic": "defense-evasion"
+        },
+        "T1556.001persistence": {
+            "count": 3,
+            "tcode": "T1556.001",
+            "tactic": "persistence"
+        },
+        "T1555.002credential-access": {
+            "count": 2,
+            "tcode": "T1555.002",
+            "tactic": "credential-access"
+        },
+        "T1078.004defense-evasion": {
+            "count": 9,
+            "tcode": "T1078.004",
+            "tactic": "defense-evasion"
+        },
+        "T1078.004persistence": {
+            "count": 9,
+            "tcode": "T1078.004",
+            "tactic": "persistence"
+        },
+        "T1078.004privilege-escalation": {
+            "count": 9,
+            "tcode": "T1078.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1078.004initial-access": {
+            "count": 9,
+            "tcode": "T1078.004",
+            "tactic": "initial-access"
+        },
+        "T1583.004resource-development": {
+            "count": 6,
+            "tcode": "T1583.004",
+            "tactic": "resource-development"
+        },
+        "T1531impact": {
+            "count": 5,
+            "tcode": "T1531",
+            "tactic": "impact"
+        },
+        "T1555.001credential-access": {
+            "count": 7,
+            "tcode": "T1555.001",
+            "tactic": "credential-access"
+        },
+        "T1556.002credential-access": {
+            "count": 3,
+            "tcode": "T1556.002",
+            "tactic": "credential-access"
+        },
+        "T1556.002defense-evasion": {
+            "count": 3,
+            "tcode": "T1556.002",
+            "tactic": "defense-evasion"
+        },
+        "T1556.002persistence": {
+            "count": 3,
+            "tcode": "T1556.002",
+            "tactic": "persistence"
+        },
+        "T1546.008privilege-escalation": {
+            "count": 8,
+            "tcode": "T1546.008",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.008persistence": {
+            "count": 8,
+            "tcode": "T1546.008",
+            "tactic": "persistence"
+        },
+        "T1574.006persistence": {
+            "count": 7,
+            "tcode": "T1574.006",
+            "tactic": "persistence"
+        },
+        "T1574.006privilege-escalation": {
+            "count": 7,
+            "tcode": "T1574.006",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.006defense-evasion": {
+            "count": 7,
+            "tcode": "T1574.006",
+            "tactic": "defense-evasion"
+        },
+        "T1589.003reconnaissance": {
+            "count": 4,
+            "tcode": "T1589.003",
+            "tactic": "reconnaissance"
+        },
+        "T1027.006defense-evasion": {
+            "count": 4,
+            "tcode": "T1027.006",
+            "tactic": "defense-evasion"
+        },
+        "T1055.003defense-evasion": {
+            "count": 4,
+            "tcode": "T1055.003",
+            "tactic": "defense-evasion"
+        },
+        "T1055.003privilege-escalation": {
+            "count": 4,
+            "tcode": "T1055.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1587.002resource-development": {
+            "count": 3,
+            "tcode": "T1587.002",
+            "tactic": "resource-development"
+        },
+        "T1552.003credential-access": {
+            "count": 2,
+            "tcode": "T1552.003",
+            "tactic": "credential-access"
+        },
+        "T1176persistence": {
+            "count": 5,
+            "tcode": "T1176",
+            "tactic": "persistence"
+        },
+        "T1070.005defense-evasion": {
+            "count": 5,
+            "tcode": "T1070.005",
+            "tactic": "defense-evasion"
+        },
+        "T1622defense-evasion": {
+            "count": 9,
+            "tcode": "T1622",
+            "tactic": "defense-evasion"
+        },
+        "T1622discovery": {
+            "count": 9,
+            "tcode": "T1622",
+            "tactic": "discovery"
+        },
+        "T1590.005reconnaissance": {
+            "count": 4,
+            "tcode": "T1590.005",
+            "tactic": "reconnaissance"
+        },
+        "T1564.009defense-evasion": {
+            "count": 3,
+            "tcode": "T1564.009",
+            "tactic": "defense-evasion"
+        },
+        "T1087.004discovery": {
+            "count": 4,
+            "tcode": "T1087.004",
+            "tactic": "discovery"
+        },
+        "T1036.003defense-evasion": {
+            "count": 7,
+            "tcode": "T1036.003",
+            "tactic": "defense-evasion"
+        },
+        "T1552.005credential-access": {
+            "count": 4,
+            "tcode": "T1552.005",
+            "tactic": "credential-access"
+        },
+        "T1070.003defense-evasion": {
+            "count": 8,
+            "tcode": "T1070.003",
+            "tactic": "defense-evasion"
+        },
+        "T1087discovery": {
+            "count": 85,
+            "tcode": "T1087",
+            "tactic": "discovery"
+        },
+        "T1553.004defense-evasion": {
+            "count": 5,
+            "tcode": "T1553.004",
+            "tactic": "defense-evasion"
+        },
+        "T1036.002defense-evasion": {
+            "count": 6,
+            "tcode": "T1036.002",
+            "tactic": "defense-evasion"
+        },
+        "T1205defense-evasion": {
+            "count": 12,
+            "tcode": "T1205",
+            "tactic": "defense-evasion"
+        },
+        "T1205persistence": {
+            "count": 12,
+            "tcode": "T1205",
+            "tactic": "persistence"
+        },
+        "T1205command-and-control": {
+            "count": 12,
+            "tcode": "T1205",
+            "tactic": "command-and-control"
+        },
+        "T1195.001initial-access": {
+            "count": 2,
+            "tcode": "T1195.001",
+            "tactic": "initial-access"
+        },
+        "T1546.007privilege-escalation": {
+            "count": 2,
+            "tcode": "T1546.007",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.007persistence": {
+            "count": 2,
+            "tcode": "T1546.007",
+            "tactic": "persistence"
+        },
+        "T1218.002defense-evasion": {
+            "count": 4,
+            "tcode": "T1218.002",
+            "tactic": "defense-evasion"
+        },
+        "T1027.008defense-evasion": {
+            "count": 2,
+            "tcode": "T1027.008",
+            "tactic": "defense-evasion"
+        },
+        "T1543persistence": {
+            "count": 141,
+            "tcode": "T1543",
+            "tactic": "persistence"
+        },
+        "T1543privilege-escalation": {
+            "count": 141,
+            "tcode": "T1543",
+            "tactic": "privilege-escalation"
+        },
+        "T1562.002defense-evasion": {
+            "count": 6,
+            "tcode": "T1562.002",
+            "tactic": "defense-evasion"
+        },
+        "T1069.003discovery": {
+            "count": 3,
+            "tcode": "T1069.003",
+            "tactic": "discovery"
+        },
+        "T1556credential-access": {
+            "count": 12,
+            "tcode": "T1556",
+            "tactic": "credential-access"
+        },
+        "T1556defense-evasion": {
+            "count": 12,
+            "tcode": "T1556",
+            "tactic": "defense-evasion"
+        },
+        "T1556persistence": {
+            "count": 12,
+            "tcode": "T1556",
+            "tactic": "persistence"
+        },
+        "T1562.003defense-evasion": {
+            "count": 3,
+            "tcode": "T1562.003",
+            "tactic": "defense-evasion"
+        },
+        "T1499impact": {
+            "count": 5,
+            "tcode": "T1499",
+            "tactic": "impact"
+        },
+        "T1498impact": {
+            "count": 3,
+            "tcode": "T1498",
+            "tactic": "impact"
+        },
+        "T1590.001reconnaissance": {
+            "count": 3,
+            "tcode": "T1590.001",
+            "tactic": "reconnaissance"
+        },
+        "T1542.001persistence": {
+            "count": 4,
+            "tcode": "T1542.001",
+            "tactic": "persistence"
+        },
+        "T1542.001defense-evasion": {
+            "count": 4,
+            "tcode": "T1542.001",
+            "tactic": "defense-evasion"
+        },
+        "T1598.002reconnaissance": {
+            "count": 5,
+            "tcode": "T1598.002",
+            "tactic": "reconnaissance"
+        },
+        "T1553defense-evasion": {
+            "count": 74,
+            "tcode": "T1553",
+            "tactic": "defense-evasion"
+        },
+        "T1547.014persistence": {
+            "count": 2,
+            "tcode": "T1547.014",
+            "tactic": "persistence"
+        },
+        "T1547.014privilege-escalation": {
+            "count": 2,
+            "tcode": "T1547.014",
+            "tactic": "privilege-escalation"
+        },
+        "T1204execution": {
+            "count": 164,
+            "tcode": "T1204",
+            "tactic": "execution"
+        },
+        "T1127.001defense-evasion": {
+            "count": 3,
+            "tcode": "T1127.001",
+            "tactic": "defense-evasion"
+        },
+        "T1552.008credential-access": {
+            "count": 2,
+            "tcode": "T1552.008",
+            "tactic": "credential-access"
+        },
+        "T1137.003persistence": {
+            "count": 2,
+            "tcode": "T1137.003",
+            "tactic": "persistence"
+        },
+        "T1568.003command-and-control": {
+            "count": 2,
+            "tcode": "T1568.003",
+            "tactic": "command-and-control"
+        },
+        "T1204.003execution": {
+            "count": 2,
+            "tcode": "T1204.003",
+            "tactic": "execution"
+        },
+        "T1027.007defense-evasion": {
+            "count": 6,
+            "tcode": "T1027.007",
+            "tactic": "defense-evasion"
+        },
+        "T1070.002defense-evasion": {
+            "count": 5,
+            "tcode": "T1070.002",
+            "tactic": "defense-evasion"
+        },
+        "T1114.003collection": {
+            "count": 4,
+            "tcode": "T1114.003",
+            "tactic": "collection"
+        },
+        "T1037.005persistence": {
+            "count": 2,
+            "tcode": "T1037.005",
+            "tactic": "persistence"
+        },
+        "T1037.005privilege-escalation": {
+            "count": 2,
+            "tcode": "T1037.005",
+            "tactic": "privilege-escalation"
+        },
+        "T1056collection": {
+            "count": 149,
+            "tcode": "T1056",
+            "tactic": "collection"
+        },
+        "T1056credential-access": {
+            "count": 149,
+            "tcode": "T1056",
+            "tactic": "credential-access"
+        },
+        "T1021lateral-movement": {
+            "count": 90,
+            "tcode": "T1021",
+            "tactic": "lateral-movement"
+        },
+        "T1558.002credential-access": {
+            "count": 5,
+            "tcode": "T1558.002",
+            "tactic": "credential-access"
+        },
+        "T1037persistence": {
+            "count": 13,
+            "tcode": "T1037",
+            "tactic": "persistence"
+        },
+        "T1037privilege-escalation": {
+            "count": 13,
+            "tcode": "T1037",
+            "tactic": "privilege-escalation"
+        },
+        "T1563.002lateral-movement": {
+            "count": 3,
+            "tcode": "T1563.002",
+            "tactic": "lateral-movement"
+        },
+        "T1001command-and-control": {
+            "count": 43,
+            "tcode": "T1001",
+            "tactic": "command-and-control"
+        },
+        "T1055.005defense-evasion": {
+            "count": 2,
+            "tcode": "T1055.005",
+            "tactic": "defense-evasion"
+        },
+        "T1055.005privilege-escalation": {
+            "count": 2,
+            "tcode": "T1055.005",
+            "tactic": "privilege-escalation"
+        },
+        "T1484.002defense-evasion": {
+            "count": 3,
+            "tcode": "T1484.002",
+            "tactic": "defense-evasion"
+        },
+        "T1484.002privilege-escalation": {
+            "count": 3,
+            "tcode": "T1484.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1550defense-evasion": {
+            "count": 21,
+            "tcode": "T1550",
+            "tactic": "defense-evasion"
+        },
+        "T1550lateral-movement": {
+            "count": 21,
+            "tcode": "T1550",
+            "tactic": "lateral-movement"
+        },
+        "T1574.008persistence": {
+            "count": 3,
+            "tcode": "T1574.008",
+            "tactic": "persistence"
+        },
+        "T1574.008privilege-escalation": {
+            "count": 3,
+            "tcode": "T1574.008",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.008defense-evasion": {
+            "count": 3,
+            "tcode": "T1574.008",
+            "tactic": "defense-evasion"
+        },
+        "T1564.008defense-evasion": {
+            "count": 2,
+            "tcode": "T1564.008",
+            "tactic": "defense-evasion"
+        },
+        "T1548.001privilege-escalation": {
+            "count": 3,
+            "tcode": "T1548.001",
+            "tactic": "privilege-escalation"
+        },
+        "T1548.001defense-evasion": {
+            "count": 3,
+            "tcode": "T1548.001",
+            "tactic": "defense-evasion"
+        },
+        "T1593.003reconnaissance": {
+            "count": 2,
+            "tcode": "T1593.003",
+            "tactic": "reconnaissance"
+        },
+        "T1590reconnaissance": {
+            "count": 6,
+            "tcode": "T1590",
+            "tactic": "reconnaissance"
+        },
+        "T1567.001exfiltration": {
+            "count": 2,
+            "tcode": "T1567.001",
+            "tactic": "exfiltration"
+        },
+        "T1561.001impact": {
+            "count": 8,
+            "tcode": "T1561.001",
+            "tactic": "impact"
+        },
+        "T1059.002execution": {
+            "count": 5,
+            "tcode": "T1059.002",
+            "tactic": "execution"
+        },
+        "T1055.011defense-evasion": {
+            "count": 3,
+            "tcode": "T1055.011",
+            "tactic": "defense-evasion"
+        },
+        "T1055.011privilege-escalation": {
+            "count": 3,
+            "tcode": "T1055.011",
+            "tactic": "privilege-escalation"
+        },
+        "T1583.002resource-development": {
+            "count": 3,
+            "tcode": "T1583.002",
+            "tactic": "resource-development"
+        },
+        "T1037.004persistence": {
+            "count": 5,
+            "tcode": "T1037.004",
+            "tactic": "persistence"
+        },
+        "T1037.004privilege-escalation": {
+            "count": 5,
+            "tcode": "T1037.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1220defense-evasion": {
+            "count": 5,
+            "tcode": "T1220",
+            "tactic": "defense-evasion"
+        },
+        "T1098.002persistence": {
+            "count": 5,
+            "tcode": "T1098.002",
+            "tactic": "persistence"
+        },
+        "T1578.003defense-evasion": {
+            "count": 2,
+            "tcode": "T1578.003",
+            "tactic": "defense-evasion"
+        },
+        "T1559execution": {
+            "count": 33,
+            "tcode": "T1559",
+            "tactic": "execution"
+        },
+        "T1558.004credential-access": {
+            "count": 2,
+            "tcode": "T1558.004",
+            "tactic": "credential-access"
+        },
+        "T1218defense-evasion": {
+            "count": 134,
+            "tcode": "T1218",
+            "tactic": "defense-evasion"
+        },
+        "T1595.001reconnaissance": {
+            "count": 2,
+            "tcode": "T1595.001",
+            "tactic": "reconnaissance"
+        },
+        "T1552.007credential-access": {
+            "count": 2,
+            "tcode": "T1552.007",
+            "tactic": "credential-access"
+        },
+        "T1055.015defense-evasion": {
+            "count": 2,
+            "tcode": "T1055.015",
+            "tactic": "defense-evasion"
+        },
+        "T1055.015privilege-escalation": {
+            "count": 2,
+            "tcode": "T1055.015",
+            "tactic": "privilege-escalation"
+        },
+        "T1547.015persistence": {
+            "count": 4,
+            "tcode": "T1547.015",
+            "tactic": "persistence"
+        },
+        "T1547.015privilege-escalation": {
+            "count": 4,
+            "tcode": "T1547.015",
+            "tactic": "privilege-escalation"
+        },
+        "T1021.007lateral-movement": {
+            "count": 2,
+            "tcode": "T1021.007",
+            "tactic": "lateral-movement"
+        },
+        "T1608resource-development": {
+            "count": 19,
+            "tcode": "T1608",
+            "tactic": "resource-development"
+        },
+        "T1619discovery": {
+            "count": 2,
+            "tcode": "T1619",
+            "tactic": "discovery"
+        },
+        "T1491.002impact": {
+            "count": 2,
+            "tcode": "T1491.002",
+            "tactic": "impact"
+        },
+        "T1606.002credential-access": {
+            "count": 3,
+            "tcode": "T1606.002",
+            "tactic": "credential-access"
+        },
+        "T1597reconnaissance": {
+            "count": 3,
+            "tcode": "T1597",
+            "tactic": "reconnaissance"
+        },
+        "T1586.003resource-development": {
+            "count": 2,
+            "tcode": "T1586.003",
+            "tactic": "resource-development"
+        },
+        "T1056.003collection": {
+            "count": 2,
+            "tcode": "T1056.003",
+            "tactic": "collection"
+        },
+        "T1056.003credential-access": {
+            "count": 2,
+            "tcode": "T1056.003",
+            "tactic": "credential-access"
+        },
+        "T1546.002privilege-escalation": {
+            "count": 2,
+            "tcode": "T1546.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.002persistence": {
+            "count": 2,
+            "tcode": "T1546.002",
+            "tactic": "persistence"
+        },
+        "T1562defense-evasion": {
+            "count": 103,
+            "tcode": "T1562",
+            "tactic": "defense-evasion"
+        },
+        "T1036.006defense-evasion": {
+            "count": 2,
+            "tcode": "T1036.006",
+            "tactic": "defense-evasion"
+        },
+        "T1070.008defense-evasion": {
+            "count": 3,
+            "tcode": "T1070.008",
+            "tactic": "defense-evasion"
+        },
+        "T1003.007credential-access": {
+            "count": 3,
+            "tcode": "T1003.007",
+            "tactic": "credential-access"
+        },
+        "T1098.003persistence": {
+            "count": 3,
+            "tcode": "T1098.003",
+            "tactic": "persistence"
+        },
+        "T1552credential-access": {
+            "count": 44,
+            "tcode": "T1552",
+            "tactic": "credential-access"
+        },
+        "T1505.002persistence": {
+            "count": 2,
+            "tcode": "T1505.002",
+            "tactic": "persistence"
+        },
+        "T1070.007defense-evasion": {
+            "count": 2,
+            "tcode": "T1070.007",
+            "tactic": "defense-evasion"
+        },
+        "T1110.004credential-access": {
+            "count": 3,
+            "tcode": "T1110.004",
+            "tactic": "credential-access"
+        },
+        "T1574.013persistence": {
+            "count": 3,
+            "tcode": "T1574.013",
+            "tactic": "persistence"
+        },
+        "T1574.013privilege-escalation": {
+            "count": 3,
+            "tcode": "T1574.013",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.013defense-evasion": {
+            "count": 3,
+            "tcode": "T1574.013",
+            "tactic": "defense-evasion"
+        },
+        "T1528credential-access": {
+            "count": 4,
+            "tcode": "T1528",
+            "tactic": "credential-access"
+        },
+        "T1574.004persistence": {
+            "count": 2,
+            "tcode": "T1574.004",
+            "tactic": "persistence"
+        },
+        "T1574.004privilege-escalation": {
+            "count": 2,
+            "tcode": "T1574.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.004defense-evasion": {
+            "count": 2,
+            "tcode": "T1574.004",
+            "tactic": "defense-evasion"
+        },
+        "T1588.005resource-development": {
+            "count": 2,
+            "tcode": "T1588.005",
+            "tactic": "resource-development"
+        },
+        "T1565.003impact": {
+            "count": 2,
+            "tcode": "T1565.003",
+            "tactic": "impact"
+        },
+        "T1547.002persistence": {
+            "count": 2,
+            "tcode": "T1547.002",
+            "tactic": "persistence"
+        },
+        "T1547.002privilege-escalation": {
+            "count": 2,
+            "tcode": "T1547.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1548.004privilege-escalation": {
+            "count": 2,
+            "tcode": "T1548.004",
+            "tactic": "privilege-escalation"
+        },
+        "T1548.004defense-evasion": {
+            "count": 2,
+            "tcode": "T1548.004",
+            "tactic": "defense-evasion"
+        },
+        "T1205.002defense-evasion": {
+            "count": 2,
+            "tcode": "T1205.002",
+            "tactic": "defense-evasion"
+        },
+        "T1205.002persistence": {
+            "count": 2,
+            "tcode": "T1205.002",
+            "tactic": "persistence"
+        },
+        "T1205.002command-and-control": {
+            "count": 2,
+            "tcode": "T1205.002",
+            "tactic": "command-and-control"
+        },
+        "T1137.002persistence": {
+            "count": 2,
+            "tcode": "T1137.002",
+            "tactic": "persistence"
+        },
+        "T1556.004credential-access": {
+            "count": 2,
+            "tcode": "T1556.004",
+            "tactic": "credential-access"
+        },
+        "T1556.004defense-evasion": {
+            "count": 2,
+            "tcode": "T1556.004",
+            "tactic": "defense-evasion"
+        },
+        "T1556.004persistence": {
+            "count": 2,
+            "tcode": "T1556.004",
+            "tactic": "persistence"
+        },
+        "T1647defense-evasion": {
+            "count": 2,
+            "tcode": "T1647",
+            "tactic": "defense-evasion"
+        },
+        "T1556.006credential-access": {
+            "count": 2,
+            "tcode": "T1556.006",
+            "tactic": "credential-access"
+        },
+        "T1556.006defense-evasion": {
+            "count": 2,
+            "tcode": "T1556.006",
+            "tactic": "defense-evasion"
+        },
+        "T1556.006persistence": {
+            "count": 2,
+            "tcode": "T1556.006",
+            "tactic": "persistence"
+        },
+        "T1036.007defense-evasion": {
+            "count": 4,
+            "tcode": "T1036.007",
+            "tactic": "defense-evasion"
+        },
+        "T1574.010persistence": {
+            "count": 2,
+            "tcode": "T1574.010",
+            "tactic": "persistence"
+        },
+        "T1574.010privilege-escalation": {
+            "count": 2,
+            "tcode": "T1574.010",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.010defense-evasion": {
+            "count": 2,
+            "tcode": "T1574.010",
+            "tactic": "defense-evasion"
+        },
+        "T1059.009execution": {
+            "count": 3,
+            "tcode": "T1059.009",
+            "tactic": "execution"
+        },
+        "T1499.004impact": {
+            "count": 2,
+            "tcode": "T1499.004",
+            "tactic": "impact"
+        },
+        "T1593.002reconnaissance": {
+            "count": 2,
+            "tcode": "T1593.002",
+            "tactic": "reconnaissance"
+        },
+        "T1137persistence": {
+            "count": 11,
+            "tcode": "T1137",
+            "tactic": "persistence"
+        },
+        "T1584.003resource-development": {
+            "count": 2,
+            "tcode": "T1584.003",
+            "tactic": "resource-development"
+        },
+        "T1211defense-evasion": {
+            "count": 2,
+            "tcode": "T1211",
+            "tactic": "defense-evasion"
+        },
+        "T1597.002reconnaissance": {
+            "count": 2,
+            "tcode": "T1597.002",
+            "tactic": "reconnaissance"
+        },
+        "T1505.001persistence": {
+            "count": 3,
+            "tcode": "T1505.001",
+            "tactic": "persistence"
+        },
+        "T1578.002defense-evasion": {
+            "count": 2,
+            "tcode": "T1578.002",
+            "tactic": "defense-evasion"
+        },
+        "T1608.002resource-development": {
+            "count": 3,
+            "tcode": "T1608.002",
+            "tactic": "resource-development"
+        },
+        "T1593reconnaissance": {
+            "count": 6,
+            "tcode": "T1593",
+            "tactic": "reconnaissance"
+        },
+        "T1550.004defense-evasion": {
+            "count": 2,
+            "tcode": "T1550.004",
+            "tactic": "defense-evasion"
+        },
+        "T1550.004lateral-movement": {
+            "count": 2,
+            "tcode": "T1550.004",
+            "tactic": "lateral-movement"
+        },
+        "T1098.001persistence": {
+            "count": 2,
+            "tcode": "T1098.001",
+            "tactic": "persistence"
+        },
+        "T1606.001credential-access": {
+            "count": 2,
+            "tcode": "T1606.001",
+            "tactic": "credential-access"
+        },
+        "T1195initial-access": {
+            "count": 15,
+            "tcode": "T1195",
+            "tactic": "initial-access"
+        },
+        "T1127defense-evasion": {
+            "count": 3,
+            "tcode": "T1127",
+            "tactic": "defense-evasion"
+        },
+        "T1583resource-development": {
+            "count": 39,
+            "tcode": "T1583",
+            "tactic": "resource-development"
+        },
+        "T1583.007resource-development": {
+            "count": 1,
+            "tcode": "T1583.007",
+            "tactic": "resource-development"
+        },
+        "T1578.004defense-evasion": {
+            "count": 1,
+            "tcode": "T1578.004",
+            "tactic": "defense-evasion"
+        },
+        "T1592reconnaissance": {
+            "count": 5,
+            "tcode": "T1592",
+            "tactic": "reconnaissance"
+        },
+        "T1596.003reconnaissance": {
+            "count": 1,
+            "tcode": "T1596.003",
+            "tactic": "reconnaissance"
+        },
+        "T1602collection": {
+            "count": 1,
+            "tcode": "T1602",
+            "tactic": "collection"
+        },
+        "T1498.001impact": {
+            "count": 1,
+            "tcode": "T1498.001",
+            "tactic": "impact"
+        },
+        "T1006defense-evasion": {
+            "count": 1,
+            "tcode": "T1006",
+            "tactic": "defense-evasion"
+        },
+        "T1499.001impact": {
+            "count": 1,
+            "tcode": "T1499.001",
+            "tactic": "impact"
+        },
+        "T1590.002reconnaissance": {
+            "count": 1,
+            "tcode": "T1590.002",
+            "tactic": "reconnaissance"
+        },
+        "T1546.006privilege-escalation": {
+            "count": 1,
+            "tcode": "T1546.006",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.006persistence": {
+            "count": 1,
+            "tcode": "T1546.006",
+            "tactic": "persistence"
+        },
+        "T1053.007execution": {
+            "count": 1,
+            "tcode": "T1053.007",
+            "tactic": "execution"
+        },
+        "T1053.007persistence": {
+            "count": 1,
+            "tcode": "T1053.007",
+            "tactic": "persistence"
+        },
+        "T1053.007privilege-escalation": {
+            "count": 1,
+            "tcode": "T1053.007",
+            "tactic": "privilege-escalation"
+        },
+        "T1578defense-evasion": {
+            "count": 2,
+            "tcode": "T1578",
+            "tactic": "defense-evasion"
+        },
+        "T1583.008resource-development": {
+            "count": 1,
+            "tcode": "T1583.008",
+            "tactic": "resource-development"
+        },
+        "T1596.002reconnaissance": {
+            "count": 1,
+            "tcode": "T1596.002",
+            "tactic": "reconnaissance"
+        },
+        "T1574.011persistence": {
+            "count": 1,
+            "tcode": "T1574.011",
+            "tactic": "persistence"
+        },
+        "T1574.011privilege-escalation": {
+            "count": 1,
+            "tcode": "T1574.011",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.011defense-evasion": {
+            "count": 1,
+            "tcode": "T1574.011",
+            "tactic": "defense-evasion"
+        },
+        "T1596.001reconnaissance": {
+            "count": 1,
+            "tcode": "T1596.001",
+            "tactic": "reconnaissance"
+        },
+        "T1499.003impact": {
+            "count": 1,
+            "tcode": "T1499.003",
+            "tactic": "impact"
+        },
+        "T1561impact": {
+            "count": 14,
+            "tcode": "T1561",
+            "tactic": "impact"
+        },
+        "T1218.013defense-evasion": {
+            "count": 1,
+            "tcode": "T1218.013",
+            "tactic": "defense-evasion"
+        },
+        "T1600defense-evasion": {
+            "count": 1,
+            "tcode": "T1600",
+            "tactic": "defense-evasion"
+        },
+        "T1591.003reconnaissance": {
+            "count": 1,
+            "tcode": "T1591.003",
+            "tactic": "reconnaissance"
+        },
+        "T1592.001reconnaissance": {
+            "count": 1,
+            "tcode": "T1592.001",
+            "tactic": "reconnaissance"
+        },
+        "T1542.005defense-evasion": {
+            "count": 1,
+            "tcode": "T1542.005",
+            "tactic": "defense-evasion"
+        },
+        "T1542.005persistence": {
+            "count": 1,
+            "tcode": "T1542.005",
+            "tactic": "persistence"
+        },
+        "T1583.005resource-development": {
+            "count": 1,
+            "tcode": "T1583.005",
+            "tactic": "resource-development"
+        },
+        "T1590.004reconnaissance": {
+            "count": 1,
+            "tcode": "T1590.004",
+            "tactic": "reconnaissance"
+        },
+        "T1590.003reconnaissance": {
+            "count": 1,
+            "tcode": "T1590.003",
+            "tactic": "reconnaissance"
+        },
+        "T1498.002impact": {
+            "count": 1,
+            "tcode": "T1498.002",
+            "tactic": "impact"
+        },
+        "T1505.005persistence": {
+            "count": 1,
+            "tcode": "T1505.005",
+            "tactic": "persistence"
+        },
+        "T1499.002impact": {
+            "count": 1,
+            "tcode": "T1499.002",
+            "tactic": "impact"
+        },
+        "T1195.003initial-access": {
+            "count": 1,
+            "tcode": "T1195.003",
+            "tactic": "initial-access"
+        },
+        "T1600.001defense-evasion": {
+            "count": 1,
+            "tcode": "T1600.001",
+            "tactic": "defense-evasion"
+        },
+        "T1558credential-access": {
+            "count": 13,
+            "tcode": "T1558",
+            "tactic": "credential-access"
+        },
+        "T1547.010persistence": {
+            "count": 1,
+            "tcode": "T1547.010",
+            "tactic": "persistence"
+        },
+        "T1547.010privilege-escalation": {
+            "count": 1,
+            "tcode": "T1547.010",
+            "tactic": "privilege-escalation"
+        },
+        "T1037.002persistence": {
+            "count": 1,
+            "tcode": "T1037.002",
+            "tactic": "persistence"
+        },
+        "T1037.002privilege-escalation": {
+            "count": 1,
+            "tcode": "T1037.002",
+            "tactic": "privilege-escalation"
+        },
+        "T1563.001lateral-movement": {
+            "count": 1,
+            "tcode": "T1563.001",
+            "tactic": "lateral-movement"
+        },
+        "T1525persistence": {
+            "count": 1,
+            "tcode": "T1525",
+            "tactic": "persistence"
+        },
+        "T1599.001defense-evasion": {
+            "count": 1,
+            "tcode": "T1599.001",
+            "tactic": "defense-evasion"
+        },
+        "T1597.001reconnaissance": {
+            "count": 1,
+            "tcode": "T1597.001",
+            "tactic": "reconnaissance"
+        },
+        "T1011exfiltration": {
+            "count": 2,
+            "tcode": "T1011",
+            "tactic": "exfiltration"
+        },
+        "T1602.002collection": {
+            "count": 1,
+            "tcode": "T1602.002",
+            "tactic": "collection"
+        },
+        "T1553.003defense-evasion": {
+            "count": 1,
+            "tcode": "T1553.003",
+            "tactic": "defense-evasion"
+        },
+        "T1596reconnaissance": {
+            "count": 1,
+            "tcode": "T1596",
+            "tactic": "reconnaissance"
+        },
+        "T1580discovery": {
+            "count": 1,
+            "tcode": "T1580",
+            "tactic": "discovery"
+        },
+        "T1491impact": {
+            "count": 8,
+            "tcode": "T1491",
+            "tactic": "impact"
+        },
+        "T1535defense-evasion": {
+            "count": 1,
+            "tcode": "T1535",
+            "tactic": "defense-evasion"
+        },
+        "T1557.003credential-access": {
+            "count": 1,
+            "tcode": "T1557.003",
+            "tactic": "credential-access"
+        },
+        "T1557.003collection": {
+            "count": 1,
+            "tcode": "T1557.003",
+            "tactic": "collection"
+        },
+        "T1563lateral-movement": {
+            "count": 3,
+            "tcode": "T1563",
+            "tactic": "lateral-movement"
+        },
+        "T1547.003persistence": {
+            "count": 1,
+            "tcode": "T1547.003",
+            "tactic": "persistence"
+        },
+        "T1547.003privilege-escalation": {
+            "count": 1,
+            "tcode": "T1547.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.005privilege-escalation": {
+            "count": 1,
+            "tcode": "T1546.005",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.005persistence": {
+            "count": 1,
+            "tcode": "T1546.005",
+            "tactic": "persistence"
+        },
+        "T1222defense-evasion": {
+            "count": 22,
+            "tcode": "T1222",
+            "tactic": "defense-evasion"
+        },
+        "T1595reconnaissance": {
+            "count": 10,
+            "tcode": "T1595",
+            "tactic": "reconnaissance"
+        },
+        "T1548privilege-escalation": {
+            "count": 56,
+            "tcode": "T1548",
+            "tactic": "privilege-escalation"
+        },
+        "T1548defense-evasion": {
+            "count": 56,
+            "tcode": "T1548",
+            "tactic": "defense-evasion"
+        },
+        "T1590.006reconnaissance": {
+            "count": 1,
+            "tcode": "T1590.006",
+            "tactic": "reconnaissance"
+        },
+        "T1574.005persistence": {
+            "count": 1,
+            "tcode": "T1574.005",
+            "tactic": "persistence"
+        },
+        "T1574.005privilege-escalation": {
+            "count": 1,
+            "tcode": "T1574.005",
+            "tactic": "privilege-escalation"
+        },
+        "T1574.005defense-evasion": {
+            "count": 1,
+            "tcode": "T1574.005",
+            "tactic": "defense-evasion"
+        },
+        "T1562.007defense-evasion": {
+            "count": 1,
+            "tcode": "T1562.007",
+            "tactic": "defense-evasion"
+        },
+        "T1048.001exfiltration": {
+            "count": 1,
+            "tcode": "T1048.001",
+            "tactic": "exfiltration"
+        },
+        "T1020.001exfiltration": {
+            "count": 1,
+            "tcode": "T1020.001",
+            "tactic": "exfiltration"
+        },
+        "T1584resource-development": {
+            "count": 15,
+            "tcode": "T1584",
+            "tactic": "resource-development"
+        },
+        "T1600.002defense-evasion": {
+            "count": 1,
+            "tcode": "T1600.002",
+            "tactic": "defense-evasion"
+        },
+        "T1542defense-evasion": {
+            "count": 15,
+            "tcode": "T1542",
+            "tactic": "defense-evasion"
+        },
+        "T1542persistence": {
+            "count": 15,
+            "tcode": "T1542",
+            "tactic": "persistence"
+        },
+        "T1612defense-evasion": {
+            "count": 1,
+            "tcode": "T1612",
+            "tactic": "defense-evasion"
+        },
+        "T1586resource-development": {
+            "count": 9,
+            "tcode": "T1586",
+            "tactic": "resource-development"
+        },
+        "T1059.008execution": {
+            "count": 1,
+            "tcode": "T1059.008",
+            "tactic": "execution"
+        },
+        "T1562.010defense-evasion": {
+            "count": 1,
+            "tcode": "T1562.010",
+            "tactic": "defense-evasion"
+        },
+        "T1559.003execution": {
+            "count": 1,
+            "tcode": "T1559.003",
+            "tactic": "execution"
+        },
+        "T1556.008credential-access": {
+            "count": 1,
+            "tcode": "T1556.008",
+            "tactic": "credential-access"
+        },
+        "T1556.008defense-evasion": {
+            "count": 1,
+            "tcode": "T1556.008",
+            "tactic": "defense-evasion"
+        },
+        "T1556.008persistence": {
+            "count": 1,
+            "tcode": "T1556.008",
+            "tactic": "persistence"
+        },
+        "T1596.004reconnaissance": {
+            "count": 1,
+            "tcode": "T1596.004",
+            "tactic": "reconnaissance"
+        },
+        "T1585.003resource-development": {
+            "count": 1,
+            "tcode": "T1585.003",
+            "tactic": "resource-development"
+        },
+        "T1606credential-access": {
+            "count": 3,
+            "tcode": "T1606",
+            "tactic": "credential-access"
+        },
+        "T1055.014defense-evasion": {
+            "count": 1,
+            "tcode": "T1055.014",
+            "tactic": "defense-evasion"
+        },
+        "T1055.014privilege-escalation": {
+            "count": 1,
+            "tcode": "T1055.014",
+            "tactic": "privilege-escalation"
+        },
+        "T1212credential-access": {
+            "count": 1,
+            "tcode": "T1212",
+            "tactic": "credential-access"
+        },
+        "T1546.014privilege-escalation": {
+            "count": 1,
+            "tcode": "T1546.014",
+            "tactic": "privilege-escalation"
+        },
+        "T1546.014persistence": {
+            "count": 1,
+            "tcode": "T1546.014",
+            "tactic": "persistence"
+        },
+        "T1053.006execution": {
+            "count": 1,
+            "tcode": "T1053.006",
+            "tactic": "execution"
+        },
+        "T1053.006persistence": {
+            "count": 1,
+            "tcode": "T1053.006",
+            "tactic": "persistence"
+        },
+        "T1053.006privilege-escalation": {
+            "count": 1,
+            "tcode": "T1053.006",
+            "tactic": "privilege-escalation"
+        },
+        "T1542.004defense-evasion": {
+            "count": 1,
+            "tcode": "T1542.004",
+            "tactic": "defense-evasion"
+        },
+        "T1542.004persistence": {
+            "count": 1,
+            "tcode": "T1542.004",
+            "tactic": "persistence"
+        },
+        "T1565impact": {
+            "count": 6,
+            "tcode": "T1565",
+            "tactic": "impact"
+        },
+        "T1601defense-evasion": {
+            "count": 2,
+            "tcode": "T1601",
+            "tactic": "defense-evasion"
+        },
+        "T1546privilege-escalation": {
+            "count": 52,
+            "tcode": "T1546",
+            "tactic": "privilege-escalation"
+        },
+        "T1546persistence": {
+            "count": 52,
+            "tcode": "T1546",
+            "tactic": "persistence"
+        },
+        "T1599defense-evasion": {
+            "count": 1,
+            "tcode": "T1599",
+            "tactic": "defense-evasion"
+        },
+        "T1592.003reconnaissance": {
+            "count": 1,
+            "tcode": "T1592.003",
+            "tactic": "reconnaissance"
+        },
+        "T1567.003exfiltration": {
+            "count": 1,
+            "tcode": "T1567.003",
+            "tactic": "exfiltration"
+        },
+        "T1587.004resource-development": {
+            "count": 1,
+            "tcode": "T1587.004",
+            "tactic": "resource-development"
+        },
+        "T1562.011defense-evasion": {
+            "count": 1,
+            "tcode": "T1562.011",
+            "tactic": "defense-evasion"
+        },
+        "T1608.003resource-development": {
+            "count": 1,
+            "tcode": "T1608.003",
+            "tactic": "resource-development"
+        },
+        "T1584.002resource-development": {
+            "count": 1,
+            "tcode": "T1584.002",
+            "tactic": "resource-development"
+        },
+        "T1037.003persistence": {
+            "count": 1,
+            "tcode": "T1037.003",
+            "tactic": "persistence"
+        },
+        "T1037.003privilege-escalation": {
+            "count": 1,
+            "tcode": "T1037.003",
+            "tactic": "privilege-escalation"
+        },
+        "T1564.007defense-evasion": {
+            "count": 1,
+            "tcode": "T1564.007",
+            "tactic": "defense-evasion"
+        },
+        "T1562.008defense-evasion": {
+            "count": 1,
+            "tcode": "T1562.008",
+            "tactic": "defense-evasion"
+        },
+        "T1588resource-development": {
+            "count": 65,
+            "tcode": "T1588",
+            "tactic": "resource-development"
+        },
+        "T1055.009defense-evasion": {
+            "count": 1,
+            "tcode": "T1055.009",
+            "tactic": "defense-evasion"
+        },
+        "T1055.009privilege-escalation": {
+            "count": 1,
+            "tcode": "T1055.009",
+            "tactic": "privilege-escalation"
+        },
+        "T1650resource-development": {
+            "count": 1,
+            "tcode": "T1650",
+            "tactic": "resource-development"
+        },
+        "T1505persistence": {
+            "count": 33,
+            "tcode": "T1505",
+            "tactic": "persistence"
+        },
+        "T1537exfiltration": {
+            "count": 1,
+            "tcode": "T1537",
+            "tactic": "exfiltration"
+        },
+        "T1556.005credential-access": {
+            "count": 1,
+            "tcode": "T1556.005",
+            "tactic": "credential-access"
+        },
+        "T1556.005defense-evasion": {
+            "count": 1,
+            "tcode": "T1556.005",
+            "tactic": "defense-evasion"
+        },
+        "T1556.005persistence": {
+            "count": 1,
+            "tcode": "T1556.005",
+            "tactic": "persistence"
+        },
+        "T1584.007resource-development": {
+            "count": 1,
+            "tcode": "T1584.007",
+            "tactic": "resource-development"
+        },
+        "T1538discovery": {
+            "count": 1,
+            "tcode": "T1538",
+            "tactic": "discovery"
+        },
+        "T1547.007persistence": {
+            "count": 1,
+            "tcode": "T1547.007",
+            "tactic": "persistence"
+        },
+        "T1547.007privilege-escalation": {
+            "count": 1,
+            "tcode": "T1547.007",
+            "tactic": "privilege-escalation"
+        },
+        "T1608.006resource-development": {
+            "count": 1,
+            "tcode": "T1608.006",
+            "tactic": "resource-development"
+        },
+        "T1052exfiltration": {
+            "count": 8,
+            "tcode": "T1052",
+            "tactic": "exfiltration"
+        },
+        "T1648execution": {
+            "count": 1,
+            "tcode": "T1648",
+            "tactic": "execution"
+        },
+        "T1055.008defense-evasion": {
+            "count": 1,
+            "tcode": "T1055.008",
+            "tactic": "defense-evasion"
+        },
+        "T1055.008privilege-escalation": {
+            "count": 1,
+            "tcode": "T1055.008",
+            "tactic": "privilege-escalation"
+        },
+        "T1484defense-evasion": {
+            "count": 9,
+            "tcode": "T1484",
+            "tactic": "defense-evasion"
+        },
+        "T1484privilege-escalation": {
+            "count": 9,
+            "tcode": "T1484",
+            "tactic": "privilege-escalation"
+        },
+        "T1596.005reconnaissance": {
+            "count": 1,
+            "tcode": "T1596.005",
+            "tactic": "reconnaissance"
+        },
+        "T1578.001defense-evasion": {
+            "count": 1,
+            "tcode": "T1578.001",
+            "tactic": "defense-evasion"
+        },
+        "T1602.001collection": {
+            "count": 1,
+            "tcode": "T1602.001",
+            "tactic": "collection"
+        },
+        "T1216defense-evasion": {
+            "count": 2,
+            "tcode": "T1216",
+            "tactic": "defense-evasion"
+        },
+        "T1598.001reconnaissance": {
+            "count": 1,
+            "tcode": "T1598.001",
+            "tactic": "reconnaissance"
+        },
+        "T1601.002defense-evasion": {
+            "count": 1,
+            "tcode": "T1601.002",
+            "tactic": "defense-evasion"
+        },
+        "T1218.014defense-evasion": {
+            "count": 1,
+            "tcode": "T1218.014",
+            "tactic": "defense-evasion"
+        }
+    },
+    "min": 1,
+    "max": 439
+}

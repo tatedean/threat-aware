@@ -1,0 +1,1126 @@
+{
+    "scores": {
+        "execution": {
+            "T1204.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "explorer.exe executes winword.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe loads VBEUI.DLL, executes code via AutoOpen()",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.2.png",
+                                "WizardSpider-Sandworm_RQ_1.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.003": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe executes cmd.exe to execute adb.vbs",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.4.png",
+                                "WizardSpider-Sandworm_RQ_1.A.4_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_16.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "WmiPrvSE.exe spawns powershell.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.7.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_18.A.3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.6.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "command-and-control": {
+            "T1105": {
+                "d": {
+                    "count": 12,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe downloads C:\\Users\\Public\\adb.txt",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.3.png",
+                                "WizardSpider-Sandworm_RQ_1.A.3_1.png",
+                                "WizardSpider-Sandworm_RQ_1.A.3_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads adb.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.8.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe downloads Outlook.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_3.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_4.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe downloads  the file rubeus.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_6.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads the file uxtheme.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_7.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads kill.bat",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_9.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads window.bat",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_9.A.4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe downloads C:\\Users\\Public\\ryuk.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_10.A.1.png",
+                                "WizardSpider-Sandworm_RQ_10.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe creates the file oradump.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_17.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe creates the file mslog.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_17.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe downloads perfc.dat via copy",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_18.A.4.png",
+                                "WizardSpider-Sandworm_RQ_18.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1071.001": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.10.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_4.A.4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32 connects to 192.168.0.4 over protocol HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.9.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1571": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "uxtheme.exe connects to 192.168.0.4 over protocol HTTP on port 447",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_4.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1573.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32 connects to 192.168.0.4 over encrypted protocol HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.10.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "defense-evasion": {
+            "T1218.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes adb.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_1.A.9.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32.exe executes wsmprovav.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.8.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes perfc.dat",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_19.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User bill successfully authenticates into 10.0.0.8",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_4.A.2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User vfleming successfully authenticates into 10.0.0.4",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_7.A.2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User fherbert successfully authenticates into 10.0.1.7 via SMB",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User patreides successfully authenticates into 10.0.1.4",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_18.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1222.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.Exe executes icacls.exe to modify permissions on C: and Z:",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_9.A.3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1055.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe injects into notepad.exe via WriteProcessMemory() and CreateRemoteThread()",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_10.A.4.png",
+                                "WizardSpider-Sandworm_RQ_10.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe deletes oradump.exe, mslog.exe, and mslog.txt via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_17.A.8.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Event logs are cleared via wevtutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_19.A.8.png",
+                                "WizardSpider-Sandworm_RQ_19.A.8_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "USN change journal is cleared using fsutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_19.A.9.png",
+                                "WizardSpider-Sandworm_RQ_19.A.9_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1547.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe adds the blbdigital Registry Run key using RegSetValueExA()",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_2.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "SecurityHealth Registry Run key is added using reg.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.7.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.004": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe adds the Userinit Registry key using Set-ItemProperty",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_7.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1543.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "New service Windows Check AV is created",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.5.png",
+                                "WizardSpider-Sandworm_RQ_15.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe creates Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_19.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "credential-access": {
+            "T1552": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to search Outlook for password strings",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_3.A.4.png",
+                                "WizardSpider-Sandworm_RQ_3.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1558.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes rubeus.exe kerberoast /domain:oz.local",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_6.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes vssadmin.exe to create a copy of C:",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_8.A.1.png",
+                                "WizardSpider-Sandworm_RQ_8.A.1_1.png",
+                                "WizardSpider-Sandworm_RQ_8.A.1_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes reg.exe to save HKLM\\SYSTEM",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_8.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1555.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "oradump.exe reads passwords from local browsers DBs",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_17.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1056.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "mslog.exe executes SetWindowsHookEx() and GetKeyState() to collect keystrokes",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_17.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "collection": {
+            "T1114.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to read SenderEmailAddress values from Outlook",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_3.A.5.png",
+                                "WizardSpider-Sandworm_RQ_3.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "lateral-movement": {
+            "T1021.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.8 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_4.A.1.png",
+                                "WizardSpider-Sandworm_RQ_4.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.0.4 using protocol RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_7.A.1.png",
+                                "WizardSpider-Sandworm_RQ_7.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Connection to 10.0.1.7 over protocol SMB",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_15.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Adversary connects to 10.0.1.4 using RDP (port 3389)",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_18.A.2.png",
+                                "WizardSpider-Sandworm_RQ_18.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.006": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Remote WMI is used to execute rundll32.exe on 10.0.1.8",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_19.A.6.png",
+                                "WizardSpider-Sandworm_RQ_19.A.6_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1082": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes systeminfo",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net /config",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.7.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1007": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes sc query",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user /domain",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1016": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes ipconfig",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1049": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.6.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_16.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1482": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes nltest /domain_trusts /all_trusts",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.8.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes whoami",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_5.A.9.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe executes adfind.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_7.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1083": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "ryuk.exe enumerates files via FindFirstFile() and FindNextFile()",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_10.A.6.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1018": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes dsquery.exe via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_17.A.7.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "impact": {
+            "T1489": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe stops various services via net stop, sc config, and taskkill",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_9.A.2.png",
+                                "WizardSpider-Sandworm_RQ_9.A.2_1.png",
+                                "WizardSpider-Sandworm_RQ_9.A.2_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1490": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe deletes system backups via vssadmin and del",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_9.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1486": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "notepad.exe encrypts various files using AES + RSA",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_10.A.7.png",
+                                "WizardSpider-Sandworm_RQ_10.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe encrypts various files using AES",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_19.A.7.png",
+                                "WizardSpider-Sandworm_RQ_19.A.7_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "exfiltration": {
+            "T1041": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe posts data from mslog.txt to 192.168.0.4 over HTTPS",
+                            "images": [
+                                "WizardSpider-Sandworm_RQ_17.A.6.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        }
+    },
+    "filename": "ibmsecurity_engenuity.json",
+    "capability_name": "ibmsecurity",
+    "counts": {
+        "detect": 46,
+        "protect": 0
+    }
+}

@@ -1,0 +1,217 @@
+{
+    "ahnlab": {
+        "product": "ahnlab",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/ahnlab?view=overview",
+        "image": "/AhnLab_CI.png"
+    },
+    "bitdefender": {
+        "product": "bitdefender",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/bitdefender?view=overview",
+        "image": "/LOGO_bitdefender_red_white.png"
+    },
+    "blackberry": {
+        "product": "blackberry",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/blackberry?view=overview",
+        "image":null
+    },
+    "checkpoint": {
+        "product": "checkpoint",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/checkpoint?view=overview",
+        "image": "/CheckPoint_logo_2022.png"
+    },
+    "cisco": {
+        "product": "cisco",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/cisco?view=overview",
+        "image": "/Cisco_Logo.png"
+    },
+    "crowdstrike": {
+        "product": "crowdstrike",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/crowdstrike?view=overview",
+        "image": "/CS_logostacked-red.png"
+    },
+    "cybereason": {
+        "product": "cybereason",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/cybereason?view=overview",
+        "image": "/cybereason_logo_april_2022.png"
+    },
+    "cycraft": {
+        "product": "cycraft",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/cycraft?view=overview",
+        "image": "/CyCraft_logo_2021_vertical_FullColor.png"
+    },
+    "cylance": {
+        "product": "cylance",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/cylance?view=overview",
+        "image": "/Cylance_BB_Logo_RGB_Vert_BLK.png"
+    },
+    "cynet": {
+        "product": "cynet",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/cynet?view=overview",
+        "image": "/Cynet-Logo.png"
+    },
+    "deepinstinct": {
+        "product": "deepinstinct",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/deepinstinct?view=overview",
+        "image": "/deep_instinct_logo_2022.jpg"
+    },
+    "elastic": {
+        "product": "elastic",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/elastic?view=overview",
+        "image": "/elastic-logo-final.png"
+    },
+    "eset": {
+        "product": "eset",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/eset?view=overview",
+        "image": "/ESET_logo_DS_PP_centered_color_RGB_large_2022.png"
+    },
+    "fidelis": {
+        "product": "fidelis",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/fidelis?view=overview",
+        "image": "/Fidelis_Green_Logo.png"
+    },
+    "fireeye": {
+        "product": "fireeye",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/fireeye?view=overview",
+        "image": "/fireeye-logo.png"
+    },
+    "fortinet": {
+        "product": "fortinet",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/fortinet?view=overview",
+        "image": "/Fortinet_Logo_Black-Red.png"
+    },
+    "gosecure": {
+        "product": "gosecure",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/gosecure?view=overview",
+        "image": "/GoSecure_L_h_red_cmyk.png"
+    },
+    "hansight": {
+        "product": "hansight",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/hansight?view=overview",
+        "image": "/hansight_logo2.png"
+    },
+    "harfanglab": {
+        "product": "harfanglab",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/harfanglab?view=overview",
+        "image":null
+    },
+    "ibmsecurity": {
+        "product": "ibmsecurity",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/ibmsecurity?view=overview",
+        "image": "/reaqta_lockup_pos_color_CMYK.png"
+    },
+    "kaspersky": {
+        "product": "kaspersky",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/kaspersky?view=overview",
+        "image": "/Kaspersky_logotype_green.png"
+    },
+    "malwarebytes": {
+        "product": "malwarebytes",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/malwarebytes?view=overview",
+        "image": "/malwarebytes_logo.png"
+    },
+    "mcafee": {
+        "product": "mcafee",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/mcafee?view=overview",
+        "image": "/mcafee-stacked-logo-no-tag-rgb-20170327.png"
+    },
+    "microfocus": {
+        "product": "microfocus",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/microfocus?view=overview",
+        "image": "/ArcSight_blue.png"
+    },
+    "microsoft": {
+        "product": "microsoft",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/microsoft?view=overview",
+        "image": "/Microsoft-logo-APT29-final.png"
+    },
+    "opentext": {
+        "product": "opentext",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/opentext?view=overview",
+        "image": "/OpenText_Logo_April_2022.png"
+    },
+    "paloaltonetworks": {
+        "product": "paloaltonetworks",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/paloaltonetworks?view=overview",
+        "image": "/PaloAltoNetworks_Logo_April_2022.png"
+    },
+    "qualys": {
+        "product": "qualys",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/qualys?view=overview",
+        "image": "/Qualys-Logo_Vertical.png"
+    },
+    "rapid7": {
+        "product": "rapid7",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/rapid7?view=overview",
+        "image": "/rapid7-logo-black-orange__20_edited.png"
+    },
+    "rsa": {
+        "product": "rsa",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/rsa?view=overview",
+        "image": "/RSA_logo.png"
+    },
+    "secureworks": {
+        "product": "secureworks",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/secureworks?view=overview",
+        "image": "/Secureworks_Logo_final.png"
+    },
+    "sentinelone": {
+        "product": "sentinelone",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/sentinelone?view=overview",
+        "image": "/S1_Logo_Stacked_RGB_BLK_2022.png"
+    },
+    "sentinelone-deceptions": {
+        "product": "sentinelone-deceptions",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/sentinelone-deceptions?view=overview",
+        "image":null
+    },
+    "somma": {
+        "product": "somma",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/somma?view=overview",
+        "image": "/Somma-Signature_UandD_RGB.png"
+    },
+    "sophos": {
+        "product": "sophos",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/sophos?view=overview",
+        "image": "/sophos-logo.png"
+    },
+    "symantec": {
+        "product": "symantec",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/symantec?view=overview",
+        "image": "/Symantec-Logo-APT29.png"
+    },
+    "tehtris": {
+        "product": "tehtris",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/tehtris?view=overview",
+        "image":null
+    },
+    "trellix": {
+        "product": "trellix",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/trellix?view=overview",
+        "image":null
+    },
+    "trendmicro": {
+        "product": "trendmicro",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/trendmicro?view=overview",
+        "image": "/TM_logo_red_2c.png"
+    },
+    "uptycs": {
+        "product": "uptycs",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/uptycs?view=overview",
+        "image": "/Uptycs_Logo_Stacked.png"
+    },
+    "vmware": {
+        "product": "vmware",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/vmware?view=overview",
+        "image": "/VMware-logo.png"
+    },
+    "watchguard": {
+        "product": "watchguard",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/watchguard?view=overview",
+        "image":null
+    },
+    "withsecure": {
+        "product": "withsecure",
+        "url": "https://attackevals.mitre-engenuity.org/enterprise/participants/withsecure?view=overview",
+        "image": "/WithSecure_logo_with_tagline_vertical_charcoal_black_RGB_2022.png"
+    }
+}
