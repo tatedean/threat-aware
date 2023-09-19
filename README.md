@@ -7,7 +7,7 @@ Navigate to the [ThreatAware](https://www.threataware.site) main page to get sta
 ## Layout Overview
 
 ### Product Selection Window & MITRE ATT&CK Display Window
-![image](https://github.com/tatedean/threat-aware/assets/41554005/e0fa219c-7cad-47ae-bc49-8477b6846420)
+![image](https://github.com/tatedean/threat-aware/assets/41554005/014b8d0d-9ec3-4cef-8f70-c90a2f1ab8f7)
 
 ## Select Products
 ![image](https://github.com/tatedean/threat-aware/assets/41554005/107fb0ae-918a-4f37-b581-d3a0b653ab17)
