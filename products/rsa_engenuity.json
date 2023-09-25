@@ -917,7 +917,7 @@
     "filename": "rsa_engenuity.json",
     "capability_name": "rsa",
     "counts": {
-        "detect": 38,
+        "detect": 0,
         "protect": 0
     }
 }

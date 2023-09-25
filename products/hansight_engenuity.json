@@ -1898,7 +1898,7 @@
     "filename": "hansight_engenuity.json",
     "capability_name": "hansight",
     "counts": {
-        "detect": 54,
+        "detect": 0,
         "protect": 0
     }
 }

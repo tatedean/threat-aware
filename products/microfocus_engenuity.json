@@ -1745,7 +1745,7 @@
     "filename": "microfocus_engenuity.json",
     "capability_name": "microfocus",
     "counts": {
-        "detect": 46,
+        "detect": 0,
         "protect": 0
     }
 }

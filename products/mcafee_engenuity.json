@@ -4140,7 +4140,7 @@
     "filename": "mcafee_engenuity.json",
     "capability_name": "mcafee",
     "counts": {
-        "detect": 65,
-        "protect": 5
+        "detect": 0,
+        "protect": 0
     }
 }

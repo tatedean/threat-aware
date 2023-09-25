@@ -4668,7 +4668,7 @@
     "filename": "reaqta_engenuity.json",
     "capability_name": "reaqta",
     "counts": {
-        "detect": 46,
+        "detect": 0,
         "protect": 0
     }
 }

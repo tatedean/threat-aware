@@ -5769,7 +5769,7 @@
     "filename": "cycraft_engenuity.json",
     "capability_name": "cycraft",
     "counts": {
-        "detect": 51,
-        "protect": 2
+        "detect": 0,
+        "protect": 0
     }
 }

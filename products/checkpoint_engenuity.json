@@ -5135,7 +5135,7 @@
     "filename": "checkpoint_engenuity.json",
     "capability_name": "checkpoint",
     "counts": {
-        "detect": 63,
-        "protect": 4
+        "detect": 0,
+        "protect": 0
     }
 }

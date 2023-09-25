@@ -5979,7 +5979,7 @@
     "filename": "cylance_engenuity.json",
     "capability_name": "cylance",
     "counts": {
-        "detect": 57,
-        "protect": 6
+        "detect": 0,
+        "protect": 0
     }
 }

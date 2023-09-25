@@ -1757,7 +1757,7 @@
     "filename": "kaspersky_engenuity.json",
     "capability_name": "kaspersky",
     "counts": {
-        "detect": 45,
+        "detect": 0,
         "protect": 0
     }
 }

@@ -8432,7 +8432,7 @@
     "filename": "fireeye_engenuity.json",
     "capability_name": "fireeye",
     "counts": {
-        "detect": 56,
-        "protect": 3
+        "detect": 0,
+        "protect": 0
     }
 }

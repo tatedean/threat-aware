@@ -3502,7 +3502,7 @@
     "filename": "cisco_engenuity.json",
     "capability_name": "cisco",
     "counts": {
-        "detect": 57,
-        "protect": 3
+        "detect": 0,
+        "protect": 0
     }
 }

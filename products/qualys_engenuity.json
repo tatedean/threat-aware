@@ -1,10 +1,86 @@
 {
     "scores": {
+        "initial-access": {
+            "T1566.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "Gunter clicks link in email from noreply@sktlocal.it and downloads NTFVersion.exe",
+                            "images": [
+                                "Turla_QA_1.A.1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1189": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "Egle browses to nato-int.com and is redirected to anto-int.com and downloads NFVersion_5e.exe",
+                            "images": [
+                                "Turla_QA_11.A.1.png",
+                                "Turla_QA_11.A.1_1.png",
+                                "Turla_QA_11.A.1_2.png",
+                                "Turla_QA_11.A.1_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
         "execution": {
             "T1204.002": {
                 "d": {
-                    "count": 2,
+                    "count": 6,
                     "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "Gunter executes NTFVersion.exe",
+                            "images": [
+                                "Turla_QA_1.A.2_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "Gunter executes NTFVersion.exe",
+                            "images": [
+                                "Turla_QA_1.A.2_4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "Gunter executes NTFVersion.exe",
+                            "images": [
+                                "Turla_QA_1.A.2_5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "Egle executes NFVersion_5e.exe",
+                            "images": [
+                                "Turla_QA_11.A.3.png",
+                                "Turla_QA_11.A.3_1.png"
+                            ],
+                            "note": null
+                        },
                         {
                             "threat": "Wizard Spider + Sandworm",
                             "criteria": "explorer.exe executes winword.exe",
@@ -19,6 +95,332 @@
                             "images": [
                                 "WizardSpider-Sandworm_QA_1.A.1_3.png",
                                 "WizardSpider-Sandworm_QA_1.A.1_4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.001": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes powershell.exe to verify to which users can access the ViperVPN service",
+                            "images": [
+                                "Turla_QA_3.A.6.png",
+                                "Turla_QA_3.A.6_1.png",
+                                "Turla_QA_3.A.6_2.png",
+                                "Turla_QA_3.A.6_3.png",
+                                "Turla_QA_3.A.6_4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe executes powershell.exe with flags \"-nol -noni -nop -enc\" and arguments \"$ProgressPreference = \\\"SilentlyContinue\\\"; Get-Module -ListAvailable -Name ActiveDirectory\"",
+                            "images": [
+                                "Turla_QA_15.A.1.png",
+                                "Turla_QA_15.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes powershell.exe on DREBULE",
+                            "images": [
+                                "Turla_QA_18.A.6.png",
+                                "Turla_QA_18.A.6_1.png",
+                                "Turla_QA_18.A.6_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "WmiPrvSE.exe spawns powershell.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_1.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_18.A.3.png",
+                                "WizardSpider-Sandworm_QA_18.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1569.002": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "WinResSvc.exe starts WinSys Restore Service via StartService API",
+                            "images": [
+                                "Turla_QA_4.A.6.png",
+                                "Turla_QA_4.A.6_1.png",
+                                "Turla_QA_4.A.6_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "file_svc_mgr.exe executes fs_cmu_v2.exe on Berzas as EgleAdmin",
+                            "images": [
+                                "Turla_QA_14.A.4.png",
+                                "Turla_QA_14.A.4_1.png",
+                                "Turla_QA_14.A.4_2.png",
+                                "Turla_QA_14.A.4_3.png",
+                                "Turla_QA_14.A.4_4.png",
+                                "Turla_QA_14.A.4_5.png",
+                                "Turla_QA_14.A.4_6.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_15.A.6.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_15.A.6_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1106": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "svchost.exe executes commands via CreateProcess",
+                            "images": [
+                                "Turla_QA_4.A.11.png",
+                                "Turla_QA_4.A.11_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe executes commands via CreateProcessW",
+                            "images": [
+                                "Turla_QA_13.A.1.png",
+                                "Turla_QA_13.A.1_1.png",
+                                "Turla_QA_13.A.1_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.003": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "svchost.exe executes cmd.exe",
+                            "images": [
+                                "Turla_QA_4.A.12.png",
+                                "Turla_QA_4.A.12_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes winsas64.bat",
+                            "images": [
+                                "Turla_QA_5.A.2.png",
+                                "Turla_QA_5.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "EdgeTransport.exe spawns cmd.exe to execute commands via _popen",
+                            "images": [
+                                "Turla_QA_19.A.5.png",
+                                "Turla_QA_19.A.5_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "winword.exe executes cmd.exe to execute adb.vbs",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_1.A.4_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_16.A.4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "svchost.exe enumerates, modifies, and executes remote scheduled task \\Microsoft\\Windows\\Customer Experience Improvement Program\\Consolidator",
+                            "images": [
+                                "Turla_QA_5.A.7.png",
+                                "Turla_QA_5.A.7_1.png",
+                                "Turla_QA_5.A.7_2.png",
+                                "Turla_QA_5.A.7_3.png",
+                                "Turla_QA_5.A.7_4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1059.007": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "Multiple snippets of JavaScript are executed",
+                            "images": [
+                                "Turla_QA_11.A.2_1.png",
+                                "Turla_QA_11.A.2_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1559": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe writes output to a named pipe svccommsdev that msedge.exe reads",
+                            "images": [
+                                "Turla_QA_13.A.3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe downloads fs_cmu_v2.exe and file_svc_mgr.exe to named pipe svcsvcctrldev that taskhostw.exe reads",
+                            "images": [
+                                "Turla_QA_14.A.1.png",
+                                "Turla_QA_14.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1105": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe writes mtxconf.dll, mtxcli.dll, msiex.ps1, perfe009.dat, wdr.rules.xml to System32 folder \u200b",
+                            "images": [
+                                "Turla_QA_18.A.2.png",
+                                "Turla_QA_18.A.2_1.png",
+                                "Turla_QA_18.A.2_2.png",
+                                "Turla_QA_18.A.2_3.png",
+                                "Turla_QA_18.A.2_4.png",
+                                "Turla_QA_18.A.2_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1047": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe uses WMIC to execute msiex.ps1 on drebule, via CreateProcessWithToken, using a copy of ZilvinasAdmin's token",
+                            "images": [
+                                "Turla_QA_18.A.5.png",
+                                "Turla_QA_18.A.5_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "adb.vbs executes powershell.exe via Win32_Process",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_1.A.6_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "adb.vbs executes powershell.exe via Win32_Process",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_1.A.6_1.png",
+                                "WizardSpider-Sandworm_QA_1.A.6_3.png"
                             ],
                             "note": null
                         }
@@ -55,24 +457,38 @@
                     "count": 0,
                     "info": []
                 }
-            },
-            "T1059.003": {
+            }
+        },
+        "defense-evasion": {
+            "T1027": {
                 "d": {
-                    "count": 2,
+                    "count": 3,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "winword.exe executes cmd.exe to execute adb.vbs",
+                            "threat": "Turla",
+                            "criteria": "mxs_installer.exe is embedded inside NTFVersion.exe via the Resource Section",
                             "images": [
-                                "WizardSpider-Sandworm_QA_1.A.4_1.png"
+                                "Turla_QA_1.A.3.png",
+                                "Turla_QA_1.A.3_1.png",
+                                "Turla_QA_1.A.3_2.png"
                             ],
                             "note": null
                         },
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe executes cmd.exe",
+                            "threat": "Turla",
+                            "criteria": "EPIC Guard DLL is embedded inside the Resource Section of mxs_installer.exe",
                             "images": [
-                                "WizardSpider-Sandworm_QA_16.A.4.png"
+                                "Turla_QA_2.A.1.png",
+                                "Turla_QA_2.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msnrcv64t.dll is embedded inside gup.sys",
+                            "images": [
+                                "Turla_QA_12.A.7.png",
+                                "Turla_QA_12.A.7_1.png"
                             ],
                             "note": null
                         }
@@ -83,24 +499,36 @@
                     "info": []
                 }
             },
-            "T1047": {
+            "T1112": {
                 "d": {
-                    "count": 2,
+                    "count": 3,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "adb.vbs executes powershell.exe via Win32_Process",
+                            "threat": "Turla",
+                            "criteria": "NTFVersion.exe modifies Gunter's Winlogon Registry Key",
                             "images": [
-                                "WizardSpider-Sandworm_QA_1.A.6_2.png"
+                                "Turla_QA_1.A.4.png",
+                                "Turla_QA_1.A.4_1.png"
                             ],
                             "note": null
                         },
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "adb.vbs executes powershell.exe via Win32_Process",
+                            "threat": "Turla",
+                            "criteria": "WinResSvc.exe writes ServiceDLL value to the WinResSvc\\Parameters Registry Key via RegCreateKey & RegSetValue API",
                             "images": [
-                                "WizardSpider-Sandworm_QA_1.A.6_1.png",
-                                "WizardSpider-Sandworm_QA_1.A.6_3.png"
+                                "Turla_QA_4.A.4.png",
+                                "Turla_QA_4.A.4_1.png",
+                                "Turla_QA_4.A.4_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "WinResSvc.exe writes SystemRestoreGroup value to the Svchost Registry Key\u200b via RegCreateKey & RegSetValue API",
+                            "images": [
+                                "Turla_QA_4.A.5.png",
+                                "Turla_QA_4.A.5_1.png",
+                                "Turla_QA_4.A.5_2.png"
                             ],
                             "note": null
                         }
@@ -111,24 +539,36 @@
                     "info": []
                 }
             },
-            "T1059.001": {
+            "T1055.001": {
                 "d": {
-                    "count": 2,
+                    "count": 3,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "WmiPrvSE.exe spawns powershell.exe",
+                            "threat": "Turla",
+                            "criteria": "mxs_installer.exe injects EPIC GUARD DLL into explorer.exe via CreateRemoteThread",
                             "images": [
-                                "WizardSpider-Sandworm_QA_1.A.7_1.png"
+                                "Turla_QA_2.A.2.png",
+                                "Turla_QA_2.A.2_1.png",
+                                "Turla_QA_2.A.2_2.png"
                             ],
                             "note": null
                         },
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "powershell.exe is executed",
+                            "threat": "Turla",
+                            "criteria": "explorer.exe injects EPIC Worker DLL into msedge.exe via CreateRemoteThread",
                             "images": [
-                                "WizardSpider-Sandworm_QA_18.A.3.png",
-                                "WizardSpider-Sandworm_QA_18.A.3_1.png"
+                                "Turla_QA_2.A.5_1.png",
+                                "Turla_QA_2.A.5_2.png",
+                                "Turla_QA_2.A.5_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "gup.sys injects msnrcv64t.dll into msedge.exe/taskhostw.exe",
+                            "images": [
+                                "Turla_QA_12.A.10.png",
+                                "Turla_QA_12.A.10_1.png"
                             ],
                             "note": null
                         }
@@ -139,23 +579,1110 @@
                     "info": []
                 }
             },
-            "T1569.002": {
+            "T1036.004": {
                 "d": {
-                    "count": 2,
+                    "count": 1,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "threat": "Turla",
+                            "criteria": "WinResSvc.exe uses filenames mressvc.dll and MSSVCCFG.DLL to appear as benign/legitimate",
                             "images": [
-                                "WizardSpider-Sandworm_QA_15.A.6.png"
+                                "Turla_QA_4.A.2.png",
+                                "Turla_QA_4.A.2_1.png",
+                                "Turla_QA_4.A.2_2.png",
+                                "Turla_QA_4.A.2_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.004": {
+                "d": {
+                    "count": 10,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "svchost.exe spawns cmd.exe to delete winsas64.bat",
+                            "images": [
+                                "Turla_QA_5.A.4.png",
+                                "Turla_QA_5.A.4_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe deletes terabox.exe, wsqsp.exe, and wsqmanager.exe",
+                            "images": [
+                                "Turla_QA_7.A.5.png",
+                                "Turla_QA_7.A.5_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe deletes mwingtsvcupdt.exe and ~DFA512.tmp",
+                            "images": [
+                                "Turla_QA_8.A.3.png",
+                                "Turla_QA_8.A.3_1.png",
+                                "Turla_QA_8.A.3_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe deletes tmp504e.tmp, pscp.exe, and plink.exe",
+                            "images": [
+                                "Turla_QA_9.A.6.png",
+                                "Turla_QA_9.A.6_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "gupsys.exe deletes gbyte.sys",
+                            "images": [
+                                "Turla_QA_12.A.13.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe deletes file_svc_mgr.exe and fs_cmu_v2.exe",
+                            "images": [
+                                "Turla_QA_14.A.6.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe deletes fs_mgr.exe, loadperf.exe, and fs_cmu.exe",
+                            "images": [
+                                "Turla_QA_17.A.3.png",
+                                "Turla_QA_17.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe deletes msiex.ps1, wdr.rules.xml, mtxconf.dll, mtxcli.dll, perfe009.dat",
+                            "images": [
+                                "Turla_QA_18.A.9.png",
+                                "Turla_QA_18.A.9_1.png",
+                                "Turla_QA_18.A.9_2.png",
+                                "Turla_QA_18.A.9_3.png",
+                                "Turla_QA_18.A.9_4.png",
+                                "Turla_QA_18.A.9_5.png",
+                                "Turla_QA_18.A.9_6.png",
+                                "Turla_QA_18.A.9_7.png"
                             ],
                             "note": null
                         },
                         {
                             "threat": "Wizard Spider + Sandworm",
-                            "criteria": "Service binary in C:\\Windows\\ is executed",
+                            "criteria": "rundll32.exe deletes oradump.exe, mslog.exe, and mslog.txt via cmd.exe",
                             "images": [
-                                "WizardSpider-Sandworm_QA_15.A.6_1.png"
+                                "WizardSpider-Sandworm_QA_17.A.8.png",
+                                "WizardSpider-Sandworm_QA_17.A.8_1.png",
+                                "WizardSpider-Sandworm_QA_17.A.8_2.png",
+                                "WizardSpider-Sandworm_QA_17.A.8_5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe deletes oradump.exe, mslog.exe, and mslog.txt via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_17.A.8_3.png",
+                                "WizardSpider-Sandworm_QA_17.A.8_4.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1036.005": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe moves terabox.exe to System32 folder",
+                            "images": [
+                                "Turla_QA_6.A.2.png",
+                                "Turla_QA_6.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "hsperfdata masquerades as cron by executing from /usr/bin/cron",
+                            "images": [
+                                "Turla_QA_9.A.8.png",
+                                "Turla_QA_9.A.8_1.png",
+                                "Turla_QA_9.A.8_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "winmail.dat masquerades as the file attachment created by Microsoft Outlook  (https://support.mozilla.org/en-US/kb/what-winmaildat-attachment)",
+                            "images": [
+                                "Turla_QA_18.A.4.png",
+                                "Turla_QA_18.A.4_1.png",
+                                "Turla_QA_18.A.4_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "LightNeuron masquerades as a benign connection filtering agent",
+                            "images": [
+                                "Turla_QA_18.A.8.png",
+                                "Turla_QA_18.A.8_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1222.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "hsperfdata adds executable flag to created file cron",
+                            "images": [
+                                "Turla_QA_9.A.9.png",
+                                "Turla_QA_9.A.9_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1553.006": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "gupsys.exe disables driver signature enforcement (DSE)",
+                            "images": [
+                                "Turla_QA_12.A.3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1014": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "gupsys.exe installs  C:\\WINDOWS\\$NtUninstallQ385719$\\gup.sys",
+                            "images": [
+                                "Turla_QA_12.A.4.png",
+                                "Turla_QA_12.A.4_1.png",
+                                "Turla_QA_12.A.4_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "gupsys.exe removes gbyte.sys and re-enables DSE",
+                            "images": [
+                                "Turla_QA_12.A.5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "USN change journal is cleared using fsutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_19.A.9.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1140": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "gup.sys XOR decodes msnrcv64t.dll",
+                            "images": [
+                                "Turla_QA_12.A.6.png",
+                                "Turla_QA_12.A.6_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1550.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe executes a pass-the-hash attack to authenticate as ZilvinasAdmin and use PsExec to execute the third Snake installer on uosis",
+                            "images": [
+                                "Turla_QA_17.A.1.png",
+                                "Turla_QA_17.A.1_1.png",
+                                "Turla_QA_17.A.1_2.png",
+                                "Turla_QA_17.A.1_3.png",
+                                "Turla_QA_17.A.1_4.png",
+                                "Turla_QA_17.A.1_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1218.011": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes adb.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_1.A.9_1.png",
+                                "WizardSpider-Sandworm_QA_1.A.9_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Rundll32.exe executes wsmprovav.dll",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_15.A.8.png",
+                                "WizardSpider-Sandworm_QA_15.A.8_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes perfc.dat",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_19.A.1.png",
+                                "WizardSpider-Sandworm_QA_19.A.1_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1078.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User bill successfully authenticates into 10.0.0.8",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_4.A.2.png",
+                                "WizardSpider-Sandworm_QA_4.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User vfleming successfully authenticates into 10.0.0.4",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_7.A.2.png",
+                                "WizardSpider-Sandworm_QA_7.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "User patreides successfully authenticates into 10.0.1.4",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_18.A.1.png",
+                                "WizardSpider-Sandworm_QA_18.A.1_1.png",
+                                "WizardSpider-Sandworm_QA_18.A.1_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1222.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.Exe executes icacls.exe to modify permissions on C: and Z:",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_9.A.3_2.png",
+                                "WizardSpider-Sandworm_QA_9.A.3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1070.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "Event logs are cleared via wevtutil.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_19.A.8.png",
+                                "WizardSpider-Sandworm_QA_19.A.8_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "persistence": {
+            "T1547.004": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "NTFVersion.exe modifies Shell key value to include mxs_installer.exe",
+                            "images": [
+                                "Turla_QA_1.A.5.png",
+                                "Turla_QA_1.A.5_1.png",
+                                "Turla_QA_1.A.5_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe adds the Userinit Registry key using Set-ItemProperty",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_7.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1543.003": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "WinResSvc.exe calls OpenSCManager & CreateService API to create WinResSvc service",
+                            "images": [
+                                "Turla_QA_4.A.3.png",
+                                "Turla_QA_4.A.3_1.png",
+                                "Turla_QA_4.A.3_2.png",
+                                "Turla_QA_4.A.3_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "gusbsys.exe installs vulnerable driver - C:\\WINDOWS\\$NtUninstallQ608317$\\gigabit.sys",
+                            "images": [
+                                "Turla_QA_12.A.2.png",
+                                "Turla_QA_12.A.2_1.png",
+                                "Turla_QA_12.A.2_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "New service Windows Check AV is created",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_15.A.5.png",
+                                "WizardSpider-Sandworm_QA_15.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "hsperfdata stops the cron service",
+                            "images": [
+                                "Turla_QA_9.A.10.png",
+                                "Turla_QA_9.A.10_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1543": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "hsperfdata modifies/restarts the cron service",
+                            "images": [
+                                "Turla_QA_9.A.11.png",
+                                "Turla_QA_9.A.11_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1136.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe creates a new domain admin Leshy using ZilvinasAdmin access token",
+                            "images": [
+                                "Turla_QA_17.A.5_2.png",
+                                "Turla_QA_17.A.5_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1505.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "LightNeuron is installed as a Microsoft.Exchange.Transport.Agent.ConnectionFiltering.dll",
+                            "images": [
+                                "Turla_QA_18.A.7.png",
+                                "Turla_QA_18.A.7_1.png",
+                                "Turla_QA_18.A.7_2.png",
+                                "Turla_QA_18.A.7_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1547.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe adds the blbdigital Registry Run key using RegSetValueExA()",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_2.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "SecurityHealth Registry Run key is added using reg.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_15.A.7_1.png",
+                                "WizardSpider-Sandworm_QA_15.A.7_2.png",
+                                "WizardSpider-Sandworm_QA_15.A.7.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1053.005": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe creates Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_19.A.2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe executes Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_19.A.10.png",
+                                "WizardSpider-Sandworm_QA_19.A.10_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "schtask.exe executes Restart task",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_19.A.10_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "discovery": {
+            "T1057": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "explorer.exe enumerates process list via CreateToolhelp32Snapshot",
+                            "images": [
+                                "Turla_QA_2.A.3.png",
+                                "Turla_QA_2.A.3_1.png",
+                                "Turla_QA_2.A.3_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe  executes tasklist.exe /v",
+                            "images": [
+                                "Turla_QA_13.A.2.png",
+                                "Turla_QA_13.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe enumerates running processes via \"tasklist.exe /v\" to discover ZilvinasAdmin process",
+                            "images": [
+                                "Turla_QA_17.A.4.png",
+                                "Turla_QA_17.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe enumerates all users on the local machine via NetUserEnum",
+                            "images": [
+                                "Turla_QA_2.A.6.png",
+                                "Turla_QA_2.A.6_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.3_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1083": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe enumerates Gunter's files via FindFirstFile & FindNextFile\u200b",
+                            "images": [
+                                "Turla_QA_2.A.7.png",
+                                "Turla_QA_2.A.7_1.png",
+                                "Turla_QA_2.A.7_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069.002": {
+                "d": {
+                    "count": 5,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes various net group commands",
+                            "images": [
+                                "Turla_QA_3.A.1_1.png",
+                                "Turla_QA_3.A.1_2.png",
+                                "Turla_QA_3.A.1_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes net group /domain",
+                            "images": [
+                                "Turla_QA_5.A.9.png",
+                                "Turla_QA_5.A.9_1.png",
+                                "Turla_QA_5.A.9_2.png",
+                                "Turla_QA_5.A.9_3.png",
+                                "Turla_QA_5.A.9_4.png",
+                                "Turla_QA_5.A.9_5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe enumerates Active Directory groups via Get-ADGroup",
+                            "images": [
+                                "Turla_QA_15.A.2.png",
+                                "Turla_QA_15.A.2_1.png",
+                                "Turla_QA_15.A.2_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe enumerates accounts belonging to domain groups (Domain Admins and Server Management) via Get-ADGroupMember",
+                            "images": [
+                                "Turla_QA_15.A.3.png",
+                                "Turla_QA_15.A.3_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "powershell.exe executes adfind.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_7.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1007": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes \"tasklist /svc\"",
+                            "images": [
+                                "Turla_QA_3.A.2.png",
+                                "Turla_QA_3.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes sc query",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.2_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1012": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe reg queries the ViperVPNSvc service",
+                            "images": [
+                                "Turla_QA_3.A.5.png",
+                                "Turla_QA_3.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1033": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes whoami",
+                            "images": [
+                                "Turla_QA_4.A.13.png",
+                                "Turla_QA_4.A.13_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1018": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes dsquery",
+                            "images": [
+                                "Turla_QA_5.A.10.png",
+                                "Turla_QA_5.A.10_1.png",
+                                "Turla_QA_5.A.10_2.png",
+                                "Turla_QA_5.A.10_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe enumerates domain computer information via Get-ADComputer",
+                            "images": [
+                                "Turla_QA_15.A.5.png",
+                                "Turla_QA_15.A.5_1.png",
+                                "Turla_QA_15.A.5_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes dsquery.exe via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_17.A.7.png",
+                                "WizardSpider-Sandworm_QA_17.A.7_1.png",
+                                "WizardSpider-Sandworm_QA_17.A.7_2.png",
+                                "WizardSpider-Sandworm_QA_17.A.7_4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe executes dsquery.exe via cmd.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_17.A.7_3.png",
+                                "WizardSpider-Sandworm_QA_17.A.7_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1082": {
+                "d": {
+                    "count": 4,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe spawns cmd.exe to execute \"systeminfo\"",
+                            "images": [
+                                "Turla_QA_11.A.6.png",
+                                "Turla_QA_11.A.6_1.png",
+                                "Turla_QA_11.A.6_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes systeminfo",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net /config",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.7_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "rundll32.exe queries HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion for various subkeys",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_16.A.2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1087.002": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe executes net.exe user /domain EgleAdmin",
+                            "images": [
+                                "Turla_QA_13.A.4.png",
+                                "Turla_QA_13.A.4_1.png",
+                                "Turla_QA_13.A.4_2.png",
+                                "Turla_QA_13.A.4_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe enumerates account information (Zilvinas and ZilvinasAdmin) via Get-ADUser",
+                            "images": [
+                                "Turla_QA_15.A.4.png",
+                                "Turla_QA_15.A.4_1.png",
+                                "Turla_QA_15.A.4_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes net user /domain",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.4_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1049": {
+                "d": {
+                    "count": 3,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe enumerates a list of shares via net use",
+                            "images": [
+                                "Turla_QA_13.A.8.png",
+                                "Turla_QA_13.A.8_1.png",
+                                "Turla_QA_13.A.8_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.6_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes netstat.exe",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_16.A.5.png",
+                                "WizardSpider-Sandworm_QA_16.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1016": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "EdgeTransport.exe spawns cmd.exe to execute ipconfig /all",
+                            "images": [
+                                "Turla_QA_19.A.6.png",
+                                "Turla_QA_19.A.6_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes ipconfig",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.5_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1482": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes nltest /domain_trusts /all_trusts",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.8_1.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1069": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes whoami",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.9_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Wizard Spider + Sandworm",
+                            "criteria": "cmd.exe executes whoami",
+                            "images": [
+                                "WizardSpider-Sandworm_QA_5.A.9.png"
                             ],
                             "note": null
                         }
@@ -168,10 +1695,254 @@
             }
         },
         "command-and-control": {
+            "T1071.001": {
+                "d": {
+                    "count": 10,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to shoppingbeach[.]org over HTTP protocol",
+                            "images": [
+                                "Turla_QA_2.A.11.png",
+                                "Turla_QA_2.A.11_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to prendre-des-vacances[.]fr over HTTP protocol",
+                            "images": [
+                                "Turla_QA_4.A.8.png",
+                                "Turla_QA_4.A.8_1.png",
+                                "Turla_QA_4.A.8_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates C:\\Windows\\Temp\\wsqsp.exe",
+                            "images": [
+                                "Turla_QA_7.A.1.png",
+                                "Turla_QA_7.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to eunewswire[.]eu over HTTP protocol",
+                            "images": [
+                                "Turla_QA_7.A.4.png",
+                                "Turla_QA_7.A.4_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to svobodaukrayin[.]ua over HTTPS protocol",
+                            "images": [
+                                "Turla_QA_11.A.4.png",
+                                "Turla_QA_11.A.4_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to bestcafenews[.]com over HTTP protocol",
+                            "images": [
+                                "Turla_QA_12.A.12.png",
+                                "Turla_QA_12.A.12_1.png",
+                                "Turla_QA_12.A.12_2.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to bestcafenews[.]com over HTTP protocol",
+                            "images": [
+                                "Turla_QA_12.A.12_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe on Berzas connects to themedicalinfo[.]net over HTTP protocol",
+                            "images": [
+                                "Turla_QA_14.A.5.png",
+                                "Turla_QA_14.A.5_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe on Berzas connects to themedicalinfo[.]net over HTTP protocol",
+                            "images": [
+                                "Turla_QA_14.A.5_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to worldcup2023aus[.]org over HTTP protocol",
+                            "images": [
+                                "Turla_QA_17.A.2_2.png",
+                                "Turla_QA_17.A.2_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1090.002": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to adversary's compromised proxy -  shoppingbeach[.]org",
+                            "images": [
+                                "Turla_QA_2.A.12.png",
+                                "Turla_QA_2.A.12_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe connects to the adversary's compromised proxy - svobodaukrayin[.]ua",
+                            "images": [
+                                "Turla_QA_11.A.5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
             "T1105": {
                 "d": {
-                    "count": 14,
+                    "count": 26,
                     "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "svchost.exe creates C:\\Windows\\System32\\WinResSvc.exe",
+                            "images": [
+                                "Turla_QA_4.A.1.png",
+                                "Turla_QA_4.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates winsas64.bat",
+                            "images": [
+                                "Turla_QA_5.A.1.png",
+                                "Turla_QA_5.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates C:\\Windows\\Temp\\wmimetricsq.exe",
+                            "images": [
+                                "Turla_QA_5.A.5.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates C:\\Windows\\Temp\\terabox.exe",
+                            "images": [
+                                "Turla_QA_6.A.1.png",
+                                "Turla_QA_6.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates C:\\Windows\\Temp\\wsqmanager.exe",
+                            "images": [
+                                "Turla_QA_7.A.2.png",
+                                "Turla_QA_7.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates wingtsvcupdt.exe",
+                            "images": [
+                                "Turla_QA_8.A.1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates C:\\Windows\\Temp\\tmp504e.tmp",
+                            "images": [
+                                "Turla_QA_9.A.1.png",
+                                "Turla_QA_9.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates C:\\Windows\\Temp\\pscp.exe",
+                            "images": [
+                                "Turla_QA_9.A.2.png",
+                                "Turla_QA_9.A.2_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe creates C:\\Windows\\Temp\\plink.exe",
+                            "images": [
+                                "Turla_QA_9.A.4.png",
+                                "Turla_QA_9.A.4_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe downloads C:\\Users\\Egle\\Desktop\\gupsys.exe",
+                            "images": [
+                                "Turla_QA_12.A.1.png",
+                                "Turla_QA_12.A.1_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe writes fs_cmu_v2.exe and file_svc_mgr.exe to System32 folder on Azuloas",
+                            "images": [
+                                "Turla_QA_14.A.2.png",
+                                "Turla_QA_14.A.2_1.png",
+                                "Turla_QA_14.A.2_2.png",
+                                "Turla_QA_14.A.2_3.png",
+                                "Turla_QA_14.A.2_4.png",
+                                "Turla_QA_14.A.2_5.png",
+                                "Turla_QA_14.A.2_6.png",
+                                "Turla_QA_14.A.2_7.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe writes loadperf.exe (mimikatz), fs_mgr.exe (psexec), and fs_cmu.exe (Snake installer) to System32 folder on Berzas",
+                            "images": [
+                                "Turla_QA_16.A.2.png",
+                                "Turla_QA_16.A.2_1.png",
+                                "Turla_QA_16.A.2_2.png",
+                                "Turla_QA_16.A.2_3.png",
+                                "Turla_QA_16.A.2_4.png"
+                            ],
+                            "note": null
+                        },
                         {
                             "threat": "Wizard Spider + Sandworm",
                             "criteria": "winword.exe downloads C:\\Users\\Public\\adb.txt",
@@ -304,37 +2075,89 @@
                     "count": 0,
                     "info": []
                 }
-            }
-        },
-        "defense-evasion": {
-            "T1218.011": {
+            },
+            "T1090.001": {
                 "d": {
-                    "count": 3,
+                    "count": 1,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe executes adb.dll",
+                            "threat": "Turla",
+                            "criteria": "msedge.exe writes to dsnap for C2 comms through hobgoblin",
                             "images": [
-                                "WizardSpider-Sandworm_QA_1.A.9_1.png",
-                                "WizardSpider-Sandworm_QA_1.A.9_2.png"
+                                "Turla_QA_5.A.8.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1573.001": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "msedge.exe XOR encrypts HTTP traffic to bestcafenews[.]com",
+                            "images": [
+                                "Turla_QA_12.A.11.png",
+                                "Turla_QA_12.A.11_1.png",
+                                "Turla_QA_12.A.11_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            }
+        },
+        "privilege-escalation": {
+            "T1574.011": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe modifies the ViperVPN service registry key",
+                            "images": [
+                                "Turla_QA_3.A.7.png",
+                                "Turla_QA_3.A.7_1.png"
                             ],
                             "note": null
                         },
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "Rundll32.exe executes wsmprovav.dll",
+                            "threat": "Turla",
+                            "criteria": "cmd.exe modifies the ViperVPN service registry key",
                             "images": [
-                                "WizardSpider-Sandworm_QA_15.A.8.png",
-                                "WizardSpider-Sandworm_QA_15.A.8_1.png"
+                                "Turla_QA_3.A.7_2.png",
+                                "Turla_QA_3.A.7_3.png",
+                                "Turla_QA_3.A.7_4.png"
                             ],
                             "note": null
-                        },
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1134.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe executes perfc.dat",
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe executes net.exe with Egle's access token via CreateProcessWithTokenW",
                             "images": [
-                                "WizardSpider-Sandworm_QA_19.A.1.png",
-                                "WizardSpider-Sandworm_QA_19.A.1_1.png"
+                                "Turla_QA_13.A.7_1.png",
+                                "Turla_QA_13.A.7.png"
                             ],
                             "note": null
                         }
@@ -347,229 +2170,15 @@
             },
             "T1078.002": {
                 "d": {
-                    "count": 3,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "User bill successfully authenticates into 10.0.0.8",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_4.A.2.png",
-                                "WizardSpider-Sandworm_QA_4.A.2_1.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "User vfleming successfully authenticates into 10.0.0.4",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_7.A.2.png",
-                                "WizardSpider-Sandworm_QA_7.A.2_1.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "User patreides successfully authenticates into 10.0.1.4",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_18.A.1.png",
-                                "WizardSpider-Sandworm_QA_18.A.1_1.png",
-                                "WizardSpider-Sandworm_QA_18.A.1_2.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1222.001": {
-                "d": {
                     "count": 1,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.Exe executes icacls.exe to modify permissions on C: and Z:",
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe authenticates as EgleAdmin to gain access to berzas",
                             "images": [
-                                "WizardSpider-Sandworm_QA_9.A.3_2.png",
-                                "WizardSpider-Sandworm_QA_9.A.3.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1070.004": {
-                "d": {
-                    "count": 2,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe deletes oradump.exe, mslog.exe, and mslog.txt via cmd.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_17.A.8.png",
-                                "WizardSpider-Sandworm_QA_17.A.8_1.png",
-                                "WizardSpider-Sandworm_QA_17.A.8_2.png",
-                                "WizardSpider-Sandworm_QA_17.A.8_5.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe deletes oradump.exe, mslog.exe, and mslog.txt via cmd.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_17.A.8_3.png",
-                                "WizardSpider-Sandworm_QA_17.A.8_4.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1070.001": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "Event logs are cleared via wevtutil.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_19.A.8.png",
-                                "WizardSpider-Sandworm_QA_19.A.8_1.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1070": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "USN change journal is cleared using fsutil.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_19.A.9.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            }
-        },
-        "persistence": {
-            "T1547.001": {
-                "d": {
-                    "count": 2,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe adds the blbdigital Registry Run key using RegSetValueExA()",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_2.A.1_1.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "SecurityHealth Registry Run key is added using reg.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_15.A.7_1.png",
-                                "WizardSpider-Sandworm_QA_15.A.7_2.png",
-                                "WizardSpider-Sandworm_QA_15.A.7.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1547.004": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "powershell.exe adds the Userinit Registry key using Set-ItemProperty",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_7.A.4_1.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1543.003": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "New service Windows Check AV is created",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_15.A.5.png",
-                                "WizardSpider-Sandworm_QA_15.A.5_1.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1053.005": {
-                "d": {
-                    "count": 3,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "schtask.exe creates Restart task",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_19.A.2.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "schtask.exe executes Restart task",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_19.A.10.png",
-                                "WizardSpider-Sandworm_QA_19.A.10_2.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "schtask.exe executes Restart task",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_19.A.10_1.png"
+                                "Turla_QA_14.A.3.png",
+                                "Turla_QA_14.A.3_1.png",
+                                "Turla_QA_14.A.3_2.png"
                             ],
                             "note": null
                         }
@@ -582,6 +2191,79 @@
             }
         },
         "credential-access": {
+            "T1110.003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "winsas64.bat sprays several weak passwords against domain admin accounts",
+                            "images": [
+                                "Turla_QA_5.A.3_1.png",
+                                "Turla_QA_5.A.3.png",
+                                "Turla_QA_5.A.3_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes terabox.exe",
+                            "images": [
+                                "Turla_QA_6.A.3.png",
+                                "Turla_QA_6.A.3_1.png",
+                                "Turla_QA_6.A.3_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1003.001": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe dumps credentials using Mimikatz sekurlsa::logonpasswords",
+                            "images": [
+                                "Turla_QA_16.A.3_3.png",
+                                "Turla_QA_16.A.3_4.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe dumps credentials using Mimikatz sekurlsa::logonpasswords",
+                            "images": [
+                                "Turla_QA_16.A.3.png",
+                                "Turla_QA_16.A.3_1.png",
+                                "Turla_QA_16.A.3_2.png",
+                                "Turla_QA_16.A.3_5.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
             "T1552": {
                 "d": {
                     "count": 2,
@@ -671,26 +2353,40 @@
                 }
             }
         },
-        "collection": {
-            "T1114.001": {
+        "lateral-movement": {
+            "T1570": {
                 "d": {
-                    "count": 2,
+                    "count": 3,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to read SenderEmailAddress values from Outlook",
+                            "threat": "Turla",
+                            "criteria": "svchost.exe moves C:\\Windows\\Temp\\wmimetricsq.exe to \\\\bannik\\C$\\Windows\\System32",
                             "images": [
-                                "WizardSpider-Sandworm_QA_3.A.5_2.png",
-                                "WizardSpider-Sandworm_QA_3.A.5_4.png"
+                                "Turla_QA_5.A.6.png",
+                                "Turla_QA_5.A.6_1.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "taskhostw.exe copies above files to DREBULE C$",
+                            "images": [
+                                "Turla_QA_18.A.3.png",
+                                "Turla_QA_18.A.3_1.png",
+                                "Turla_QA_18.A.3_2.png",
+                                "Turla_QA_18.A.3_3.png",
+                                "Turla_QA_18.A.3_4.png",
+                                "Turla_QA_18.A.3_5.png",
+                                "Turla_QA_18.A.3_6.png",
+                                "Turla_QA_18.A.3_7.png"
                             ],
                             "note": null
                         },
                         {
                             "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to read SenderEmailAddress values from Outlook",
+                            "criteria": "C:\\Windows\\perfc.dat is written to disk on 10.0.1.8",
                             "images": [
-                                "WizardSpider-Sandworm_QA_3.A.5_3.png",
-                                "WizardSpider-Sandworm_QA_3.A.5.png"
+                                "WizardSpider-Sandworm_QA_19.A.5.png"
                             ],
                             "note": null
                         }
@@ -700,9 +2396,60 @@
                     "count": 0,
                     "info": []
                 }
-            }
-        },
-        "lateral-movement": {
+            },
+            "T1550.002": {
+                "d": {
+                    "count": 1,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes terabox.exe to pass the hash with previously discovered Adalwolfa creds",
+                            "images": [
+                                "Turla_QA_7.A.3.png",
+                                "Turla_QA_7.A.3_1.png",
+                                "Turla_QA_7.A.3_2.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
+            "T1021.004": {
+                "d": {
+                    "count": 2,
+                    "info": [
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes pscp.exe to copy tmp504e.tmp to 10.20.10.23 as /tmp/tmp514f524f using Adalwolfa's credentials",
+                            "images": [
+                                "Turla_QA_9.A.3.png",
+                                "Turla_QA_9.A.3_1.png",
+                                "Turla_QA_9.A.3_2.png",
+                                "Turla_QA_9.A.3_3.png"
+                            ],
+                            "note": null
+                        },
+                        {
+                            "threat": "Turla",
+                            "criteria": "cmd.exe executes plink to execute /root/hsperfdata",
+                            "images": [
+                                "Turla_QA_9.A.5.png",
+                                "Turla_QA_9.A.5_1.png",
+                                "Turla_QA_9.A.5_3.png"
+                            ],
+                            "note": null
+                        }
+                    ]
+                },
+                "p": {
+                    "count": 0,
+                    "info": []
+                }
+            },
             "T1021.001": {
                 "d": {
                     "count": 4,
@@ -782,25 +2529,6 @@
                     "info": []
                 }
             },
-            "T1570": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "C:\\Windows\\perfc.dat is written to disk on 10.0.1.8",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_19.A.5.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
             "T1021.006": {
                 "d": {
                     "count": 2,
@@ -831,51 +2559,18 @@
                 }
             }
         },
-        "discovery": {
-            "T1082": {
-                "d": {
-                    "count": 3,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes systeminfo",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_5.A.1_1.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes net /config",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_5.A.7_1.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe queries HKLM\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion for various subkeys",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_16.A.2.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1007": {
+        "collection": {
+            "T1056.001": {
                 "d": {
                     "count": 1,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes sc query",
+                            "threat": "Turla",
+                            "criteria": "wingtsvcupdt.exe logs keystrokes to %temp%\\~DFA512.tmp",
                             "images": [
-                                "WizardSpider-Sandworm_QA_5.A.2_1.png"
+                                "Turla_QA_8.A.2.png",
+                                "Turla_QA_8.A.2_1.png",
+                                "Turla_QA_8.A.2_2.png"
                             ],
                             "note": null
                         }
@@ -886,15 +2581,19 @@
                     "info": []
                 }
             },
-            "T1087.001": {
+            "T1114.002": {
                 "d": {
                     "count": 1,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes net user",
+                            "threat": "Turla",
+                            "criteria": "EdgeTransport.exe collects and logs all incoming emails to nk.local to C:\\Windows\\ServiceProfiles\\NetworkService\\AppData\\Local\\Temp\\tmp4C4E",
                             "images": [
-                                "WizardSpider-Sandworm_QA_5.A.3_1.png"
+                                "Turla_QA_19.A.12_4.png",
+                                "Turla_QA_19.A.12_5.png",
+                                "Turla_QA_19.A.12_6.png",
+                                "Turla_QA_19.A.12_7.png",
+                                "Turla_QA_19.A.12_8.png"
                             ],
                             "note": null
                         }
@@ -905,62 +2604,25 @@
                     "info": []
                 }
             },
-            "T1087.002": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes net user /domain",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_5.A.4_1.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1016": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes ipconfig",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_5.A.5_1.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1049": {
+            "T1114.001": {
                 "d": {
                     "count": 2,
                     "info": [
                         {
                             "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes netstat",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to read SenderEmailAddress values from Outlook",
                             "images": [
-                                "WizardSpider-Sandworm_QA_5.A.6_1.png"
+                                "WizardSpider-Sandworm_QA_3.A.5_2.png",
+                                "WizardSpider-Sandworm_QA_3.A.5_4.png"
                             ],
                             "note": null
                         },
                         {
                             "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes netstat.exe",
+                            "criteria": "rundll32.exe spawns cmd.exe then powershell.exe to read SenderEmailAddress values from Outlook",
                             "images": [
-                                "WizardSpider-Sandworm_QA_16.A.5.png",
-                                "WizardSpider-Sandworm_QA_16.A.5_1.png"
+                                "WizardSpider-Sandworm_QA_3.A.5_3.png",
+                                "WizardSpider-Sandworm_QA_3.A.5.png"
                             ],
                             "note": null
                         }
@@ -970,93 +2632,20 @@
                     "count": 0,
                     "info": []
                 }
-            },
-            "T1482": {
+            }
+        },
+        "exfiltration": {
+            "T1041": {
                 "d": {
                     "count": 1,
                     "info": [
                         {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes nltest /domain_trusts /all_trusts",
+                            "threat": "Turla",
+                            "criteria": "EdgeTransport.exe exfiltrates the email log file over its existing C2 channel",
                             "images": [
-                                "WizardSpider-Sandworm_QA_5.A.8_1.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1069": {
-                "d": {
-                    "count": 2,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes whoami",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_5.A.9_2.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "cmd.exe executes whoami",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_5.A.9.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1069.002": {
-                "d": {
-                    "count": 1,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "powershell.exe executes adfind.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_7.A.5_1.png"
-                            ],
-                            "note": null
-                        }
-                    ]
-                },
-                "p": {
-                    "count": 0,
-                    "info": []
-                }
-            },
-            "T1018": {
-                "d": {
-                    "count": 2,
-                    "info": [
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe executes dsquery.exe via cmd.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_17.A.7.png",
-                                "WizardSpider-Sandworm_QA_17.A.7_1.png",
-                                "WizardSpider-Sandworm_QA_17.A.7_2.png",
-                                "WizardSpider-Sandworm_QA_17.A.7_4.png"
-                            ],
-                            "note": null
-                        },
-                        {
-                            "threat": "Wizard Spider + Sandworm",
-                            "criteria": "rundll32.exe executes dsquery.exe via cmd.exe",
-                            "images": [
-                                "WizardSpider-Sandworm_QA_17.A.7_3.png",
-                                "WizardSpider-Sandworm_QA_17.A.7_5.png"
+                                "Turla_QA_19.A.13.png",
+                                "Turla_QA_19.A.13_1.png",
+                                "Turla_QA_19.A.13_2.png"
                             ],
                             "note": null
                         }
@@ -1172,7 +2761,7 @@
     "filename": "qualys_engenuity.json",
     "capability_name": "qualys",
     "counts": {
-        "detect": 40,
+        "detect": 0,
         "protect": 0
     }
 }

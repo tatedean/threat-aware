@@ -4136,7 +4136,7 @@
     "filename": "gosecure_engenuity.json",
     "capability_name": "gosecure",
     "counts": {
-        "detect": 39,
+        "detect": 0,
         "protect": 0
     }
 }

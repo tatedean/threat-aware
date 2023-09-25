@@ -2497,7 +2497,7 @@
     "filename": "opentext_engenuity.json",
     "capability_name": "opentext",
     "counts": {
-        "detect": 44,
+        "detect": 0,
         "protect": 0
     }
 }

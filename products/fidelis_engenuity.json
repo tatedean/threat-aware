@@ -4677,7 +4677,7 @@
     "filename": "fidelis_engenuity.json",
     "capability_name": "fidelis",
     "counts": {
-        "detect": 61,
+        "detect": 0,
         "protect": 0
     }
 }
